@@ -1,0 +1,2639 @@
+================================================================================
+FILE: FDA_3500_PT-2025-016-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-016 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-016 Full Name Nancy Claire Foster
+Identifier: (Conf.):
+
+Date of Birth: 15-Sep-1983 Age: 41 year(s)
+
+Sex: Female Weight: 140 Ib
+
+Race / White
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Required Intervention to Prevent
+Permanent Impairment/Damage
+Date of Event: 01-Sep-2024 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Osteonecrosis of the jaw (ONJ) developed after dental extraction. Exposed necrotic bone in mandible confirmed on
+CT. Surgical debridement required.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+Recent molar extraction 1 month prior. Corticosteroid use (prednisone). Vitamin D deficiency.
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+Serum Calcium 10.5 mg/dL 05-Feb-2025
+Vitamin D 25-OH 18 30 100 ng/mL 05-Feb-2025
+
+C. PRODUCT AVAILABILITY
+
+Product Available No Picture of No
+for Evaluation? Product?
+
+D. SUSPECT PRODUCT #1
+
+Product Name: Zoledronic Acid 5mg IV NDC / Unique ID: 00078-0457-15
+
+Manufacturer: Novartis AG Lot #: NV20240901
+
+Dose / Amount: 5 mg Frequency: Yearly
+
+Route: Intravenous Diagnosis Osteoporosis prevention
+(Indication):
+
+Therapy Start 01-Sep-2022 Therapy Stop 01-Sep-2024
+
+Date: Date:
+
+Event Abated Yes Event Reappeared No
+
+After Stop? After Reintro?
+
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A - Drug/Biologic Report
+
+Operator of N/A Device N/A
+Device: Implanted:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+1 See History / Medical Record _ _
+2 — — —
+3 — — —
+
+G. REPORTER INFORMATION
+
+Last Name: Taylor First Name: Angela
+Address: 600 Highland Ave City: Madison
+State: WI ZIP: 53792
+Phone: 608-555-0355 Email: a.taylor@uwhealth.org
+Occupation: Endocrinologist Health Yes
+Professional?
+Also Reported To: Manufacturer Identity Yes
+Disclosed?
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-010.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-010 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-010 
+Full Name 
+(Conf.): 
+Emily Grace Hoffman 
+Date of Birth: 
+19-Aug-2001 
+Age: 
+23 year(s) 
+Sex: 
+Female 
+Weight: 
+110 lb 
+Race / 
+Ethnicity: 
+White 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Other Serious or Important 
+Medical Events 
+Date of Event: 
+20-Jan-2025 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Drug-induced lupus erythematosus confirmed. Patient presented with arthralgias, rash, and positive ANA. 
+Symptoms began 4 months after initiating therapy. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+Slow acetylator genotype. No family history of lupus. Non-smoker. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+ANA Titer 
+1:640 
+N/A 
+1:40 
+titer 
+20-Jan-2025 
+Anti-dsDNA 
+Positive 
+N/A 
+Negative 
+— 
+20-Jan-2025 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Hydralazine 25mg 
+NDC / Unique ID: 
+00378-0106-01 
+Manufacturer: 
+Mylan Pharmaceuticals 
+Lot #: 
+MY20240811 
+Dose / Amount: 
+25 mg 
+Frequency: 
+Three times daily 
+Route: 
+Oral 
+Diagnosis 
+(Indication): 
+Hypertension 
+Therapy Start 
+Date: 
+15-Sep-2024 
+Therapy Stop 
+Date: 
+20-Jan-2025 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICEBrand Name: 
+N/A – Drug/Biologic Report 
+Operator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Garcia 
+First Name: 
+Isabel 
+Address: 
+3800 Reservoir Rd NW 
+City: 
+Washington 
+State: 
+DC 
+ZIP: 
+20007 
+Phone: 
+202-555-0833 
+Email: 
+i.garcia@guhosp.edu 
+Occupation: 
+Internist 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-004.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-004 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-004 
+Full Name 
+(Conf.): 
+Jennifer L. Brooks 
+Date of Birth: 
+18-Feb-1990 
+Age: 
+35 year(s) 
+Sex: 
+Female 
+Weight: 
+118 lb 
+Race / 
+Ethnicity: 
+Black or African American 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Life-threatening 
+Date of Event: 
+14-Feb-2025 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Stevens-Johnson Syndrome developed 2 weeks after starting medication. Widespread skin blistering, mucosal 
+involvement, and high fever (103°F). ICU admission required. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+No prior drug allergies. HLA-B*1502 status unknown. On valproic acid concurrently. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+WBC 
+14.2 
+4.5 
+11.0 
+K/uL 
+14-Feb-2025 
+CRP 
+88 
+0 
+10 
+mg/L 
+14-Feb-2025 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Lamotrigine 25mg 
+NDC / Unique ID: 
+00173-0643-55 
+Manufacturer: 
+GlaxoSmithKline 
+Lot #: 
+GSK20250033 
+Dose / Amount: 
+25 mg 
+Frequency: 
+Once daily 
+Route: 
+Oral 
+Diagnosis 
+(Indication): 
+Bipolar disorder 
+Therapy Start 
+Date: 
+01-Feb-2025 
+Therapy Stop 
+Date: 
+14-Feb-2025 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICEBrand Name: 
+N/A – Drug/Biologic Report 
+Operator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Thompson 
+First Name: 
+Marcus 
+Address: 
+500 University Blvd 
+City: 
+Birmingham 
+State: 
+AL 
+ZIP: 
+35294 
+Phone: 
+205-555-0924 
+Email: 
+m.thompson@uabmed.edu 
+Occupation: 
+Physician 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-005.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-005 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-005 
+Full Name 
+(Conf.): 
+William Scott Turner 
+Date of Birth: 
+22-Jul-1955 
+Age: 
+69 year(s) 
+Sex: 
+Male 
+Weight: 
+210 lb 
+Race / 
+Ethnicity: 
+White 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Hospitalization 
+Date of Event: 
+15-Jan-2025 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Rhabdomyolysis confirmed by elevated CPK. Patient presented with severe muscle pain, weakness, and dark 
+urine after dose increase 3 weeks prior. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+Concurrent gemfibrozil use. Mild renal impairment. Former smoker. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+Creatine Kinase 
+12450 
+30 
+200 
+U/L 
+15-Jan-2025 
+Creatinine 
+2.8 
+0.6 
+1.2 
+mg/dL 
+15-Jan-2025 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Atorvastatin 80mg 
+NDC / Unique ID: 
+00071-0155-23 
+Manufacturer: 
+Pfizer Inc. 
+Lot #: 
+PFZ20241222 
+Dose / Amount: 
+80 mg 
+Frequency: 
+Once daily 
+Route: 
+Oral 
+Diagnosis 
+(Indication): 
+Hyperlipidemia 
+Therapy Start 
+Date: 
+01-Nov-2024 
+Therapy Stop 
+Date: 
+15-Jan-2025 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICEBrand Name: 
+N/A – Drug/Biologic Report 
+Operator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Ramirez 
+First Name: 
+Carlos 
+Address: 
+4502 Medical Pkwy 
+City: 
+Austin 
+State: 
+TX 
+ZIP: 
+78756 
+Phone: 
+512-555-0388 
+Email: 
+c.ramirez@austinmedctr.org 
+Occupation: 
+Pharmacist 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-007.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-007 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-007 
+Full Name 
+(Conf.): 
+David K. Nguyen 
+Date of Birth: 
+31-Oct-1995 
+Age: 
+29 year(s) 
+Sex: 
+Male 
+Weight: 
+143 lb 
+Race / 
+Ethnicity: 
+Asian 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Hospitalization 
+Date of Event: 
+03-Jan-2025 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Severe hypoglycemia episode requiring emergency glucagon administration. Blood glucose dropped to 28 mg/dL. 
+Patient lost consciousness briefly. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+Missed lunch before taking medication. Renal insufficiency (CrCl 42 mL/min). Exercise-intensive lifestyle. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+Blood Glucose 
+28 
+70 
+100 
+mg/dL 
+03-Jan-2025 
+HbA1c 
+9.2 
+4.0 
+5.6 
+% 
+03-Jan-2025 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Glipizide 10mg 
+NDC / Unique ID: 
+00069-2610-66 
+Manufacturer: 
+Pfizer Inc. 
+Lot #: 
+PFZ20250109 
+Dose / Amount: 
+10 mg 
+Frequency: 
+Once daily 
+Route: 
+Oral 
+Diagnosis 
+(Indication): 
+Type 2 Diabetes Mellitus 
+Therapy Start 
+Date: 
+03-Jan-2025 
+Therapy Stop 
+Date: 
+03-Jan-2025 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICEBrand Name: 
+N/A – Drug/Biologic Report 
+Operator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Park 
+First Name: 
+Christine 
+Address: 
+9600 Gross Point Rd 
+City: 
+Skokie 
+State: 
+IL 
+ZIP: 
+60076 
+Phone: 
+847-555-0711 
+Email: 
+c.park@northshore.org 
+Occupation: 
+Physician 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-006.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-006 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-006 
+Full Name 
+(Conf.): 
+Patricia Ann Walsh 
+Date of Birth: 
+09-Apr-1978 
+Age: 
+46 year(s) 
+Sex: 
+Female 
+Weight: 
+155 lb 
+Race / 
+Ethnicity: 
+White 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Life-threatening 
+Date of Event: 
+30-Nov-2024 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Acute liver failure symptoms emerged 6 weeks after therapy initiation. Jaundice, abdominal pain, and significantly 
+elevated liver enzymes noted. Liver biopsy showed drug-induced hepatic necrosis. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+Slow acetylator. Social alcohol use. No prior liver disease. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+ALT 
+1240 
+7 
+56 
+U/L 
+30-Nov-2024 
+Total Bilirubin 
+8.4 
+0.2 
+1.2 
+mg/dL 
+30-Nov-2024 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Isoniazid 300mg 
+NDC / Unique ID: 
+50383-737-30 
+Manufacturer: 
+Akorn Inc. 
+Lot #: 
+AK20241015 
+Dose / Amount: 
+300 mg 
+Frequency: 
+Once daily 
+Route: 
+Oral 
+Diagnosis 
+(Indication): 
+Tuberculosis prophylaxis 
+Therapy Start 
+Date: 
+15-Oct-2024 
+Therapy Stop 
+Date: 
+30-Nov-2024 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICEBrand Name: 
+N/A – Drug/Biologic Report 
+Operator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Johnson 
+First Name: 
+Beth 
+Address: 
+1 Hospital Dr 
+City: 
+Columbus 
+State: 
+OH 
+ZIP: 
+43210 
+Phone: 
+614-555-0213 
+Email: 
+b.johnson@osumc.edu 
+Occupation: 
+Physician 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-014-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-014 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-014 Full Name Barbara Jean Powell
+Identifier: (Conf.):
+
+Date of Birth: 24-May-1936 Age: 88 year(s)
+
+Sex: Female Weight: 98 Ib
+
+Race / White
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Life-threatening
+Date of Event: 18-Feb-2025 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Intracranial hemorrhage (subdural hematoma) after minor fall. On anticoagulation therapy. Neurosurgical
+intervention required. Prolonged ICU stay.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+Fall risk due to orthostatic hypotension. Concurrent aspirin 81mg. Renal insufficiency (eGFR 28).
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+Test / Parameter Result =e |
+INR 6.8 2.0 3.0 —
+
+18-Feb-2025
+PT 58 11 13.5 seconds 18-Feb-2025
+C. PRODUCT AVAILABILITY
+Product Available No Picture of No
+for Evaluation? Product?
+D. SUSPECT PRODUCT #1
+Product Name: Warfarin 5mg NDC / Unique ID: 00056-0171-75
+Manufacturer: Bristol-Myers Squibb Lot #: BM20250110
+Dose / Amount: 5mg Frequency: Once daily
+Route: Oral Diagnosis Atrial fibrillation
+(Indication):
+Therapy Start 01-Jan-2020 Therapy Stop 18-Feb-2025
+Date: Date:
+Event Abated Yes Event Reappeared No
+After Stop? After Reintro?
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A - Drug/Biologic Report
+
+Operator of N/A Device N/A
+Device: Implanted:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+1 See History / Medical Record _ _
+2 — — —
+3 — — —
+
+G. REPORTER INFORMATION
+
+Last Name: Perez First Name: Sandra
+Address: 3600 Gaston Ave City: Dallas
+State: TX ZIP: 75246
+Phone: 214-555-0783 Email: s.perez@baylorhealth.edu
+Occupation: Neurologist Health Yes
+Professional?
+Also Reported To: Manufacturer Identity Yes
+Disclosed?
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-002.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-002 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-002 
+Full Name 
+(Conf.): 
+Maria Elena Vasquez 
+Date of Birth: 
+27-Jun-1985 
+Age: 
+39 year(s) 
+Sex: 
+Female 
+Weight: 
+132 lb 
+Race / 
+Ethnicity: 
+Hispanic or Latino 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Life-threatening 
+Date of Event: 
+13-Nov-2024 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Patient experienced QT prolongation detected on ECG monitoring 3 days into treatment. Complained of 
+palpitations and near-syncope. Drug was immediately discontinued. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+History of prolonged QT syndrome. Concurrent use of metoprolol. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+QTc Interval 
+520 
+350 
+450 
+ms 
+13-Nov-2024 
+Potassium 
+3.1 
+3.5 
+5.0 
+mEq/L 
+13-Nov-2024 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Azithromycin 500mg 
+NDC / Unique ID: 
+00069-3060-30 
+Manufacturer: 
+Pfizer Inc. 
+Lot #: 
+PFZ20241108 
+Dose / Amount: 
+500 mg 
+Frequency: 
+Once daily 
+Route: 
+Oral 
+Diagnosis 
+(Indication): 
+Bacterial pneumonia 
+Therapy Start 
+Date: 
+10-Nov-2024 
+Therapy Stop 
+Date: 
+13-Nov-2024 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICEBrand Name: 
+N/A – Drug/Biologic Report 
+Operator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Chen 
+First Name: 
+Linda 
+Address: 
+450 Sutter St Suite 900 
+City: 
+San Francisco 
+State: 
+CA 
+ZIP: 
+94108 
+Phone: 
+415-555-0348 
+Email: 
+l.chen@sfmedical.com 
+Occupation: 
+Nurse Practitioner 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-003.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-003 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-003 
+Full Name 
+(Conf.): 
+Robert Alan Patel 
+Date of Birth: 
+03-Sep-1948 
+Age: 
+76 year(s) 
+Sex: 
+Male 
+Weight: 
+160 lb 
+Race / 
+Ethnicity: 
+Asian 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Hospitalization 
+Date of Event: 
+26-Dec-2024 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Gastrointestinal bleeding developed after 2 weeks of therapy. Hematemesis noted. Hospitalized for 5 days. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+Peptic ulcer disease – history. Chronic kidney disease Stage 2. Non-smoker. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+Hemoglobin 
+7.2 
+13.5 
+17.5 
+g/dL 
+26-Dec-2024 
+Hematocrit 
+22 
+41 
+53 
+% 
+26-Dec-2024 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Naproxen 500mg 
+NDC / Unique ID: 
+12843-187-01 
+Manufacturer: 
+Bayer AG 
+Lot #: 
+BY20250078 
+Dose / Amount: 
+500 mg 
+Frequency: 
+Twice daily 
+Route: 
+Oral 
+Diagnosis 
+(Indication): 
+Osteoarthritis pain management 
+Therapy Start 
+Date: 
+12-Dec-2024 
+Therapy Stop 
+Date: 
+26-Dec-2024 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICE 
+Brand Name: 
+N/A – Drug/Biologic ReportOperator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Williams 
+First Name: 
+Samantha 
+Address: 
+2000 Lexington Ave 
+City: 
+New York 
+State: 
+NY 
+ZIP: 
+10035 
+Phone: 
+212-555-0762 
+Email: 
+s.williams@nychosp.org 
+Occupation: 
+Physician 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-001.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-001 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-001 
+Full Name 
+(Conf.): 
+James R. Mitchell 
+Date of Birth: 
+14-Mar-1962 
+Age: 
+63 year(s) 
+Sex: 
+Male 
+Weight: 
+185 lb 
+Race / 
+Ethnicity: 
+White 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Hospitalization 
+Date of Event: 
+05-Jan-2025 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Severe allergic reaction with hives and difficulty breathing 30 minutes after first dose. Patient required emergency 
+epinephrine injection. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+Known allergy to ACE inhibitors – not on prior records. No prior adverse drug reactions documented. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+IgE Level 
+820 
+0 
+100 
+IU/mL 
+05-Jan-2025 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Lisinopril 10mg 
+NDC / Unique ID: 
+68382-103-10 
+Manufacturer: 
+Zydus Pharmaceuticals 
+Lot #: 
+ZP20250112 
+Dose / Amount: 
+10 mg 
+Frequency: 
+Once daily 
+Route: 
+Oral 
+Diagnosis 
+(Indication): 
+Hypertension 
+Therapy Start 
+Date: 
+05-Jan-2025 
+Therapy Stop 
+Date: 
+05-Jan-2025 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICE 
+Brand Name: 
+N/A – Drug/Biologic ReportOperator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Okafor 
+First Name: 
+Ngozi 
+Address: 
+1201 Medical Center Dr 
+City: 
+Houston 
+State: 
+TX 
+ZIP: 
+77030 
+Phone: 
+713-555-0192 
+Email: 
+n.okafor@houstonclinic.org 
+Occupation: 
+Physician 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-012-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-012 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-012 Full Name Linda Rose Huang
+Identifier: (Conf.):
+
+Date of Birth: 07-Mar-1972 Age: 52 year(s)
+
+Sex: Female Weight: 128 Ib
+
+Race / Asian
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Disability or Permanent Damage
+Date of Event: 10-Jan-2025 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Nephrogenic diabetes insipidus with severe polyuria (10+ L/day) and hypernatremia after 2 years of therapy.
+Serum sodium peaked at 162 mEq/L.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+NSAIDs used concurrently (ibuprofen). Low-sodium diet recently started. No prior renal disease.
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+Serum Sodium mEq/L 10-Jan-2025
+Lithium Level 1.6 0.6 1.2 mEq/L 10-Jan-2025
+
+C. PRODUCT AVAILABILITY
+
+Product Available No Picture of No
+for Evaluation? Product?
+
+D. SUSPECT PRODUCT #1
+
+Product Name: Lithium Carbonate 300mg NDC / Unique ID: 51285-158-01
+
+Manufacturer: Noven Pharmaceuticals Lot #: NV20241130
+
+Dose / Amount: 300 mg Frequency: Three times daily
+
+Route: Oral Diagnosis Bipolar | Disorder
+(Indication):
+
+Therapy Start 10-Jan-2023 Therapy Stop 10-Jan-2025
+
+Date: Date:
+
+Event Abated Yes Event Reappeared No
+
+After Stop? After Reintro?
+
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A - Drug/Biologic Report
+
+Operator of N/A Device N/A
+Device: Implanted:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+1 See History / Medical Record _ _
+2 — — —
+3 — — —
+
+G. REPORTER INFORMATION
+
+Last Name: Kim First Name: Rachel
+Address: 725 Welch Rd City: Palo Alto
+State: CA ZIP: 94304
+Phone: 650-555-0924 Email: r.kim@stanfordmed.edu
+Occupation: Psychiatrist Health Yes
+Professional?
+Also Reported To: Manufacturer Identity Yes
+Disclosed?
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-015-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-015 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-015 Full Name Kevin Alexander Ross
+Identifier: (Conf.):
+
+Date of Birth: 06-Feb-2000 Age: 25 year(s)
+
+Sex: Male Weight: 165 Ib
+
+Race / Black or African American
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Life-threatening
+Date of Event: 20-Jan-2025 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Aplastic anemia confirmed after routine CBC showed pancytopenia. Bone marrow biopsy showed markedly
+hypocellular marrow. Patient required transfusions and eventual stem cell transplant.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+Folate supplementation was NOT co-prescribed. Renal function borderline (CrCl 48). No NSAID use.
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+11.0 20-Jan-2025
+Platelets 18 150 400 K/uL 20-Jan-2025
+C. PRODUCT AVAILABILITY
+Product Available No Picture of No
+for Evaluation? Product?
+D. SUSPECT PRODUCT #1
+Product Name: Methotrexate 15mg NDC / Unique ID: 55111-667-15
+Manufacturer: Strides Pharma Lot #: $T20240820
+Dose / Amount: 15mg Frequency: Once weekly
+Route: Oral Diagnosis Rheumatoid arthritis
+(Indication):
+Therapy Start 01-Aug-2024 Therapy Stop 20-Jan-2025
+Date: Date:
+Event Abated Yes Event Reappeared No
+After Stop? After Reintro?
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A - Drug/Biologic Report
+
+Operator of N/A Device N/A
+Device: Implanted:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+1 See History / Medical Record _ _
+2 — — —
+3 — — —
+
+G. REPORTER INFORMATION
+
+Last Name: White First Name: Gregory
+Address: 2025 E Newport Pike City: Wilmington
+State: DE ZIP: 19804
+Phone: 302-555-0194 Email: g.white@christiana.org
+Occupation: Rheumatologist Health Yes
+Professional?
+Also Reported To: Manufacturer Identity Yes
+Disclosed?
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-017-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-017 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-017 Full Name George Henry Watts
+Identifier: (Conf.):
+
+Date of Birth: 29-Dec-1970 Age: 54 year(s)
+
+Sex: Male Weight: 220 Ib
+
+Race / White
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Life-threatening
+Date of Event: 18-Nov-2024 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Severe exfoliative dermatitis (toxic epidermal necrolysis — TEN) covering 40% body surface area. ICU admission,
+wound care, IV fluids, pain management required.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+HLA-B*5801 positive (not checked prior to prescribing). Renal impairment — dose not adjusted.
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+Eosinophil Count 18-Nov-2024
+CRP 112 0 10 mg/L 18-Nov-2024
+
+C. PRODUCT AVAILABILITY
+
+Product Available No Picture of No
+for Evaluation? Product?
+
+D. SUSPECT PRODUCT #1
+
+Product Name: Allopurinol 300mg NDC / Unique ID: 00378-0270-01
+
+Manufacturer: Mylan Pharmaceuticals Lot #: MY20241005
+
+Dose / Amount: 300 mg Frequency: Once daily
+
+Route: Oral Diagnosis Gout
+(Indication):
+
+Therapy Start 01-Oct-2024 Therapy Stop 18-Nov-2024
+
+Date: Date:
+
+Event Abated Yes Event Reappeared No
+
+After Stop? After Reintro?
+
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A - Drug/Biologic Report
+
+Operator of N/A
+Device:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+# Product Name Therapy Start Therapy End
+
+1 See History / Medical Record
+2 —
+3 =
+
+G. REPORTER INFORMATION
+
+Last Name: Brown
+Address: 750 E Adams St
+State: NY
+
+Phone: 315-555-0874
+Occupation: Dermatologist
+
+Also Reported To: Manufacturer
+
+First Name:
+City:
+
+ZIP:
+
+Email:
+
+Health
+Professional?
+
+Identity
+Disclosed?
+
+Device N/A
+Implanted:
+
+Karen
+
+Syracuse
+
+13210
+k.brown@sunyupstate.edu
+Yes
+
+Yes
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-013-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-013 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-013 Full Name Carlos Antonio Rivera
+Identifier: (Conf.):
+
+Date of Birth: 11-Nov-1980 Age: 44 year(s)
+
+Sex: Male Weight: 175 Ib
+
+Race / Hispanic or Latino
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Disability or Permanent Damage
+Date of Event: 15-Dec-2024 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Severe peripheral neuropathy with burning pain and numbness in bilateral lower extremities after 6 months of
+therapy. EMG confirmed axonal neuropathy.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+CD4 count 320 cells/uL. Diabetic - confounds neuropathy risk. Alcohol use (social).
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+Nerve Conduction Velocity 20-Dec-2024
+Lactate 5.8 0.5 2.2 mmol/L 15-Dec-2024
+
+C. PRODUCT AVAILABILITY
+
+Product Available No Picture of No
+for Evaluation? Product?
+
+D. SUSPECT PRODUCT #1
+
+Product Name: Stavudine (d4T) 40mg NDC / Unique ID: 00087-667 1-22
+
+Manufacturer: Bristol-Myers Squibb Lot #: BM20240715
+
+Dose / Amount: 40 mg Frequency: Twice daily
+
+Route: Oral Diagnosis HIV prophylaxis
+(Indication):
+
+Therapy Start 15-Jun-2024 Therapy Stop 15-Dec-2024
+
+Date: Date:
+
+Event Abated Yes Event Reappeared No
+
+After Stop? After Reintro?
+
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A - Drug/Biologic Report
+
+Operator of N/A Device N/A
+Device: Implanted:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+1 See History / Medical Record _ _
+2 — — —
+3 — — —
+
+G. REPORTER INFORMATION
+
+Last Name: Morales First Name: Diego
+Address: 1500 NW 12th Ave City: Miami
+State: FL ZIP: 33136
+Phone: 305-555-0427 Email: d.morales@jacksonhealth.org
+Occupation: Infectious Disease Specialist Health Yes
+Professional?
+Also Reported To: Manufacturer Identity Yes
+Disclosed?
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-011-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-011 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-011 Full Name Thomas E. Robinson
+Identifier: (Conf.):
+
+Date of Birth: 28-Jan-1959 Age: 66 year(s)
+
+Sex: Male Weight: 195 Ib
+
+Race / White
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Hospitalization
+Date of Event: 22-Jan-2025 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Serotonin syndrome developed after combining medications. Symptoms included agitation, diaphoresis,
+myoclonus, and hyperthermia (104.2°F). ICU admitted.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+Concurrently prescribed sertraline 100mg for depression. History of opioid use disorder, in remission.
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+Temperature 104.2 97.0 99.0 °F 22-Jan-2025
+Serotonin Level 2450 50 220 ng/mL 22-Jan-2025
+
+C. PRODUCT AVAILABILITY
+
+Product Available No Picture of No
+for Evaluation? Product?
+
+D. SUSPECT PRODUCT #1
+
+Product Name: Tramadol 50mg NDC / Unique ID: 65162-61 1-50
+
+Manufacturer: Amneal Pharmaceuticals Lot #: AM20250120
+
+Dose / Amount: 50 mg Frequency: Every 6 hours PRN
+
+Route: Oral Diagnosis Major depressive disorder
+(Indication):
+
+Therapy Start 20-Jan-2025 Therapy Stop 22-Jan-2025
+
+Date: Date:
+
+Event Abated Yes Event Reappeared No
+
+After Stop? After Reintro?
+
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A - Drug/Biologic Report
+
+Operator of N/A Device N/A
+Device: Implanted:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+1 See History / Medical Record _ _
+2 — — —
+3 — — —
+
+G. REPORTER INFORMATION
+
+Last Name: Lee First Name: Jonathan
+Address: 200 W Arbor Dr City: San Diego
+State: CA ZIP: 92103
+Phone: 619-555-0562 Email: j.lee@ucsdhealth.org
+Occupation: Physician Health Yes
+Professional?
+Also Reported To: Manufacturer Identity Yes
+Disclosed?
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-019-4-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-019 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-019 Full Name Raymond Louis
+Identifier: (Conf.): Greene
+
+Date of Birth: 17-Jul-1952 Age: 72 year(s)
+
+Sex: Male Weight: 178 Ib
+
+Race / White
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Life-threatening
+Date of Event: 15-Jan-2025 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Refractory hypotension and shock developed 2 hours after IV infusion. Required vasopressors, fluid resuscitation,
+and 3-day ICU stay. Suspected anaphylaxis.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+Premedication with acetaminophen and diphenhydramine was given. Renal impairment at baseline.
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+Blood Pressure 68/40 90/60 120/80 mmHg 15-Jan-2025
+Creatinine 3.1 0.7 1.3 mg/dL 16-Jan-2025
+
+C. PRODUCT AVAILABILITY
+
+Product Available No Picture of No
+for Evaluation? Product?
+
+D. SUSPECT PRODUCT #1
+
+Product Name: Amphotericin B 50mg IV NDC / Unique ID: 39822-0104-05
+
+Manufacturer: X-Gen Pharmaceuticals Lot #: XG20250115
+
+Dose / Amount: 50 mg Frequency: Daily
+
+Route: Intravenous Diagnosis Systemic fungal infection
+(Indication):
+
+Therapy Start 15-Jan-2025 Therapy Stop 15-Jan-2025
+
+Date: Date:
+
+Event Abated Yes Event Reappeared No
+
+After Stop? After Reintro?
+
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A - Drug/Biologic Report
+
+Operator of N/A Device N/A
+Device: Implanted:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+# Product Name Therapy Start Therapy End
+
+1 See History / Medical Record _ _
+2 — — —
+3 — — —
+
+G. REPORTER INFORMATION
+
+Last Name: Hall First Name: Diane
+Address: 404 W Thomas Rd City: Phoenix
+State: AZ ZIP: 85013
+Phone: 602-555-0991 Email: d.hall@dignityhealth.org
+Occupation: Infectious Disease Physician Health Yes
+Professional?
+Also Reported To: Manufacturer Identity Yes
+Disclosed?
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-020-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-020 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-020 Full Name Christine Mei Zhou
+Identifier: (Conf.):
+
+Date of Birth: 21-Oct-2008 Age: 16 year(s)
+
+Sex: Female Weight: 97 |b
+
+Race / Asian
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Hospitalization
+Date of Event: 30-Jan-2025 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Suicidal ideation and behavioral changes reported 2 weeks after dose increase. Patient disclosed plan to parents;
+hospitalized for psychiatric evaluation and safety monitoring.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+Pediatric patient under 18 — black box warning applicable. Family history of depression. No prior suicidal ideation.
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+Columbia Suicide Severity High 30-Jan-2025
+Rating
+
+C. PRODUCT AVAILABILITY
+
+Product Available No Picture of No
+for Evaluation? Product?
+
+D. SUSPECT PRODUCT #1
+
+Product Name: Fluoxetine 20mg NDC / Unique ID: 00002-3105-30
+
+Manufacturer: Eli Lilly and Company Lot #: EL20250108
+
+Dose / Amount: 20 mg Frequency: Once daily
+
+Route: Oral Diagnosis Major depressive disorder
+(Indication):
+
+Therapy Start 15-Jan-2025 Therapy Stop 30-Jan-2025
+
+Date: Date:
+
+Event Abated Yes Event Reappeared No
+
+After Stop? After Reintro?
+
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A — Drug/Biologic Report
+Operator of N/A Device N/A
+Device: Implanted:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+fe | Product Name Therapy Start Therapy End
+
+1 See History / Medical Record
+2 — — —
+3 — — —
+
+G. REPORTER INFORMATION
+
+Last Name: Adams First Name: Patricia
+Address: 200 Hawkins Field Dr City: Nashville
+State: TN ZIP: 37232
+Phone: 615-555-0382 Email: p.adams@vumc.org
+Occupation: Child Psychiatrist Health Yes
+Professional?
+Also Reported To: Manufacturer Identity Yes
+Disclosed?
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-018-2.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report
+
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291 Expires: 09-30-2027
+
+Report ID: FDA-3500-PT-2025-018 Date of Report: 10-Jun-2026
+Form Version: FDA-3500 (09/2025) Report Type: Voluntary — Health Professional
+
+A. PATIENT INFORMATION
+
+Patient PT-2025-018 Full Name Ashley Renee
+Identifier: (Conf.): Coleman
+Date of Birth: 03-Apr-1997 Age: 27 year(s)
+Sex: Female Weight: 125 Ib
+
+Race / Black or African American
+
+Ethnicity:
+
+B. ADVERSE EVENT / PRODUCT PROBLEM
+
+Type of Report: Adverse Event Outcome: Hospitalization
+Date of Event: 25-Jan-2025 Date of This 10-Jun-2025
+Report:
+
+Describe Event / Problem / Product Use Error (B.5)
+
+Agranulocytosis confirmed after presenting with fever, sore throat, and mouth ulcers. ANC dropped to 0.1 K/uL.
+Hospitalized on reverse isolation for 11 days with IV antibiotics.
+
+Other Relevant History / Preexisting Medical Conditions (B.7)
+
+Weekly CBC monitoring was being done per REMS protocol. No prior blood dyscrasias. Non-smoker.
+
+B.6 RELEVANT TEST / LABORATORY DATA
+
+Test / Parameter Result =e |
+ANC 0.1 1.5 8.0 K/uL 25-Jan-2025
+
+WBC 1.1 4.5 11.0 K/uL 25-Jan-2025
+
+C. PRODUCT AVAILABILITY
+
+Product Available No Picture of No
+for Evaluation? Product?
+
+D. SUSPECT PRODUCT #1
+
+Product Name: Clozapine 200mg NDC / Unique ID: 00078-0126-46
+
+Manufacturer: Novartis AG Lot #: NV20241218
+
+Dose / Amount: 200 mg Frequency: Once daily (evening)
+
+Route: Oral Diagnosis Schizophrenia
+(Indication):
+
+Therapy Start 01-Oct-2024 Therapy Stop 25-Jan-2025
+
+Date: Date:
+
+Event Abated Yes Event Reappeared No
+
+After Stop? After Reintro?
+
+Product Type: Drug or Biologic — Brand Ongoing Therapy? No
+
+E. SUSPECT MEDICAL DEVICE
+Brand Name: N/A - Drug/Biologic Report
+
+Operator of N/A Device N/A
+Device: Implanted:
+
+F. OTHER (CONCOMITANT) MEDICAL PRODUCTS
+
+1 See History / Medical Record _ _
+2 — — —
+3 — — —
+
+G. REPORTER INFORMATION
+
+Last Name: Scott First Name: Tiffany
+Address: 1301 Medical Center Pkwy City: Murfreesboro
+State: TN ZIP: 37129
+Phone: 615-555-0218 Email: t.scott@ssmhealth.org
+Occupation: Psychiatrist Health Yes
+Professional?
+Also Reported To: Manufacturer Identity Yes
+Disclosed?
+
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event.
+Form FDA-3500 MedWatch (09/2025) | Page 1 of 1 | For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: image.pdf
+================================================================================
+
+Welcome 
+app.py 
+6 
+8 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+inport fitz 
+inport pytesseract 
+import pandas as pd 
+import re 
+20 
+21 
+22 
+23 
+app.py 
+from PIL import Image 
+from pathlib import Path 
+pdf_folder 
+records 
+) 
+"data 
+for pdf_file in Path(pdf folder)ge 
+docfitz.open(pE File) 
+full text 
+for page num in range (len (doc) ): 
+page 
+doc [page 
+um) 
+plxpage.get pinp 
+PROBLEMS 
+OUTPUT 
+ng=Tnage.fronbytes( 
+RGB 
+DEBUG CONSOLE 
+TERMINAL 
+PORTS 
+icrosoft Mindows [Version 10.6.26200.8457] 
+(c) Microsoft Corporation. All righitts reserved. 
+C:UsersAdnin\Desktop\ED-AI>
+================================================================================
+FILE: FDA_3500_PT-2025-008.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-008 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-008 
+Full Name 
+(Conf.): 
+Susan Marie Clarke 
+Date of Birth: 
+14-Jun-1967 
+Age: 
+57 year(s) 
+Sex: 
+Female 
+Weight: 
+168 lb 
+Race / 
+Ethnicity: 
+White 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Disability or Permanent Damage 
+Date of Event: 
+15-Feb-2025 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Pulmonary fibrosis detected on high-resolution CT scan after 14 months of treatment. Persistent dry cough and 
+progressive dyspnea reported for 3 months prior to imaging. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+Cumulative bleomycin dose exceeded 400 units. Non-smoker. Prior radiation to chest. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+FVC 
+52 
+80 
+120 
+% predicted 
+20-Feb-2025 
+DLCO 
+38 
+75 
+120 
+% predicted 
+20-Feb-2025 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Bleomycin 15 Units 
+NDC / Unique ID: 
+00703-3069-01 
+Manufacturer: 
+Teva Pharmaceuticals 
+Lot #: 
+TV20240619 
+Dose / Amount: 
+15 units 
+Frequency: 
+Weekly 
+Route: 
+Intravenous 
+Diagnosis 
+(Indication): 
+Breast cancer 
+Therapy Start 
+Date: 
+01-Jan-2024 
+Therapy Stop 
+Date: 
+15-Feb-2025 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICEBrand Name: 
+N/A – Drug/Biologic Report 
+Operator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Martinez 
+First Name: 
+Elena 
+Address: 
+633 N Saint Clair St 
+City: 
+Chicago 
+State: 
+IL 
+ZIP: 
+60611 
+Phone: 
+312-555-0649 
+Email: 
+e.martinez@nm.org 
+Occupation: 
+Oncologist 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
+================================================================================
+FILE: FDA_3500_PT-2025-009.pdf
+================================================================================
+
+FDA FORM 3500 — MedWatch Adverse Event Report 
+U.S. Department of Health and Human Services | Food and Drug Administration | OMB No. 0910-0291  Expires: 09-30-2027 
+Report ID: 
+FDA-3500-PT-2025-009 
+Date of Report: 
+10-Jun-2026 
+Form Version: 
+FDA-3500 (09/2025) 
+Report Type: 
+Voluntary – Health Professional 
+  A. PATIENT INFORMATION 
+Patient 
+Identifier: 
+PT-2025-009 
+Full Name 
+(Conf.): 
+Michael J. Harrison 
+Date of Birth: 
+05-Dec-1942 
+Age: 
+82 year(s) 
+Sex: 
+Male 
+Weight: 
+152 lb 
+Race / 
+Ethnicity: 
+Black or African American 
+  B. ADVERSE EVENT / PRODUCT PROBLEM 
+Type of Report: 
+Adverse Event 
+Outcome: 
+Life-threatening 
+Date of Event: 
+15-Feb-2025 
+Date of This 
+Report: 
+10-Jun-2025 
+ 
+Describe Event / Problem / Product Use Error (B.5) 
+Angioedema of tongue and lips requiring emergency airway management and intubation. Occurred 3 hours after 
+first dose. 
+Other Relevant History / Preexisting Medical Conditions (B.7) 
+Previous intolerance to lisinopril (cough). African American male – higher risk for ACE-I angioedema. 
+  B.6  RELEVANT TEST / LABORATORY DATA 
+Test / Parameter 
+Result 
+Low Ref 
+High 
+Ref 
+Unit 
+Date 
+SpO2 
+86 
+95 
+100 
+% 
+15-Feb-2025 
+  C. PRODUCT AVAILABILITY 
+Product Available 
+for Evaluation? 
+No 
+Picture of 
+Product? 
+No 
+  D. SUSPECT PRODUCT #1 
+Product Name: 
+Enalapril 5mg 
+NDC / Unique ID: 
+00006-0713-54 
+Manufacturer: 
+Merck & Co. 
+Lot #: 
+MK20250202 
+Dose / Amount: 
+5 mg 
+Frequency: 
+Twice daily 
+Route: 
+Oral 
+Diagnosis 
+(Indication): 
+Congestive heart failure 
+Therapy Start 
+Date: 
+15-Feb-2025 
+Therapy Stop 
+Date: 
+15-Feb-2025 
+Event Abated 
+After Stop? 
+Yes 
+Event Reappeared 
+After Reintro? 
+No 
+Product Type: 
+Drug or Biologic – Brand 
+Ongoing Therapy? 
+No 
+  E. SUSPECT MEDICAL DEVICE 
+Brand Name: 
+N/A – Drug/Biologic ReportOperator of 
+Device: 
+N/A 
+Device 
+Implanted: 
+N/A 
+  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS 
+# 
+Product Name 
+Therapy Start 
+Therapy End 
+1 
+See History / Medical Record 
+— 
+— 
+2 
+— 
+— 
+— 
+3 
+— 
+— 
+— 
+  G. REPORTER INFORMATION 
+Last Name: 
+Davis 
+First Name: 
+Loretta 
+Address: 
+500 S State College Blvd 
+City: 
+Anaheim 
+State: 
+CA 
+ZIP: 
+92806 
+Phone: 
+714-555-0182 
+Email: 
+l.davis@westernclinic.com 
+Occupation: 
+Emergency Physician 
+Health 
+Professional? 
+Yes 
+Also Reported To: 
+Manufacturer 
+Identity 
+Disclosed? 
+Yes 
+ 
+Submission of a report does not constitute an admission that medical personnel or the product caused or contributed to the event. 
+Form FDA-3500 MedWatch (09/2025)  |  Page 1 of 1  |  For Voluntary Reporting by Health Professionals
