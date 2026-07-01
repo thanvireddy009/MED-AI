@@ -40,22 +40,38 @@ def extract_block(text, start_marker, end_markers):
  
 def parse_patient_information(text):
     return {
+        # With or without colon after identifier label
         "patient_identifier": extract_field(text,
             r"Patient\s+Identifier[:\s]+([A-Z0-9\-]+)",
-            r"Patient\s*\nIdentifier:\s*([A-Z0-9\-]+)"),
+            r"Patient\s*\nIdentifier:?\s*([A-Z0-9\-]+)",
+            r"Patient\s+([A-Z0-9\-]+)\s+Full Name"),
+
+        # OCR drops the colon: "Full Name Jennifer L. Brooks"
+        # Native has: "Full Name (Conf.): Jennifer L. Brooks"
         "full_name": extract_field(text,
             r"Full Name\s*\(Conf\.\)[:\s]+([\w\s]+?)(?:\n|Date of Birth)",
-            r"Full Name\s*\(Conf\.\):\s*([\w\s]+?)(?=\n)"),
+            r"Full Name\s*\(Conf\.\):\s*([\w\s]+?)(?=\n)",
+            r"Full Name\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]*){1,3})(?:\n|Date of Birth|\s{2,})",
+            r"(?:Identifier:\s*\S+\s+Full Name\s+)([\w][\w\s]+?)(?:\n|Date of Birth)"),
+
         "date_of_birth": extract_field(text,
             r"Date of Birth[:\s]+([\d\-A-Za-z]+)"),
+
         "age": extract_field(text,
             r"Age[:\s]+([\d]+\s*year\(s\))"),
+
         "sex": extract_field(text,
             r"Sex[:\s]+(Male|Female)"),
+
         "weight": extract_field(text,
             r"Weight[:\s]+([\d]+\s*lb)"),
+
+        # OCR may give "Race / White" without Ethnicity label
         "race_ethnicity": extract_field(text,
-            r"Race\s*/\s*Ethnicity[:\s]+([\w\s\/]+?)(?:\n|  [A-Z])"),
+            r"Race\s*/\s*Ethnicity[:\s]+([\w\s\/]+?)(?:\n|  [A-Z])",
+            r"Race\s*/\s*\nEthnicity[:\s]+([\w\s\/]+?)(?:\n|  [A-Z])",
+            r"Race\s*/\s*([\w\s]+?)\n\s*\nEthnicity",
+            r"Race\s*/\s*\n([\w\s]+?)\n"),
     }
  
  
@@ -74,7 +90,8 @@ def parse_adverse_events(text):
             r"Date of Event[:\s]+([\d\-A-Za-z]+)"),
         "date_of_report": extract_field(text,
             r"Date of This\s*\nReport[:\s]+([\d\-A-Za-z]+)",
-            r"Date of This Report[:\s]+([\d\-A-Za-z]+)"),
+            r"Date of This Report[:\s]+([\d\-A-Za-z]+)",
+            r"Date of This\s+([\d\-A-Za-z]+)\s*\nReport"),
         "event_description": extract_field(block,
             r"Describe Event.*?(?:B\.5\))?\s*([\s\S]+?)(?:Other Relevant|$)"),
         "medical_history_preexisting": extract_field(block,
@@ -107,16 +124,20 @@ def parse_suspect_drug(text):
             r"(?:Diagnosis|Indication)[:\s\(]+[\w\s\)]*[:\)]\s*([\w\s]+?)(?:\n|Therapy)"),
         "therapy_start_date": extract_field(block,
             r"Therapy Start\s*\nDate[:\s]+([\d\-A-Za-z]+)",
-            r"Therapy Start\s+Date[:\s]+([\d\-A-Za-z]+)"),
+            r"Therapy Start\s+Date[:\s]+([\d\-A-Za-z]+)",
+            r"Therapy Start\s+([\d\-A-Za-z]+)"),
         "therapy_stop_date": extract_field(block,
             r"Therapy Stop\s*\nDate[:\s]+([\d\-A-Za-z]+)",
-            r"Therapy Stop\s+Date[:\s]+([\d\-A-Za-z]+)"),
+            r"Therapy Stop\s+Date[:\s]+([\d\-A-Za-z]+)",
+            r"Therapy Stop\s+([\d\-A-Za-z]+)"),
         "event_abated_after_stop": extract_field(block,
             r"Event Abated\s*\nAfter Stop\?[:\s]+(Yes|No)",
-            r"Event Abated\s+After Stop\?[:\s]+(Yes|No)"),
+            r"Event Abated\s+After Stop\?[:\s]+(Yes|No)",
+            r"Event Abated\s+(Yes|No)"),
         "event_reappeared_after_reintro": extract_field(block,
             r"Event Reappeared\s*\nAfter Reintro\?[:\s]+(Yes|No)",
-            r"Event Reappeared\s+After Reintro\?[:\s]+(Yes|No)"),
+            r"Event Reappeared\s+After Reintro\?[:\s]+(Yes|No)",
+            r"Event Reappeared\s+(Yes|No)"),
         "product_type": extract_field(block,
             r"Product Type[:\s]+([\w\s\-–]+?)(?:\n|Ongoing)"),
         "ongoing_therapy": extract_field(block,
@@ -148,10 +169,10 @@ def parse_concomitant_medications(text):
  
  
 def parse_medical_history(text):
-    """Pulls the 'Other Relevant History / Preexisting Medical Conditions' field."""
     return {
         "preexisting_conditions": extract_field(text,
-            r"Other Relevant History[^:]*:[^\n]*\n([\s\S]+?)(?:\n\s*B\.6|\n\s*C\.|\n\s*D\.)"),
+            r"Other Relevant History[^:]*:[^\n]*\n([\s\S]+?)(?:\n\s*B\.6|\n\s*C\.|\n\s*D\.)",
+            r"Other Relevant History[^:]*\n([\s\S]+?)(?:\n\s*B\.6|\n\s*C\.|\n\s*D\.)"),
     }
  
  
@@ -161,11 +182,9 @@ def parse_laboratory_tests(text):
         r"B\.6\s+RELEVANT TEST",
         [r"C\.\s+PRODUCT", r"D\.\s+SUSPECT"]
     )
-    # Remove header row
     block = re.sub(r"Test\s*/\s*Parameter\s+Result.*?(?:Date|Unit)\s*\n", "", block, flags=re.IGNORECASE)
  
     tests = []
-    # Pattern: Test Name  Result  LowRef  HighRef  Unit  Date
     rows = re.findall(
         r"([\w\s/]+?)\s+([\d\.]+)\s+([\d\.]+)\s+([\d\.]+)\s+([\w/%]+)\s+([\d\-A-Za-z]+)",
         block
@@ -180,7 +199,6 @@ def parse_laboratory_tests(text):
             "date":           row[5].strip(),
         })
  
-    # Fallback: non-numeric results (e.g. Columbia Suicide Severity Rating = High)
     if not tests:
         alt = re.findall(r"([\w\s/]+?)\s+(High|Low|Positive|Negative)\s+([\d\-A-Za-z]+)", block)
         for row in alt:
@@ -199,20 +217,24 @@ def parse_laboratory_tests(text):
 def parse_reporter_information(text):
     block = extract_block(text, r"G\.\s+REPORTER INFORMATION", [r"Submission of a report"])
     return {
-        "last_name":          extract_field(block, r"Last Name[:\s]+([\w]+)"),
-        "first_name":         extract_field(block, r"First Name[:\s]+([\w]+)"),
-        "address":            extract_field(block, r"Address[:\s]+([\w\d\s]+?)(?:\n|City)"),
-        "city":               extract_field(block, r"City[:\s]+([\w\s]+?)(?:\n|State)"),
-        "state":              extract_field(block, r"State[:\s]+([A-Z]{2})"),
-        "zip":                extract_field(block, r"ZIP[:\s]+([\d]+)"),
-        "phone":              extract_field(block, r"Phone[:\s]+([\d\-]+)"),
-        "email":              extract_field(block, r"Email[:\s]+([\w\.\@]+)"),
-        "occupation":         extract_field(block, r"Occupation[:\s]+([\w\s]+?)(?:\n|Health)"),
-        "health_professional":extract_field(block, r"Health\s*\nProfessional\?[:\s]+(Yes|No)",
-                                                    r"Health Professional\?[:\s]+(Yes|No)"),
-        "also_reported_to":   extract_field(block, r"Also Reported To[:\s]+([\w\s]+?)(?:\n|Identity)"),
-        "identity_disclosed": extract_field(block, r"Identity\s*\nDisclosed\?[:\s]+(Yes|No)",
-                                                    r"Identity Disclosed\?[:\s]+(Yes|No)"),
+        "last_name":           extract_field(block, r"Last Name[:\s]+([\w]+)"),
+        "first_name":          extract_field(block, r"First Name[:\s]+([\w]+)"),
+        "address":             extract_field(block, r"Address[:\s]+([\w\d\s]+?)(?:\n|City)"),
+        "city":                extract_field(block, r"City[:\s]+([\w\s]+?)(?:\n|State)"),
+        "state":               extract_field(block, r"State[:\s]+([A-Z]{2})"),
+        "zip":                 extract_field(block, r"ZIP[:\s]+([\d]+)"),
+        "phone":               extract_field(block, r"Phone[:\s]+([\d\-]+)"),
+        "email":               extract_field(block, r"Email[:\s]+([\w\.\@]+)"),
+        "occupation":          extract_field(block, r"Occupation[:\s]+([\w\s]+?)(?:\n|Health)"),
+        "health_professional": extract_field(block,
+            r"Health\s*\nProfessional\?[:\s]+(Yes|No)",
+            r"Health Professional\?[:\s]+(Yes|No)",
+            r"Health\s+(Yes|No)"),
+        "also_reported_to":    extract_field(block, r"Also Reported To[:\s]+([\w\s]+?)(?:\n|Identity)"),
+        "identity_disclosed":  extract_field(block,
+            r"Identity\s*\nDisclosed\?[:\s]+(Yes|No)",
+            r"Identity Disclosed\?[:\s]+(Yes|No)",
+            r"Identity\s+(Yes|No)"),
     }
  
  
@@ -231,15 +253,15 @@ for _, row in data.iterrows():
     text = str(ocr_text)
  
     record = {
-        "file_name":              file_name,
-        "report_id":              extract_field(text, r"Report ID[:\s]+([\w\-]+)"),
-        "patient_information":    parse_patient_information(text),
-        "adverse_events":         parse_adverse_events(text),
-        "suspect_drug":           parse_suspect_drug(text),
-        "concomitant_medications":parse_concomitant_medications(text),
-        "medical_history":        parse_medical_history(text),
-        "laboratory_tests":       parse_laboratory_tests(text),
-        "reporter_information":   parse_reporter_information(text),
+        "file_name":               file_name,
+        "report_id":               extract_field(text, r"Report ID[:\s]+([\w\-]+)"),
+        "patient_information":     parse_patient_information(text),
+        "adverse_events":          parse_adverse_events(text),
+        "suspect_drug":            parse_suspect_drug(text),
+        "concomitant_medications": parse_concomitant_medications(text),
+        "medical_history":         parse_medical_history(text),
+        "laboratory_tests":        parse_laboratory_tests(text),
+        "reporter_information":    parse_reporter_information(text),
     }
  
     output.append(record)
@@ -251,4 +273,4 @@ output_path = "fda_extracted_data.json"
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(output, f, indent=4, ensure_ascii=False)
  
-print(f"✓ Extracted {len(output)} records → {output_path}")
+print(f"Extracted {len(output)} records -> {output_path}")
