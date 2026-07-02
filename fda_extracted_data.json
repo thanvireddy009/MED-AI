@@ -8,7 +8,7 @@
             "date_of_birth": "15-Sep-1983",
             "age": "41 year(s)",
             "sex": "Female",
-            "weight": "N/A",
+            "weight": "140 Ib",
             "race_ethnicity": "White"
         },
         "adverse_events": {
@@ -164,7 +164,7 @@
         "report_id": "FDA-3500-PT-2025-004",
         "patient_information": {
             "patient_identifier": "PT-2025-004",
-            "full_name": "N/A",
+            "full_name": "Jennifer L. Brooks",
             "date_of_birth": "18-Feb-1990",
             "age": "35 year(s)",
             "sex": "Female",
@@ -324,7 +324,7 @@
         "report_id": "FDA-3500-PT-2025-007",
         "patient_information": {
             "patient_identifier": "PT-2025-007",
-            "full_name": "N/A",
+            "full_name": "David K. Nguyen",
             "date_of_birth": "31-Oct-1995",
             "age": "29 year(s)",
             "sex": "Male",
@@ -488,7 +488,7 @@
             "date_of_birth": "24-May-1936",
             "age": "88 year(s)",
             "sex": "Female",
-            "weight": "N/A",
+            "weight": "98 Ib",
             "race_ethnicity": "White"
         },
         "adverse_events": {
@@ -716,7 +716,7 @@
         "report_id": "FDA-3500-PT-2025-001",
         "patient_information": {
             "patient_identifier": "PT-2025-001",
-            "full_name": "N/A",
+            "full_name": "James R. Mitchell",
             "date_of_birth": "14-Mar-1962",
             "age": "63 year(s)",
             "sex": "Male",
@@ -792,7 +792,7 @@
             "date_of_birth": "07-Mar-1972",
             "age": "52 year(s)",
             "sex": "Female",
-            "weight": "N/A",
+            "weight": "128 Ib",
             "race_ethnicity": "Asian"
         },
         "adverse_events": {
@@ -864,7 +864,7 @@
             "date_of_birth": "06-Feb-2000",
             "age": "25 year(s)",
             "sex": "Male",
-            "weight": "N/A",
+            "weight": "165 Ib",
             "race_ethnicity": "Black or African American"
         },
         "adverse_events": {
@@ -936,7 +936,7 @@
             "date_of_birth": "29-Dec-1970",
             "age": "54 year(s)",
             "sex": "Male",
-            "weight": "N/A",
+            "weight": "220 Ib",
             "race_ethnicity": "White"
         },
         "adverse_events": {
@@ -1008,7 +1008,7 @@
             "date_of_birth": "11-Nov-1980",
             "age": "44 year(s)",
             "sex": "Male",
-            "weight": "N/A",
+            "weight": "175 Ib",
             "race_ethnicity": "Hispanic or Latino"
         },
         "adverse_events": {
@@ -1076,11 +1076,11 @@
         "report_id": "FDA-3500-PT-2025-011",
         "patient_information": {
             "patient_identifier": "PT-2025-011",
-            "full_name": "N/A",
+            "full_name": "Thomas E. Robinson",
             "date_of_birth": "28-Jan-1959",
             "age": "66 year(s)",
             "sex": "Male",
-            "weight": "N/A",
+            "weight": "195 Ib",
             "race_ethnicity": "White"
         },
         "adverse_events": {
@@ -1152,7 +1152,7 @@
             "date_of_birth": "17-Jul-1952",
             "age": "72 year(s)",
             "sex": "Male",
-            "weight": "N/A",
+            "weight": "178 Ib",
             "race_ethnicity": "White"
         },
         "adverse_events": {
@@ -1224,7 +1224,7 @@
             "date_of_birth": "21-Oct-2008",
             "age": "16 year(s)",
             "sex": "Female",
-            "weight": "N/A",
+            "weight": "97 |b",
             "race_ethnicity": "Asian"
         },
         "adverse_events": {
@@ -1296,7 +1296,7 @@
             "date_of_birth": "03-Apr-1997",
             "age": "27 year(s)",
             "sex": "Female",
-            "weight": "N/A",
+            "weight": "125 Ib",
             "race_ethnicity": "Black or African American"
         },
         "adverse_events": {
@@ -1512,7 +1512,7 @@
         "report_id": "FDA-3500-PT-2025-009",
         "patient_information": {
             "patient_identifier": "PT-2025-009",
-            "full_name": "N/A",
+            "full_name": "Michael J. Harrison",
             "date_of_birth": "05-Dec-1942",
             "age": "82 year(s)",
             "sex": "Male",

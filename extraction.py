@@ -11,7 +11,6 @@ data = pd.read_excel('pdf_classification.xlsx')
 # Step 2: Helper – pull the value that follows a label
 # ─────────────────────────────────────────────
 def extract_field(text, *patterns, default="N/A"):
-    """Return first non-empty capture from a list of regex patterns."""
     for pat in patterns:
         m = re.search(pat, text, re.IGNORECASE | re.DOTALL)
         if m:
@@ -19,10 +18,9 @@ def extract_field(text, *patterns, default="N/A"):
             if val:
                 return val
     return default
- 
- 
+
+
 def extract_block(text, start_marker, end_markers):
-    """Return raw text between start_marker and the first matching end_marker."""
     start = re.search(start_marker, text, re.IGNORECASE)
     if not start:
         return ""
@@ -32,27 +30,27 @@ def extract_block(text, start_marker, end_markers):
         if end:
             chunk = chunk[:end.start()]
     return chunk.strip()
- 
- 
+
+
 # ─────────────────────────────────────────────
 # Step 3: Per-record extractors
 # ─────────────────────────────────────────────
- 
+
 def parse_patient_information(text):
     return {
-        # With or without colon after identifier label
+        # Native: "Patient \nIdentifier: \nPT-2025-001"
+        # OCR:    "Patient PT-2025-011 Full Name ..."
         "patient_identifier": extract_field(text,
             r"Patient\s+Identifier[:\s]+([A-Z0-9\-]+)",
             r"Patient\s*\nIdentifier:?\s*([A-Z0-9\-]+)",
             r"Patient\s+([A-Z0-9\-]+)\s+Full Name"),
 
-        # OCR drops the colon: "Full Name Jennifer L. Brooks"
-        # Native has: "Full Name (Conf.): Jennifer L. Brooks"
+        # Native: "Full Name \n(Conf.): \nJames R. Mitchell \n"
+        # OCR:    "Full Name Thomas E. Robinson\nIdentifier:"
         "full_name": extract_field(text,
-            r"Full Name\s*\(Conf\.\)[:\s]+([\w\s]+?)(?:\n|Date of Birth)",
-            r"Full Name\s*\(Conf\.\):\s*([\w\s]+?)(?=\n)",
-            r"Full Name\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]*){1,3})(?:\n|Date of Birth|\s{2,})",
-            r"(?:Identifier:\s*\S+\s+Full Name\s+)([\w][\w\s]+?)(?:\n|Date of Birth)"),
+            r"Full Name\s*\n\s*\(Conf\.\)[:\s]+([\w][^\n]+?)(?:\n|Date of Birth)",
+            r"Full Name\s*\(Conf\.\)[:\s]+([\w][^\n]+?)(?:\n|Date of Birth)",
+            r"Full Name\s+(.*?)\s*\nIdentifier"),
 
         "date_of_birth": extract_field(text,
             r"Date of Birth[:\s]+([\d\-A-Za-z]+)"),
@@ -63,18 +61,18 @@ def parse_patient_information(text):
         "sex": extract_field(text,
             r"Sex[:\s]+(Male|Female)"),
 
+        # OCR reads 'lb' as 'Ib' — handle both
         "weight": extract_field(text,
-            r"Weight[:\s]+([\d]+\s*lb)"),
+            r"Weight[:\s]+([\d]+\s*(?:lb|Ib|[|]b))"),
 
-        # OCR may give "Race / White" without Ethnicity label
+        # Native: "Race / \nEthnicity: \nWhite"
+        # OCR:    "Race / White\n\nEthnicity:"
         "race_ethnicity": extract_field(text,
-            r"Race\s*/\s*Ethnicity[:\s]+([\w\s\/]+?)(?:\n|  [A-Z])",
-            r"Race\s*/\s*\nEthnicity[:\s]+([\w\s\/]+?)(?:\n|  [A-Z])",
-            r"Race\s*/\s*([\w\s]+?)\n\s*\nEthnicity",
-            r"Race\s*/\s*\n([\w\s]+?)\n"),
+            r"Race\s*/\s*(.*?)\s*\nEthnicity",
+            r"Race\s*/\s*Ethnicity[:\s]+([\w\s\/]+?)(?:\n|  [A-Z])"),
     }
- 
- 
+
+
 def parse_adverse_events(text):
     block = extract_block(
         text,
@@ -97,8 +95,8 @@ def parse_adverse_events(text):
         "medical_history_preexisting": extract_field(block,
             r"Other Relevant History.*?(?:B\.7\))?\s*([\s\S]+?)$"),
     }
- 
- 
+
+
 def parse_suspect_drug(text):
     block = extract_block(
         text,
@@ -143,8 +141,8 @@ def parse_suspect_drug(text):
         "ongoing_therapy": extract_field(block,
             r"Ongoing Therapy\?[:\s]+(Yes|No)"),
     }
- 
- 
+
+
 def parse_concomitant_medications(text):
     block = extract_block(
         text,
@@ -166,16 +164,16 @@ def parse_concomitant_medications(text):
                 "therapy_end":   row[3].strip() if row[3].strip() not in ("—", "–") else "N/A",
             })
     return medications if medications else [{"note": "See History / Medical Record"}]
- 
- 
+
+
 def parse_medical_history(text):
     return {
         "preexisting_conditions": extract_field(text,
             r"Other Relevant History[^:]*:[^\n]*\n([\s\S]+?)(?:\n\s*B\.6|\n\s*C\.|\n\s*D\.)",
             r"Other Relevant History[^:]*\n([\s\S]+?)(?:\n\s*B\.6|\n\s*C\.|\n\s*D\.)"),
     }
- 
- 
+
+
 def parse_laboratory_tests(text):
     block = extract_block(
         text,
@@ -183,7 +181,7 @@ def parse_laboratory_tests(text):
         [r"C\.\s+PRODUCT", r"D\.\s+SUSPECT"]
     )
     block = re.sub(r"Test\s*/\s*Parameter\s+Result.*?(?:Date|Unit)\s*\n", "", block, flags=re.IGNORECASE)
- 
+
     tests = []
     rows = re.findall(
         r"([\w\s/]+?)\s+([\d\.]+)\s+([\d\.]+)\s+([\d\.]+)\s+([\w/%]+)\s+([\d\-A-Za-z]+)",
@@ -198,7 +196,7 @@ def parse_laboratory_tests(text):
             "unit":           row[4].strip(),
             "date":           row[5].strip(),
         })
- 
+
     if not tests:
         alt = re.findall(r"([\w\s/]+?)\s+(High|Low|Positive|Negative)\s+([\d\-A-Za-z]+)", block)
         for row in alt:
@@ -210,10 +208,10 @@ def parse_laboratory_tests(text):
                 "unit":           "N/A",
                 "date":           row[2].strip(),
             })
- 
+
     return tests
- 
- 
+
+
 def parse_reporter_information(text):
     block = extract_block(text, r"G\.\s+REPORTER INFORMATION", [r"Submission of a report"])
     return {
@@ -236,22 +234,22 @@ def parse_reporter_information(text):
             r"Identity Disclosed\?[:\s]+(Yes|No)",
             r"Identity\s+(Yes|No)"),
     }
- 
- 
+
+
 # ─────────────────────────────────────────────
 # Step 4: Process every row
 # ─────────────────────────────────────────────
 output = []
- 
+
 for _, row in data.iterrows():
     file_name = row.get("File Name", "")
     ocr_text  = row.get("OCR Text", "")
- 
+
     if pd.isna(ocr_text) or str(ocr_text).strip() == "":
         continue
- 
+
     text = str(ocr_text)
- 
+
     record = {
         "file_name":               file_name,
         "report_id":               extract_field(text, r"Report ID[:\s]+([\w\-]+)"),
@@ -263,14 +261,28 @@ for _, row in data.iterrows():
         "laboratory_tests":        parse_laboratory_tests(text),
         "reporter_information":    parse_reporter_information(text),
     }
- 
+
     output.append(record)
- 
+
 # ─────────────────────────────────────────────
 # Step 5: Save JSON
 # ─────────────────────────────────────────────
 output_path = "fda_extracted_data.json"
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(output, f, indent=4, ensure_ascii=False)
- 
+
 print(f"Extracted {len(output)} records -> {output_path}")
+
+# ─────────────────────────────────────────────
+# Step 6: Accuracy check - print any remaining N/A in patient_information
+# ─────────────────────────────────────────────
+print("\n===== Patient Information Accuracy Check =====")
+all_clean = True
+for i, rec in enumerate(output):
+    pi = rec['patient_information']
+    nas = [k for k, v in pi.items() if v == 'N/A']
+    if nas and rec['file_name'] != 'image.pdf':
+        print(f"  Record {i} ({rec['file_name']}): missing {nas}")
+        all_clean = False
+if all_clean:
+    print("  All records clean!")
