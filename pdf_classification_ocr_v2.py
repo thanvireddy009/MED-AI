@@ -15,7 +15,7 @@ pdf_folder = r"Synthetic data"
 OCR_DPI = 300
 
 results = []
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
 
 def ocr_page(page, dpi=OCR_DPI):
     """Render a PDF page to an image and run Tesseract OCR on it."""
