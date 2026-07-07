@@ -4,4 +4,3 @@ pymupdf
 pytesseract
 Pillow
 psycopg[binary]
- 
