@@ -1,0 +1,1582 @@
+[
+    {
+        "file_name": "FDA_3500_PT-2025-016-2.pdf",
+        "report_id": "FDA-3500-PT-2025-016",
+        "patient_information": {
+            "patient_identifier": "PT-2025-016",
+            "full_name": "Nancy Claire Foster",
+            "date_of_birth": "15-Sep-1983",
+            "age": "41 year(s)",
+            "sex": "Female",
+            "weight": "140 Ib",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Required Intervention to Prevent",
+            "date_of_event": "01-Sep-2024",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nOsteonecrosis of the jaw (ONJ) developed after dental extraction. Exposed necrotic bone in mandible confirmed on\nCT. Surgical debridement required.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nRecent molar extraction 1 month prior. Corticosteroid use (prednisone). Vitamin D deficiency."
+        },
+        "suspect_drug": {
+            "product_name": "Zoledronic Acid 5mg IV",
+            "ndc_unique_id": "00078-0457-15",
+            "manufacturer": "Novartis AG",
+            "lot_number": "NV20240901",
+            "dose_amount": "5 mg",
+            "frequency": "Yearly",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "01-Sep-2022",
+            "therapy_stop_date": "01-Sep-2024",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "OH",
+                "result": "18",
+                "low_ref": "30",
+                "high_ref": "100",
+                "unit": "ng/mL",
+                "date": "05-Feb-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Taylor",
+            "first_name": "Angela",
+            "address": "600 Highland Ave",
+            "city": "Madison",
+            "state": "WI",
+            "zip": "53792",
+            "phone": "608-555-0355",
+            "email": "a.taylor@uwhealth.org",
+            "occupation": "Endocrinologist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-010.pdf",
+        "report_id": "FDA-3500-PT-2025-010",
+        "patient_information": {
+            "patient_identifier": "PT-2025-010",
+            "full_name": "Emily Grace Hoffman",
+            "date_of_birth": "19-Aug-2001",
+            "age": "23 year(s)",
+            "sex": "Female",
+            "weight": "110 lb",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Other Serious or Important",
+            "date_of_event": "20-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nDrug-induced lupus erythematosus confirmed. Patient presented with arthralgias, rash, and positive ANA. \nSymptoms began 4 months after initiating therapy.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nSlow acetylator genotype. No family history of lupus. Non-smoker."
+        },
+        "suspect_drug": {
+            "product_name": "Hydralazine 25mg",
+            "ndc_unique_id": "00378-0106-01",
+            "manufacturer": "Mylan Pharmaceuticals",
+            "lot_number": "MY20240811",
+            "dose_amount": "25 mg",
+            "frequency": "Three times daily",
+            "route": "N/A",
+            "indication": "Hypertension",
+            "therapy_start_date": "15-Sep-2024",
+            "therapy_stop_date": "20-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "N/A \n1:40 \ntiter \n20-Jan-2025 \nAnti-dsDNA \nPositive \nN/A \nNegative \n— \n20-Jan-2025"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult",
+                "result": "Low",
+                "low_ref": "N/A",
+                "high_ref": "N/A",
+                "unit": "N/A",
+                "date": "Ref"
+            },
+            {
+                "test_parameter": "",
+                "result": "High",
+                "low_ref": "N/A",
+                "high_ref": "N/A",
+                "unit": "N/A",
+                "date": "Ref"
+            },
+            {
+                "test_parameter": "dsDNA",
+                "result": "Positive",
+                "low_ref": "N/A",
+                "high_ref": "N/A",
+                "unit": "N/A",
+                "date": "N"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Garcia",
+            "first_name": "Isabel",
+            "address": "3800 Reservoir Rd NW",
+            "city": "Washington",
+            "state": "DC",
+            "zip": "20007",
+            "phone": "202-555-0833",
+            "email": "i.garcia@guhosp.edu",
+            "occupation": "Internist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-004.pdf",
+        "report_id": "FDA-3500-PT-2025-004",
+        "patient_information": {
+            "patient_identifier": "PT-2025-004",
+            "full_name": "Jennifer L. Brooks",
+            "date_of_birth": "18-Feb-1990",
+            "age": "35 year(s)",
+            "sex": "Female",
+            "weight": "118 lb",
+            "race_ethnicity": "Black or African American"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Life-threatening",
+            "date_of_event": "14-Feb-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nStevens-Johnson Syndrome developed 2 weeks after starting medication. Widespread skin blistering, mucosal \ninvolvement, and high fever (103°F). ICU admission required.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nNo prior drug allergies. HLA-B*1502 status unknown. On valproic acid concurrently."
+        },
+        "suspect_drug": {
+            "product_name": "Lamotrigine 25mg",
+            "ndc_unique_id": "00173-0643-55",
+            "manufacturer": "GlaxoSmithKline",
+            "lot_number": "GSK20250033",
+            "dose_amount": "25 mg",
+            "frequency": "Once daily",
+            "route": "N/A",
+            "indication": "Bipolar disorder",
+            "therapy_start_date": "01-Feb-2025",
+            "therapy_stop_date": "14-Feb-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "No"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult \nLow Ref \nHigh \nRef \nUnit \nDate \nWBC",
+                "result": "14.2",
+                "low_ref": "4.5",
+                "high_ref": "11.0",
+                "unit": "K/uL",
+                "date": "14-Feb-2025"
+            },
+            {
+                "test_parameter": "CRP",
+                "result": "88",
+                "low_ref": "0",
+                "high_ref": "10",
+                "unit": "mg/L",
+                "date": "14-Feb-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Thompson",
+            "first_name": "Marcus",
+            "address": "500 University Blvd",
+            "city": "Birmingham",
+            "state": "AL",
+            "zip": "35294",
+            "phone": "205-555-0924",
+            "email": "m.thompson@uabmed.edu",
+            "occupation": "Physician",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-005.pdf",
+        "report_id": "FDA-3500-PT-2025-005",
+        "patient_information": {
+            "patient_identifier": "PT-2025-005",
+            "full_name": "William Scott Turner",
+            "date_of_birth": "22-Jul-1955",
+            "age": "69 year(s)",
+            "sex": "Male",
+            "weight": "210 lb",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Hospitalization",
+            "date_of_event": "15-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nRhabdomyolysis confirmed by elevated CPK. Patient presented with severe muscle pain, weakness, and dark \nurine after dose increase 3 weeks prior.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nConcurrent gemfibrozil use. Mild renal impairment. Former smoker."
+        },
+        "suspect_drug": {
+            "product_name": "Atorvastatin 80mg",
+            "ndc_unique_id": "00071-0155-23",
+            "manufacturer": "Pfizer Inc.",
+            "lot_number": "PFZ20241222",
+            "dose_amount": "80 mg",
+            "frequency": "Once daily",
+            "route": "N/A",
+            "indication": "Hyperlipidemia",
+            "therapy_start_date": "01-Nov-2024",
+            "therapy_stop_date": "15-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "Atorvastatin 80mg \nNDC / Unique ID: \n00071-0155-23 \nManufacturer: \nPfizer Inc. \nLot #: \nPFZ20241222 \nDose / Amount: \n80 mg \nFrequency: \nOnce daily \nRoute: \nOral \nDiagnosis \n(Indication): \nHyperlipidemia \nTherapy Start \nDate: \n01-Nov-2024 \nTherapy Stop \nDate: \n15-Jan-2025 \nEvent Abated \nAfter Stop? \nYes \nEvent Reappeared \nAfter Reintro? \nNo \nProduct Type: \nDrug or Biologic – Brand \nOngoing Therapy? \nNo \n  E. SUSPECT MEDICAL DEVICEBrand Name: \nN/A – Drug/Biologic Report \nOperator of \nDevice: \nN/A \nDevice \nImplanted: \nN/A \n  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS \n# \nProduct Name \nTherapy Start \nTherapy End \n1 \nSee History / Medical Record \n— \n— \n2 \n— \n— \n— \n3 \n— \n— \n— \n  G. REPORTER INFORMATION \nLast Name: \nRamirez \nFirst Name: \nCarlos \nAddress: \n4502 Medical Pkwy \nCity: \nAustin \nState: \nTX \nZIP: \n78756 \nPhone: \n512-555-0388 \nEmail:"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult \nLow Ref \nHigh \nRef \nUnit \nDate \nCreatine Kinase",
+                "result": "12450",
+                "low_ref": "30",
+                "high_ref": "200",
+                "unit": "U/L",
+                "date": "15-Jan-2025"
+            },
+            {
+                "test_parameter": "Creatinine",
+                "result": "2.8",
+                "low_ref": "0.6",
+                "high_ref": "1.2",
+                "unit": "mg/dL",
+                "date": "15-Jan-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Ramirez",
+            "first_name": "Carlos",
+            "address": "4502 Medical Pkwy",
+            "city": "Austin",
+            "state": "TX",
+            "zip": "78756",
+            "phone": "512-555-0388",
+            "email": "c.ramirez@austinmedctr.org",
+            "occupation": "Pharmacist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-007.pdf",
+        "report_id": "FDA-3500-PT-2025-007",
+        "patient_information": {
+            "patient_identifier": "PT-2025-007",
+            "full_name": "David K. Nguyen",
+            "date_of_birth": "31-Oct-1995",
+            "age": "29 year(s)",
+            "sex": "Male",
+            "weight": "143 lb",
+            "race_ethnicity": "Asian"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Hospitalization",
+            "date_of_event": "03-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nSevere hypoglycemia episode requiring emergency glucagon administration. Blood glucose dropped to 28 mg/dL. \nPatient lost consciousness briefly.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nMissed lunch before taking medication. Renal insufficiency (CrCl 42 mL/min). Exercise-intensive lifestyle."
+        },
+        "suspect_drug": {
+            "product_name": "Glipizide 10mg",
+            "ndc_unique_id": "00069-2610-66",
+            "manufacturer": "Pfizer Inc.",
+            "lot_number": "PFZ20250109",
+            "dose_amount": "10 mg",
+            "frequency": "Once daily",
+            "route": "N/A",
+            "indication": "Type 2 Diabetes Mellitus",
+            "therapy_start_date": "03-Jan-2025",
+            "therapy_stop_date": "03-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "Glipizide 10mg \nNDC / Unique ID: \n00069-2610-66 \nManufacturer: \nPfizer Inc. \nLot #: \nPFZ20250109 \nDose / Amount: \n10 mg \nFrequency: \nOnce daily \nRoute: \nOral \nDiagnosis \n(Indication): \nType 2 Diabetes Mellitus \nTherapy Start \nDate: \n03-Jan-2025 \nTherapy Stop \nDate: \n03-Jan-2025 \nEvent Abated \nAfter Stop? \nYes \nEvent Reappeared \nAfter Reintro? \nNo \nProduct Type: \nDrug or Biologic – Brand \nOngoing Therapy? \nNo \n  E. SUSPECT MEDICAL DEVICEBrand Name: \nN/A – Drug/Biologic Report \nOperator of \nDevice: \nN/A \nDevice \nImplanted: \nN/A \n  F. OTHER (CONCOMITANT) MEDICAL PRODUCTS \n# \nProduct Name \nTherapy Start \nTherapy End \n1 \nSee History / Medical Record \n— \n— \n2 \n— \n— \n— \n3 \n— \n— \n— \n  G. REPORTER INFORMATION \nLast Name: \nPark \nFirst Name: \nChristine \nAddress: \n9600 Gross Point Rd \nCity: \nSkokie \nState: \nIL \nZIP: \n60076 \nPhone: \n847-555-0711 \nEmail:"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult \nLow Ref \nHigh \nRef \nUnit \nDate \nBlood Glucose",
+                "result": "28",
+                "low_ref": "70",
+                "high_ref": "100",
+                "unit": "mg/dL",
+                "date": "03-Jan-2025"
+            },
+            {
+                "test_parameter": "HbA1c",
+                "result": "9.2",
+                "low_ref": "4.0",
+                "high_ref": "5.6",
+                "unit": "%",
+                "date": "03-Jan-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Park",
+            "first_name": "Christine",
+            "address": "9600 Gross Point Rd",
+            "city": "Skokie",
+            "state": "IL",
+            "zip": "60076",
+            "phone": "847-555-0711",
+            "email": "c.park@northshore.org",
+            "occupation": "Physician",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-006.pdf",
+        "report_id": "FDA-3500-PT-2025-006",
+        "patient_information": {
+            "patient_identifier": "PT-2025-006",
+            "full_name": "Patricia Ann Walsh",
+            "date_of_birth": "09-Apr-1978",
+            "age": "46 year(s)",
+            "sex": "Female",
+            "weight": "155 lb",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Life-threatening",
+            "date_of_event": "30-Nov-2024",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nAcute liver failure symptoms emerged 6 weeks after therapy initiation. Jaundice, abdominal pain, and significantly \nelevated liver enzymes noted. Liver biopsy showed drug-induced hepatic necrosis.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nSlow acetylator. Social alcohol use. No prior liver disease."
+        },
+        "suspect_drug": {
+            "product_name": "Isoniazid 300mg",
+            "ndc_unique_id": "50383-737-30",
+            "manufacturer": "Akorn Inc.",
+            "lot_number": "AK20241015",
+            "dose_amount": "300 mg",
+            "frequency": "Once daily",
+            "route": "N/A",
+            "indication": "Tuberculosis prophylaxis",
+            "therapy_start_date": "15-Oct-2024",
+            "therapy_stop_date": "30-Nov-2024",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "No"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult \nLow Ref \nHigh \nRef \nUnit \nDate \nALT",
+                "result": "1240",
+                "low_ref": "7",
+                "high_ref": "56",
+                "unit": "U/L",
+                "date": "30-Nov-2024"
+            },
+            {
+                "test_parameter": "Total Bilirubin",
+                "result": "8.4",
+                "low_ref": "0.2",
+                "high_ref": "1.2",
+                "unit": "mg/dL",
+                "date": "30-Nov-2024"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Johnson",
+            "first_name": "Beth",
+            "address": "1 Hospital Dr",
+            "city": "Columbus",
+            "state": "OH",
+            "zip": "43210",
+            "phone": "614-555-0213",
+            "email": "b.johnson@osumc.edu",
+            "occupation": "Physician",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-014-2.pdf",
+        "report_id": "FDA-3500-PT-2025-014",
+        "patient_information": {
+            "patient_identifier": "PT-2025-014",
+            "full_name": "Barbara Jean Powell",
+            "date_of_birth": "24-May-1936",
+            "age": "88 year(s)",
+            "sex": "Female",
+            "weight": "98 Ib",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Life-threatening",
+            "date_of_event": "18-Feb-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nIntracranial hemorrhage (subdural hematoma) after minor fall. On anticoagulation therapy. Neurosurgical\nintervention required. Prolonged ICU stay.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nFall risk due to orthostatic hypotension. Concurrent aspirin 81mg. Renal insufficiency (eGFR 28)."
+        },
+        "suspect_drug": {
+            "product_name": "Warfarin 5mg",
+            "ndc_unique_id": "00056-0171-75",
+            "manufacturer": "N/A",
+            "lot_number": "BM20250110",
+            "dose_amount": "5mg",
+            "frequency": "Once daily",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "01-Jan-2020",
+            "therapy_stop_date": "18-Feb-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "2025\nPT",
+                "result": "58",
+                "low_ref": "11",
+                "high_ref": "13.5",
+                "unit": "seconds",
+                "date": "18-Feb-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Perez",
+            "first_name": "Sandra",
+            "address": "3600 Gaston Ave",
+            "city": "Dallas",
+            "state": "TX",
+            "zip": "75246",
+            "phone": "214-555-0783",
+            "email": "s.perez@baylorhealth.edu",
+            "occupation": "Neurologist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-002.pdf",
+        "report_id": "FDA-3500-PT-2025-002",
+        "patient_information": {
+            "patient_identifier": "PT-2025-002",
+            "full_name": "Maria Elena Vasquez",
+            "date_of_birth": "27-Jun-1985",
+            "age": "39 year(s)",
+            "sex": "Female",
+            "weight": "132 lb",
+            "race_ethnicity": "Hispanic or Latino"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Life-threatening",
+            "date_of_event": "13-Nov-2024",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nPatient experienced QT prolongation detected on ECG monitoring 3 days into treatment. Complained of \npalpitations and near-syncope. Drug was immediately discontinued.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nHistory of prolonged QT syndrome. Concurrent use of metoprolol."
+        },
+        "suspect_drug": {
+            "product_name": "Azithromycin 500mg",
+            "ndc_unique_id": "00069-3060-30",
+            "manufacturer": "Pfizer Inc.",
+            "lot_number": "PFZ20241108",
+            "dose_amount": "500 mg",
+            "frequency": "Once daily",
+            "route": "N/A",
+            "indication": "Bacterial pneumonia",
+            "therapy_start_date": "10-Nov-2024",
+            "therapy_stop_date": "13-Nov-2024",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "No"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult \nLow Ref \nHigh \nRef \nUnit \nDate \nQTc Interval",
+                "result": "520",
+                "low_ref": "350",
+                "high_ref": "450",
+                "unit": "ms",
+                "date": "13-Nov-2024"
+            },
+            {
+                "test_parameter": "Potassium",
+                "result": "3.1",
+                "low_ref": "3.5",
+                "high_ref": "5.0",
+                "unit": "mEq/L",
+                "date": "13-Nov-2024"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Chen",
+            "first_name": "Linda",
+            "address": "450 Sutter St Suite 900",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94108",
+            "phone": "415-555-0348",
+            "email": "l.chen@sfmedical.com",
+            "occupation": "Nurse Practitioner",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-003.pdf",
+        "report_id": "FDA-3500-PT-2025-003",
+        "patient_information": {
+            "patient_identifier": "PT-2025-003",
+            "full_name": "Robert Alan Patel",
+            "date_of_birth": "03-Sep-1948",
+            "age": "76 year(s)",
+            "sex": "Male",
+            "weight": "160 lb",
+            "race_ethnicity": "Asian"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Hospitalization",
+            "date_of_event": "26-Dec-2024",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nGastrointestinal bleeding developed after 2 weeks of therapy. Hematemesis noted. Hospitalized for 5 days.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nPeptic ulcer disease – history. Chronic kidney disease Stage 2. Non-smoker."
+        },
+        "suspect_drug": {
+            "product_name": "Naproxen 500mg",
+            "ndc_unique_id": "12843-187-01",
+            "manufacturer": "Bayer AG",
+            "lot_number": "BY20250078",
+            "dose_amount": "500 mg",
+            "frequency": "Twice daily",
+            "route": "N/A",
+            "indication": "Osteoarthritis pain management",
+            "therapy_start_date": "12-Dec-2024",
+            "therapy_stop_date": "26-Dec-2024",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "No"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult \nLow Ref \nHigh \nRef \nUnit \nDate \nHemoglobin",
+                "result": "7.2",
+                "low_ref": "13.5",
+                "high_ref": "17.5",
+                "unit": "g/dL",
+                "date": "26-Dec-2024"
+            },
+            {
+                "test_parameter": "Hematocrit",
+                "result": "22",
+                "low_ref": "41",
+                "high_ref": "53",
+                "unit": "%",
+                "date": "26-Dec-2024"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Williams",
+            "first_name": "Samantha",
+            "address": "2000 Lexington Ave",
+            "city": "New York",
+            "state": "NY",
+            "zip": "10035",
+            "phone": "212-555-0762",
+            "email": "s.williams@nychosp.org",
+            "occupation": "Physician",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-001.pdf",
+        "report_id": "FDA-3500-PT-2025-001",
+        "patient_information": {
+            "patient_identifier": "PT-2025-001",
+            "full_name": "James R. Mitchell",
+            "date_of_birth": "14-Mar-1962",
+            "age": "63 year(s)",
+            "sex": "Male",
+            "weight": "185 lb",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Hospitalization",
+            "date_of_event": "05-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nSevere allergic reaction with hives and difficulty breathing 30 minutes after first dose. Patient required emergency \nepinephrine injection.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nKnown allergy to ACE inhibitors – not on prior records. No prior adverse drug reactions documented."
+        },
+        "suspect_drug": {
+            "product_name": "Lisinopril 10mg",
+            "ndc_unique_id": "68382-103-10",
+            "manufacturer": "Zydus Pharmaceuticals",
+            "lot_number": "ZP20250112",
+            "dose_amount": "10 mg",
+            "frequency": "Once daily",
+            "route": "N/A",
+            "indication": "Hypertension",
+            "therapy_start_date": "05-Jan-2025",
+            "therapy_stop_date": "05-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "No"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult \nLow Ref \nHigh \nRef \nUnit \nDate \nIgE Level",
+                "result": "820",
+                "low_ref": "0",
+                "high_ref": "100",
+                "unit": "IU/mL",
+                "date": "05-Jan-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Okafor",
+            "first_name": "Ngozi",
+            "address": "1201 Medical Center Dr",
+            "city": "Houston",
+            "state": "TX",
+            "zip": "77030",
+            "phone": "713-555-0192",
+            "email": "n.okafor@houstonclinic.org",
+            "occupation": "Physician",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-012-2.pdf",
+        "report_id": "FDA-3500-PT-2025-012",
+        "patient_information": {
+            "patient_identifier": "PT-2025-012",
+            "full_name": "Linda Rose Huang",
+            "date_of_birth": "07-Mar-1972",
+            "age": "52 year(s)",
+            "sex": "Female",
+            "weight": "128 Ib",
+            "race_ethnicity": "Asian"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Disability or Permanent Damage",
+            "date_of_event": "10-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nNephrogenic diabetes insipidus with severe polyuria (10+ L/day) and hypernatremia after 2 years of therapy.\nSerum sodium peaked at 162 mEq/L.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nNSAIDs used concurrently (ibuprofen). Low-sodium diet recently started. No prior renal disease."
+        },
+        "suspect_drug": {
+            "product_name": "Lithium Carbonate 300mg",
+            "ndc_unique_id": "51285-158-01",
+            "manufacturer": "Noven Pharmaceuticals",
+            "lot_number": "NV20241130",
+            "dose_amount": "300 mg",
+            "frequency": "Three times daily",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "10-Jan-2023",
+            "therapy_stop_date": "10-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "2025\nLithium Level",
+                "result": "1.6",
+                "low_ref": "0.6",
+                "high_ref": "1.2",
+                "unit": "mEq/L",
+                "date": "10-Jan-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Kim",
+            "first_name": "Rachel",
+            "address": "725 Welch Rd",
+            "city": "Palo Alto",
+            "state": "CA",
+            "zip": "94304",
+            "phone": "650-555-0924",
+            "email": "r.kim@stanfordmed.edu",
+            "occupation": "Psychiatrist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-015-2.pdf",
+        "report_id": "FDA-3500-PT-2025-015",
+        "patient_information": {
+            "patient_identifier": "PT-2025-015",
+            "full_name": "Kevin Alexander Ross",
+            "date_of_birth": "06-Feb-2000",
+            "age": "25 year(s)",
+            "sex": "Male",
+            "weight": "165 Ib",
+            "race_ethnicity": "Black or African American"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Life-threatening",
+            "date_of_event": "20-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nAplastic anemia confirmed after routine CBC showed pancytopenia. Bone marrow biopsy showed markedly\nhypocellular marrow. Patient required transfusions and eventual stem cell transplant.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nFolate supplementation was NOT co-prescribed. Renal function borderline (CrCl 48). No NSAID use."
+        },
+        "suspect_drug": {
+            "product_name": "Methotrexate 15mg",
+            "ndc_unique_id": "55111-667-15",
+            "manufacturer": "Strides Pharma",
+            "lot_number": "N/A",
+            "dose_amount": "15mg",
+            "frequency": "Once weekly",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "01-Aug-2024",
+            "therapy_stop_date": "20-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "2025\nPlatelets",
+                "result": "18",
+                "low_ref": "150",
+                "high_ref": "400",
+                "unit": "K/uL",
+                "date": "20-Jan-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "White",
+            "first_name": "Gregory",
+            "address": "2025 E Newport Pike",
+            "city": "Wilmington",
+            "state": "DE",
+            "zip": "19804",
+            "phone": "302-555-0194",
+            "email": "g.white@christiana.org",
+            "occupation": "Rheumatologist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-017-2.pdf",
+        "report_id": "FDA-3500-PT-2025-017",
+        "patient_information": {
+            "patient_identifier": "PT-2025-017",
+            "full_name": "George Henry Watts",
+            "date_of_birth": "29-Dec-1970",
+            "age": "54 year(s)",
+            "sex": "Male",
+            "weight": "220 Ib",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Life-threatening",
+            "date_of_event": "18-Nov-2024",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nSevere exfoliative dermatitis (toxic epidermal necrolysis — TEN) covering 40% body surface area. ICU admission,\nwound care, IV fluids, pain management required.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nHLA-B*5801 positive (not checked prior to prescribing). Renal impairment — dose not adjusted."
+        },
+        "suspect_drug": {
+            "product_name": "Allopurinol 300mg",
+            "ndc_unique_id": "00378-0270-01",
+            "manufacturer": "Mylan Pharmaceuticals",
+            "lot_number": "MY20241005",
+            "dose_amount": "300 mg",
+            "frequency": "Once daily",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "01-Oct-2024",
+            "therapy_stop_date": "18-Nov-2024",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "2024\nCRP",
+                "result": "112",
+                "low_ref": "0",
+                "high_ref": "10",
+                "unit": "mg/L",
+                "date": "18-Nov-2024"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Brown",
+            "first_name": "City",
+            "address": "750 E Adams St",
+            "city": "N/A",
+            "state": "NY",
+            "zip": "N/A",
+            "phone": "315-555-0874",
+            "email": "Health",
+            "occupation": "Dermatologist",
+            "health_professional": "N/A",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "N/A"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-013-2.pdf",
+        "report_id": "FDA-3500-PT-2025-013",
+        "patient_information": {
+            "patient_identifier": "PT-2025-013",
+            "full_name": "Carlos Antonio Rivera",
+            "date_of_birth": "11-Nov-1980",
+            "age": "44 year(s)",
+            "sex": "Male",
+            "weight": "175 Ib",
+            "race_ethnicity": "Hispanic or Latino"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Disability or Permanent Damage",
+            "date_of_event": "15-Dec-2024",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nSevere peripheral neuropathy with burning pain and numbness in bilateral lower extremities after 6 months of\ntherapy. EMG confirmed axonal neuropathy.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nCD4 count 320 cells/uL. Diabetic - confounds neuropathy risk. Alcohol use (social)."
+        },
+        "suspect_drug": {
+            "product_name": "N/A",
+            "ndc_unique_id": "00087-667",
+            "manufacturer": "N/A",
+            "lot_number": "BM20240715",
+            "dose_amount": "40 mg",
+            "frequency": "Twice daily",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "15-Jun-2024",
+            "therapy_stop_date": "15-Dec-2024",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "2024\nLactate",
+                "result": "5.8",
+                "low_ref": "0.5",
+                "high_ref": "2.2",
+                "unit": "mmol/L",
+                "date": "15-Dec-2024"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Morales",
+            "first_name": "Diego",
+            "address": "1500 NW 12th Ave",
+            "city": "Miami",
+            "state": "FL",
+            "zip": "33136",
+            "phone": "305-555-0427",
+            "email": "d.morales@jacksonhealth.org",
+            "occupation": "Infectious Disease Specialist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-011-2.pdf",
+        "report_id": "FDA-3500-PT-2025-011",
+        "patient_information": {
+            "patient_identifier": "PT-2025-011",
+            "full_name": "Thomas E. Robinson",
+            "date_of_birth": "28-Jan-1959",
+            "age": "66 year(s)",
+            "sex": "Male",
+            "weight": "195 Ib",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Hospitalization",
+            "date_of_event": "22-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nSerotonin syndrome developed after combining medications. Symptoms included agitation, diaphoresis,\nmyoclonus, and hyperthermia (104.2°F). ICU admitted.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nConcurrently prescribed sertraline 100mg for depression. History of opioid use disorder, in remission."
+        },
+        "suspect_drug": {
+            "product_name": "Tramadol 50mg",
+            "ndc_unique_id": "65162-61",
+            "manufacturer": "Amneal Pharmaceuticals",
+            "lot_number": "AM20250120",
+            "dose_amount": "50 mg",
+            "frequency": "Every 6 hours PRN",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "20-Jan-2025",
+            "therapy_stop_date": "22-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "2025\nSerotonin Level",
+                "result": "2450",
+                "low_ref": "50",
+                "high_ref": "220",
+                "unit": "ng/mL",
+                "date": "22-Jan-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Lee",
+            "first_name": "Jonathan",
+            "address": "200 W Arbor Dr",
+            "city": "San Diego",
+            "state": "CA",
+            "zip": "92103",
+            "phone": "619-555-0562",
+            "email": "j.lee@ucsdhealth.org",
+            "occupation": "Physician",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-019-4-2.pdf",
+        "report_id": "FDA-3500-PT-2025-019",
+        "patient_information": {
+            "patient_identifier": "PT-2025-019",
+            "full_name": "Raymond Louis",
+            "date_of_birth": "17-Jul-1952",
+            "age": "72 year(s)",
+            "sex": "Male",
+            "weight": "178 Ib",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Life-threatening",
+            "date_of_event": "15-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nRefractory hypotension and shock developed 2 hours after IV infusion. Required vasopressors, fluid resuscitation,\nand 3-day ICU stay. Suspected anaphylaxis.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nPremedication with acetaminophen and diphenhydramine was given. Renal impairment at baseline."
+        },
+        "suspect_drug": {
+            "product_name": "Amphotericin B 50mg IV",
+            "ndc_unique_id": "39822-0104-05",
+            "manufacturer": "N/A",
+            "lot_number": "XG20250115",
+            "dose_amount": "50 mg",
+            "frequency": "Daily",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "15-Jan-2025",
+            "therapy_stop_date": "15-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "2025\nCreatinine",
+                "result": "3.1",
+                "low_ref": "0.7",
+                "high_ref": "1.3",
+                "unit": "mg/dL",
+                "date": "16-Jan-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Hall",
+            "first_name": "Diane",
+            "address": "404 W Thomas Rd",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zip": "85013",
+            "phone": "602-555-0991",
+            "email": "d.hall@dignityhealth.org",
+            "occupation": "Infectious Disease Physician",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-020-2.pdf",
+        "report_id": "FDA-3500-PT-2025-020",
+        "patient_information": {
+            "patient_identifier": "PT-2025-020",
+            "full_name": "Christine Mei Zhou",
+            "date_of_birth": "21-Oct-2008",
+            "age": "16 year(s)",
+            "sex": "Female",
+            "weight": "97 |b",
+            "race_ethnicity": "Asian"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Hospitalization",
+            "date_of_event": "30-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nSuicidal ideation and behavioral changes reported 2 weeks after dose increase. Patient disclosed plan to parents;\nhospitalized for psychiatric evaluation and safety monitoring.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nPediatric patient under 18 — black box warning applicable. Family history of depression. No prior suicidal ideation."
+        },
+        "suspect_drug": {
+            "product_name": "Fluoxetine 20mg",
+            "ndc_unique_id": "00002-3105-30",
+            "manufacturer": "Eli Lilly and Company",
+            "lot_number": "EL20250108",
+            "dose_amount": "20 mg",
+            "frequency": "Once daily",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "15-Jan-2025",
+            "therapy_stop_date": "30-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA\n\nColumbia Suicide Severity",
+                "result": "High",
+                "low_ref": "N/A",
+                "high_ref": "N/A",
+                "unit": "N/A",
+                "date": "30-Jan-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Adams",
+            "first_name": "Patricia",
+            "address": "200 Hawkins Field Dr",
+            "city": "Nashville",
+            "state": "TN",
+            "zip": "37232",
+            "phone": "615-555-0382",
+            "email": "p.adams@vumc.org",
+            "occupation": "Child Psychiatrist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-018-2.pdf",
+        "report_id": "FDA-3500-PT-2025-018",
+        "patient_information": {
+            "patient_identifier": "PT-2025-018",
+            "full_name": "Ashley Renee",
+            "date_of_birth": "03-Apr-1997",
+            "age": "27 year(s)",
+            "sex": "Female",
+            "weight": "125 Ib",
+            "race_ethnicity": "Black or African American"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Hospitalization",
+            "date_of_event": "25-Jan-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5)\n\nAgranulocytosis confirmed after presenting with fever, sore throat, and mouth ulcers. ANC dropped to 0.1 K/uL.\nHospitalized on reverse isolation for 11 days with IV antibiotics.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7)\n\nWeekly CBC monitoring was being done per REMS protocol. No prior blood dyscrasias. Non-smoker."
+        },
+        "suspect_drug": {
+            "product_name": "Clozapine 200mg",
+            "ndc_unique_id": "00078-0126-46",
+            "manufacturer": "Novartis AG",
+            "lot_number": "NV20241218",
+            "dose_amount": "200 mg",
+            "frequency": "Once daily (evening)",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "01-Oct-2024",
+            "therapy_stop_date": "25-Jan-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "N/A",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "for Evaluation? Product?"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "ANC",
+                "result": "0.1",
+                "low_ref": "1.5",
+                "high_ref": "8.0",
+                "unit": "K/uL",
+                "date": "25-Jan-2025"
+            },
+            {
+                "test_parameter": "WBC",
+                "result": "1.1",
+                "low_ref": "4.5",
+                "high_ref": "11.0",
+                "unit": "K/uL",
+                "date": "25-Jan-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Scott",
+            "first_name": "Tiffany",
+            "address": "1301 Medical Center Pkwy",
+            "city": "Murfreesboro",
+            "state": "TN",
+            "zip": "37129",
+            "phone": "615-555-0218",
+            "email": "t.scott@ssmhealth.org",
+            "occupation": "Psychiatrist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "image.pdf",
+        "report_id": "N/A",
+        "patient_information": {
+            "patient_identifier": "N/A",
+            "full_name": "N/A",
+            "date_of_birth": "N/A",
+            "age": "N/A",
+            "sex": "N/A",
+            "weight": "N/A",
+            "race_ethnicity": "N/A"
+        },
+        "adverse_events": {
+            "type_of_report": "N/A",
+            "outcome": "N/A",
+            "date_of_event": "N/A",
+            "date_of_report": "N/A",
+            "event_description": "N/A",
+            "medical_history_preexisting": "N/A"
+        },
+        "suspect_drug": {
+            "product_name": "N/A",
+            "ndc_unique_id": "N/A",
+            "manufacturer": "N/A",
+            "lot_number": "N/A",
+            "dose_amount": "N/A",
+            "frequency": "N/A",
+            "route": "N/A",
+            "indication": "N/A",
+            "therapy_start_date": "N/A",
+            "therapy_stop_date": "N/A",
+            "event_abated_after_stop": "N/A",
+            "event_reappeared_after_reintro": "N/A",
+            "product_type": "N/A",
+            "ongoing_therapy": "N/A"
+        },
+        "concomitant_medications": [
+            {
+                "note": "See History / Medical Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "N/A"
+        },
+        "laboratory_tests": [],
+        "reporter_information": {
+            "last_name": "N/A",
+            "first_name": "N/A",
+            "address": "N/A",
+            "city": "N/A",
+            "state": "N/A",
+            "zip": "N/A",
+            "phone": "N/A",
+            "email": "N/A",
+            "occupation": "N/A",
+            "health_professional": "N/A",
+            "also_reported_to": "N/A",
+            "identity_disclosed": "N/A"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-008.pdf",
+        "report_id": "FDA-3500-PT-2025-008",
+        "patient_information": {
+            "patient_identifier": "PT-2025-008",
+            "full_name": "Susan Marie Clarke",
+            "date_of_birth": "14-Jun-1967",
+            "age": "57 year(s)",
+            "sex": "Female",
+            "weight": "168 lb",
+            "race_ethnicity": "White"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Disability or Permanent Damage",
+            "date_of_event": "15-Feb-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nPulmonary fibrosis detected on high-resolution CT scan after 14 months of treatment. Persistent dry cough and \nprogressive dyspnea reported for 3 months prior to imaging.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nCumulative bleomycin dose exceeded 400 units. Non-smoker. Prior radiation to chest."
+        },
+        "suspect_drug": {
+            "product_name": "Bleomycin 15 Units",
+            "ndc_unique_id": "00703-3069-01",
+            "manufacturer": "Teva Pharmaceuticals",
+            "lot_number": "TV20240619",
+            "dose_amount": "15 units",
+            "frequency": "Weekly",
+            "route": "N/A",
+            "indication": "Breast cancer",
+            "therapy_start_date": "01-Jan-2024",
+            "therapy_stop_date": "15-Feb-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "No"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult \nLow Ref \nHigh \nRef \nUnit \nDate \nFVC",
+                "result": "52",
+                "low_ref": "80",
+                "high_ref": "120",
+                "unit": "%",
+                "date": "predicted"
+            },
+            {
+                "test_parameter": "2025 \nDLCO",
+                "result": "38",
+                "low_ref": "75",
+                "high_ref": "120",
+                "unit": "%",
+                "date": "predicted"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Martinez",
+            "first_name": "Elena",
+            "address": "633 N Saint Clair St",
+            "city": "Chicago",
+            "state": "IL",
+            "zip": "60611",
+            "phone": "312-555-0649",
+            "email": "e.martinez@nm.org",
+            "occupation": "Oncologist",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    },
+    {
+        "file_name": "FDA_3500_PT-2025-009.pdf",
+        "report_id": "FDA-3500-PT-2025-009",
+        "patient_information": {
+            "patient_identifier": "PT-2025-009",
+            "full_name": "Michael J. Harrison",
+            "date_of_birth": "05-Dec-1942",
+            "age": "82 year(s)",
+            "sex": "Male",
+            "weight": "152 lb",
+            "race_ethnicity": "Black or African American"
+        },
+        "adverse_events": {
+            "type_of_report": "Adverse Event",
+            "outcome": "Life-threatening",
+            "date_of_event": "15-Feb-2025",
+            "date_of_report": "10-Jun-2025",
+            "event_description": "/ Problem / Product Use Error (B.5) \nAngioedema of tongue and lips requiring emergency airway management and intubation. Occurred 3 hours after \nfirst dose.",
+            "medical_history_preexisting": "/ Preexisting Medical Conditions (B.7) \nPrevious intolerance to lisinopril (cough). African American male – higher risk for ACE-I angioedema."
+        },
+        "suspect_drug": {
+            "product_name": "Enalapril 5mg",
+            "ndc_unique_id": "00006-0713-54",
+            "manufacturer": "N/A",
+            "lot_number": "MK20250202",
+            "dose_amount": "5 mg",
+            "frequency": "Twice daily",
+            "route": "N/A",
+            "indication": "Congestive heart failure",
+            "therapy_start_date": "15-Feb-2025",
+            "therapy_stop_date": "15-Feb-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No",
+            "product_type": "Drug or Biologic – Brand",
+            "ongoing_therapy": "No"
+        },
+        "concomitant_medications": [
+            {
+                "entry": "1",
+                "product_name": "See History /",
+                "therapy_start": "Medical",
+                "therapy_end": "Record"
+            }
+        ],
+        "medical_history": {
+            "preexisting_conditions": "No"
+        },
+        "laboratory_tests": [
+            {
+                "test_parameter": "/ LABORATORY DATA \nTest / Parameter \nResult \nLow Ref \nHigh \nRef \nUnit \nDate \nSpO2",
+                "result": "86",
+                "low_ref": "95",
+                "high_ref": "100",
+                "unit": "%",
+                "date": "15-Feb-2025"
+            }
+        ],
+        "reporter_information": {
+            "last_name": "Davis",
+            "first_name": "Loretta",
+            "address": "500 S State College Blvd",
+            "city": "Anaheim",
+            "state": "Co",
+            "zip": "92806",
+            "phone": "714-555-0182",
+            "email": "l.davis@westernclinic.com",
+            "occupation": "Emergency Physician",
+            "health_professional": "Yes",
+            "also_reported_to": "Manufacturer",
+            "identity_disclosed": "Yes"
+        }
+    }
+]

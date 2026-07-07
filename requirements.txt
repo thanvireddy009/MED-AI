@@ -1,0 +1,7 @@
+pandas
+openpyxl
+pymupdf
+pytesseract
+Pillow
+psycopg[binary]
+ 
