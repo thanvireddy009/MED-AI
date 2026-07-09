@@ -7,12 +7,13 @@ import io
 
 # If brew installed tesseract somewhere not on PATH, uncomment and set this:
 # pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
+# pytesseract.pytesseract.tesseract_cmd = "pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # Windows path"
 
 # Folder containing PDFs
 pdf_folder = r"Synthetic data"
 
 # DPI for rendering pages to images before OCR (higher = more accurate, slower)
-OCR_DPI = 300
+OCR_DPI = 300 
 
 results = []
 

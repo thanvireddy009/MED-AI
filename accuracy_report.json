@@ -1,0 +1,2440 @@
+{
+    "model": "llama-3.1-8b-instant",
+    "total_documents": 21,
+    "documents_compared": 21,
+    "field_accuracy": {
+        "patient_information.patient_identifier": "100.0%",
+        "patient_information.full_name": "90.0%",
+        "patient_information.date_of_birth": "100.0%",
+        "patient_information.age": "100.0%",
+        "patient_information.sex": "100.0%",
+        "patient_information.weight": "95.0%",
+        "patient_information.race_ethnicity": "95.0%",
+        "adverse_events.type_of_report": "100.0%",
+        "adverse_events.outcome": "90.0%",
+        "adverse_events.date_of_event": "100.0%",
+        "suspect_drug.product_name": "100.0%",
+        "suspect_drug.ndc_unique_id": "90.0%",
+        "suspect_drug.manufacturer": "100.0%",
+        "suspect_drug.lot_number": "100.0%",
+        "suspect_drug.dose_amount": "100.0%",
+        "suspect_drug.frequency": "100.0%",
+        "suspect_drug.therapy_start_date": "100.0%",
+        "suspect_drug.therapy_stop_date": "100.0%",
+        "suspect_drug.ongoing_therapy": "100.0%",
+        "reporter_information.last_name": "100.0%",
+        "reporter_information.first_name": "95.0%",
+        "reporter_information.city": "100.0%",
+        "reporter_information.state": "95.0%",
+        "reporter_information.occupation": "100.0%"
+    },
+    "per_document": {
+        "FDA_3500_PT-2025-016-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-016",
+                "llm_value": "pt-2025-016"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "nancy claire foster",
+                "llm_value": "nancy claire foster"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "15-sep-1983",
+                "llm_value": "15-sep-1983"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "41",
+                "llm_value": "41"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "140 lb",
+                "llm_value": "140 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": false,
+                "gt_value": "required intervention to prevent",
+                "llm_value": "required intervention to prevent permanent impairment/damage"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "01-sep-2024",
+                "llm_value": "01-sep-2024"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "zoledronic acid 5mg iv",
+                "llm_value": "zoledronic acid 5mg iv"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00078-0457-15",
+                "llm_value": "00078-0457-15"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "novartis ag",
+                "llm_value": "novartis ag"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "nv20240901",
+                "llm_value": "nv20240901"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "5 mg",
+                "llm_value": "5 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "yearly",
+                "llm_value": "yearly"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "01-sep-2022",
+                "llm_value": "01-sep-2022"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "01-sep-2024",
+                "llm_value": "01-sep-2024"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "taylor",
+                "llm_value": "taylor"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "angela",
+                "llm_value": "angela"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "madison",
+                "llm_value": "madison"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "wi",
+                "llm_value": "wi"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "endocrinologist",
+                "llm_value": "endocrinologist"
+            }
+        },
+        "FDA_3500_PT-2025-010.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-010",
+                "llm_value": "pt-2025-010"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "emily grace hoffman",
+                "llm_value": "emily grace hoffman"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "19-aug-2001",
+                "llm_value": "19-aug-2001"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "23",
+                "llm_value": "23"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "110 lb",
+                "llm_value": "110 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": false,
+                "gt_value": "other serious or important",
+                "llm_value": "other serious or important medical events"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "20-jan-2025",
+                "llm_value": "20-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "hydralazine 25mg",
+                "llm_value": "hydralazine 25mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00378-0106-01",
+                "llm_value": "00378-0106-01"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "mylan pharmaceuticals",
+                "llm_value": "mylan pharmaceuticals"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "my20240811",
+                "llm_value": "my20240811"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "25 mg",
+                "llm_value": "25 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "three times daily",
+                "llm_value": "three times daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "15-sep-2024",
+                "llm_value": "15-sep-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "20-jan-2025",
+                "llm_value": "20-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "garcia",
+                "llm_value": "garcia"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "isabel",
+                "llm_value": "isabel"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "washington",
+                "llm_value": "washington"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "dc",
+                "llm_value": "dc"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "internist",
+                "llm_value": "internist"
+            }
+        },
+        "FDA_3500_PT-2025-004.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-004",
+                "llm_value": "pt-2025-004"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "jennifer l. brooks",
+                "llm_value": "jennifer l. brooks"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "18-feb-1990",
+                "llm_value": "18-feb-1990"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "35",
+                "llm_value": "35"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "118 lb",
+                "llm_value": "118 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "black or african american",
+                "llm_value": "black or african american"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "life-threatening",
+                "llm_value": "life-threatening"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "14-feb-2025",
+                "llm_value": "14-feb-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "lamotrigine 25mg",
+                "llm_value": "lamotrigine 25mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00173-0643-55",
+                "llm_value": "00173-0643-55"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "glaxosmithkline",
+                "llm_value": "glaxosmithkline"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "gsk20250033",
+                "llm_value": "gsk20250033"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "25 mg",
+                "llm_value": "25 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily",
+                "llm_value": "once daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "01-feb-2025",
+                "llm_value": "01-feb-2025"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "14-feb-2025",
+                "llm_value": "14-feb-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "thompson",
+                "llm_value": "thompson"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "marcus",
+                "llm_value": "marcus"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "birmingham",
+                "llm_value": "birmingham"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "al",
+                "llm_value": "al"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "physician",
+                "llm_value": "physician"
+            }
+        },
+        "FDA_3500_PT-2025-005.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-005",
+                "llm_value": "pt-2025-005"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "william scott turner",
+                "llm_value": "william scott turner"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "22-jul-1955",
+                "llm_value": "22-jul-1955"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "69",
+                "llm_value": "69"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "210 lb",
+                "llm_value": "210 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "hospitalization",
+                "llm_value": "hospitalization"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "15-jan-2025",
+                "llm_value": "15-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "atorvastatin 80mg",
+                "llm_value": "atorvastatin 80mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00071-0155-23",
+                "llm_value": "00071-0155-23"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "pfizer inc.",
+                "llm_value": "pfizer inc."
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "pfz20241222",
+                "llm_value": "pfz20241222"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "80 mg",
+                "llm_value": "80 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily",
+                "llm_value": "once daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "01-nov-2024",
+                "llm_value": "01-nov-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "15-jan-2025",
+                "llm_value": "15-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "ramirez",
+                "llm_value": "ramirez"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "carlos",
+                "llm_value": "carlos"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "austin",
+                "llm_value": "austin"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "tx",
+                "llm_value": "tx"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "pharmacist",
+                "llm_value": "pharmacist"
+            }
+        },
+        "FDA_3500_PT-2025-007.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-007",
+                "llm_value": "pt-2025-007"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "david k. nguyen",
+                "llm_value": "david k. nguyen"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "31-oct-1995",
+                "llm_value": "31-oct-1995"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "29",
+                "llm_value": "29"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "143 lb",
+                "llm_value": "143 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "asian",
+                "llm_value": "asian"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "hospitalization",
+                "llm_value": "hospitalization"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "03-jan-2025",
+                "llm_value": "03-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "glipizide 10mg",
+                "llm_value": "glipizide 10mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00069-2610-66",
+                "llm_value": "00069-2610-66"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "pfizer inc.",
+                "llm_value": "pfizer inc."
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "pfz20250109",
+                "llm_value": "pfz20250109"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "10 mg",
+                "llm_value": "10 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily",
+                "llm_value": "once daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "03-jan-2025",
+                "llm_value": "03-jan-2025"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "03-jan-2025",
+                "llm_value": "03-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "park",
+                "llm_value": "park"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "christine",
+                "llm_value": "christine"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "skokie",
+                "llm_value": "skokie"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "il",
+                "llm_value": "il"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "physician",
+                "llm_value": "physician"
+            }
+        },
+        "FDA_3500_PT-2025-006.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-006",
+                "llm_value": "pt-2025-006"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "patricia ann walsh",
+                "llm_value": "patricia ann walsh"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "09-apr-1978",
+                "llm_value": "09-apr-1978"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "46",
+                "llm_value": "46"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "155 lb",
+                "llm_value": "155 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "life-threatening",
+                "llm_value": "life-threatening"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "30-nov-2024",
+                "llm_value": "30-nov-2024"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "isoniazid 300mg",
+                "llm_value": "isoniazid 300mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "50383-737-30",
+                "llm_value": "50383-737-30"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "akorn inc.",
+                "llm_value": "akorn inc."
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "ak20241015",
+                "llm_value": "ak20241015"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "300 mg",
+                "llm_value": "300 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily",
+                "llm_value": "once daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "15-oct-2024",
+                "llm_value": "15-oct-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "30-nov-2024",
+                "llm_value": "30-nov-2024"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "johnson",
+                "llm_value": "johnson"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "beth",
+                "llm_value": "beth"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "columbus",
+                "llm_value": "columbus"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "oh",
+                "llm_value": "oh"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "physician",
+                "llm_value": "physician"
+            }
+        },
+        "FDA_3500_PT-2025-014-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-014",
+                "llm_value": "pt-2025-014"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "barbara jean powell",
+                "llm_value": "barbara jean powell"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "24-may-1936",
+                "llm_value": "24-may-1936"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "88",
+                "llm_value": "88"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "98 lb",
+                "llm_value": "98 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "life-threatening",
+                "llm_value": "life-threatening"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "18-feb-2025",
+                "llm_value": "18-feb-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "warfarin 5mg",
+                "llm_value": "warfarin 5mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00056-0171-75",
+                "llm_value": "00056-0171-75"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "bm20250110",
+                "llm_value": "bm20250110"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "5mg",
+                "llm_value": "5mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily",
+                "llm_value": "once daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "01-jan-2020",
+                "llm_value": "01-jan-2020"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "18-feb-2025",
+                "llm_value": "18-feb-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "perez",
+                "llm_value": "perez"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "sandra",
+                "llm_value": "sandra"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "dallas",
+                "llm_value": "dallas"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "tx",
+                "llm_value": "tx"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "neurologist",
+                "llm_value": "neurologist"
+            }
+        },
+        "FDA_3500_PT-2025-002.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-002",
+                "llm_value": "pt-2025-002"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "maria elena vasquez",
+                "llm_value": "maria elena vasquez"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "27-jun-1985",
+                "llm_value": "27-jun-1985"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "39",
+                "llm_value": "39"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "132 lb",
+                "llm_value": "132 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "hispanic or latino",
+                "llm_value": "hispanic or latino"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "life-threatening",
+                "llm_value": "life-threatening"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "13-nov-2024",
+                "llm_value": "13-nov-2024"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "azithromycin 500mg",
+                "llm_value": "azithromycin 500mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00069-3060-30",
+                "llm_value": "00069-3060-30"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "pfizer inc.",
+                "llm_value": "pfizer inc."
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "pfz20241108",
+                "llm_value": "pfz20241108"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "500 mg",
+                "llm_value": "500 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily",
+                "llm_value": "once daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "10-nov-2024",
+                "llm_value": "10-nov-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "13-nov-2024",
+                "llm_value": "13-nov-2024"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "chen",
+                "llm_value": "chen"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "linda",
+                "llm_value": "linda"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "san francisco",
+                "llm_value": "san francisco"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "ca",
+                "llm_value": "ca"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "nurse practitioner",
+                "llm_value": "nurse practitioner"
+            }
+        },
+        "FDA_3500_PT-2025-003.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-003",
+                "llm_value": "pt-2025-003"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "robert alan patel",
+                "llm_value": "robert alan patel"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "03-sep-1948",
+                "llm_value": "03-sep-1948"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "76",
+                "llm_value": "76"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "160 lb",
+                "llm_value": "160 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "asian",
+                "llm_value": "asian"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "hospitalization",
+                "llm_value": "hospitalization"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "26-dec-2024",
+                "llm_value": "26-dec-2024"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "naproxen 500mg",
+                "llm_value": "naproxen 500mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "12843-187-01",
+                "llm_value": "12843-187-01"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "bayer ag",
+                "llm_value": "bayer ag"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "by20250078",
+                "llm_value": "by20250078"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "500 mg",
+                "llm_value": "500 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "twice daily",
+                "llm_value": "twice daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "12-dec-2024",
+                "llm_value": "12-dec-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "26-dec-2024",
+                "llm_value": "26-dec-2024"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "williams",
+                "llm_value": "williams"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "samantha",
+                "llm_value": "samantha"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "new york",
+                "llm_value": "new york"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "ny",
+                "llm_value": "ny"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "physician",
+                "llm_value": "physician"
+            }
+        },
+        "FDA_3500_PT-2025-001.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-001",
+                "llm_value": "pt-2025-001"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "james r. mitchell",
+                "llm_value": "james r. mitchell"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "14-mar-1962",
+                "llm_value": "14-mar-1962"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "63",
+                "llm_value": "63"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "185 lb",
+                "llm_value": "185 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "hospitalization",
+                "llm_value": "hospitalization"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "05-jan-2025",
+                "llm_value": "05-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "lisinopril 10mg",
+                "llm_value": "lisinopril 10mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "68382-103-10",
+                "llm_value": "68382-103-10"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "zydus pharmaceuticals",
+                "llm_value": "zydus pharmaceuticals"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "zp20250112",
+                "llm_value": "zp20250112"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "10 mg",
+                "llm_value": "10 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily",
+                "llm_value": "once daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "05-jan-2025",
+                "llm_value": "05-jan-2025"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "05-jan-2025",
+                "llm_value": "05-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "okafor",
+                "llm_value": "okafor"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "ngozi",
+                "llm_value": "ngozi"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "houston",
+                "llm_value": "houston"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "tx",
+                "llm_value": "tx"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "physician",
+                "llm_value": "physician"
+            }
+        },
+        "FDA_3500_PT-2025-012-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-012",
+                "llm_value": "pt-2025-012"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "linda rose huang",
+                "llm_value": "linda rose huang"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "07-mar-1972",
+                "llm_value": "07-mar-1972"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "52",
+                "llm_value": "52"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "128 lb",
+                "llm_value": "128 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "asian",
+                "llm_value": "asian"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "disability or permanent damage",
+                "llm_value": "disability or permanent damage"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "10-jan-2025",
+                "llm_value": "10-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "lithium carbonate 300mg",
+                "llm_value": "lithium carbonate 300mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "51285-158-01",
+                "llm_value": "51285-158-01"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "noven pharmaceuticals",
+                "llm_value": "noven pharmaceuticals"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "nv20241130",
+                "llm_value": "nv20241130"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "300 mg",
+                "llm_value": "300 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "three times daily",
+                "llm_value": "three times daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "10-jan-2023",
+                "llm_value": "10-jan-2023"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "10-jan-2025",
+                "llm_value": "10-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "kim",
+                "llm_value": "kim"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "rachel",
+                "llm_value": "rachel"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "palo alto",
+                "llm_value": "palo alto"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "ca",
+                "llm_value": "ca"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "psychiatrist",
+                "llm_value": "psychiatrist"
+            }
+        },
+        "FDA_3500_PT-2025-015-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-015",
+                "llm_value": "pt-2025-015"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "kevin alexander ross",
+                "llm_value": "kevin alexander ross"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "06-feb-2000",
+                "llm_value": "06-feb-2000"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "25",
+                "llm_value": "25"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "165 lb",
+                "llm_value": "165 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "black or african american",
+                "llm_value": "black or african american"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "life-threatening",
+                "llm_value": "life-threatening"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "20-jan-2025",
+                "llm_value": "20-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "methotrexate 15mg",
+                "llm_value": "methotrexate 15mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "55111-667-15",
+                "llm_value": "55111-667-15"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "strides pharma",
+                "llm_value": "strides pharma"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "15mg",
+                "llm_value": "15mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once weekly",
+                "llm_value": "once weekly"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "01-aug-2024",
+                "llm_value": "01-aug-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "20-jan-2025",
+                "llm_value": "20-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "gregory",
+                "llm_value": "gregory"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "wilmington",
+                "llm_value": "wilmington"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "de",
+                "llm_value": "de"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "rheumatologist",
+                "llm_value": "rheumatologist"
+            }
+        },
+        "FDA_3500_PT-2025-017-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-017",
+                "llm_value": "pt-2025-017"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "george henry watts",
+                "llm_value": "george henry watts"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "29-dec-1970",
+                "llm_value": "29-dec-1970"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "54",
+                "llm_value": "54"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "220 lb",
+                "llm_value": "220 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "life-threatening",
+                "llm_value": "life-threatening"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "18-nov-2024",
+                "llm_value": "18-nov-2024"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "allopurinol 300mg",
+                "llm_value": "allopurinol 300mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00378-0270-01",
+                "llm_value": "00378-0270-01"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "mylan pharmaceuticals",
+                "llm_value": "mylan pharmaceuticals"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "my20241005",
+                "llm_value": "my20241005"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "300 mg",
+                "llm_value": "300 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily",
+                "llm_value": "once daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "01-oct-2024",
+                "llm_value": "01-oct-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "18-nov-2024",
+                "llm_value": "18-nov-2024"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "brown",
+                "llm_value": "brown"
+            },
+            "reporter_information.first_name": {
+                "match": false,
+                "gt_value": "city",
+                "llm_value": "karen"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "ny",
+                "llm_value": "ny"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "dermatologist",
+                "llm_value": "dermatologist"
+            }
+        },
+        "FDA_3500_PT-2025-013-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-013",
+                "llm_value": "pt-2025-013"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "carlos antonio rivera",
+                "llm_value": "carlos antonio rivera"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "11-nov-1980",
+                "llm_value": "11-nov-1980"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "44",
+                "llm_value": "44"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "175 lb",
+                "llm_value": "175 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": false,
+                "gt_value": "hispanic or latino",
+                "llm_value": "male, race / hispanic or latino"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "disability or permanent damage",
+                "llm_value": "disability or permanent damage"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "15-dec-2024",
+                "llm_value": "15-dec-2024"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": false,
+                "gt_value": "00087-667",
+                "llm_value": "00087-667 1-22"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "bm20240715",
+                "llm_value": "bm20240715"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "40 mg",
+                "llm_value": "40 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "twice daily",
+                "llm_value": "twice daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "15-jun-2024",
+                "llm_value": "15-jun-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "15-dec-2024",
+                "llm_value": "15-dec-2024"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "morales",
+                "llm_value": "morales"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "diego",
+                "llm_value": "diego"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "miami",
+                "llm_value": "miami"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "fl",
+                "llm_value": "fl"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "infectious disease specialist",
+                "llm_value": "infectious disease specialist"
+            }
+        },
+        "FDA_3500_PT-2025-011-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-011",
+                "llm_value": "pt-2025-011"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "thomas e. robinson",
+                "llm_value": "thomas e. robinson"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "28-jan-1959",
+                "llm_value": "28-jan-1959"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "66",
+                "llm_value": "66"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "195 lb",
+                "llm_value": "195 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "hospitalization",
+                "llm_value": "hospitalization"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "22-jan-2025",
+                "llm_value": "22-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "tramadol 50mg",
+                "llm_value": "tramadol 50mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": false,
+                "gt_value": "65162-61",
+                "llm_value": "65162-61 1-50"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "amneal pharmaceuticals",
+                "llm_value": "amneal pharmaceuticals"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "am20250120",
+                "llm_value": "am20250120"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "50 mg",
+                "llm_value": "50 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "every 6 hours prn",
+                "llm_value": "every 6 hours prn"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "20-jan-2025",
+                "llm_value": "20-jan-2025"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "22-jan-2025",
+                "llm_value": "22-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "lee",
+                "llm_value": "lee"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "jonathan",
+                "llm_value": "jonathan"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "san diego",
+                "llm_value": "san diego"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "ca",
+                "llm_value": "ca"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "physician",
+                "llm_value": "physician"
+            }
+        },
+        "FDA_3500_PT-2025-019-4-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-019",
+                "llm_value": "pt-2025-019"
+            },
+            "patient_information.full_name": {
+                "match": false,
+                "gt_value": "raymond louis",
+                "llm_value": "raymond louis greene"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "17-jul-1952",
+                "llm_value": "17-jul-1952"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "72",
+                "llm_value": "72"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "178 lb",
+                "llm_value": "178 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "life-threatening",
+                "llm_value": "life-threatening"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "15-jan-2025",
+                "llm_value": "15-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "amphotericin b 50mg iv",
+                "llm_value": "amphotericin b 50mg iv"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "39822-0104-05",
+                "llm_value": "39822-0104-05"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "xg20250115",
+                "llm_value": "xg20250115"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "50 mg",
+                "llm_value": "50 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "daily",
+                "llm_value": "daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "15-jan-2025",
+                "llm_value": "15-jan-2025"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "15-jan-2025",
+                "llm_value": "15-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "hall",
+                "llm_value": "hall"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "diane",
+                "llm_value": "diane"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "phoenix",
+                "llm_value": "phoenix"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "az",
+                "llm_value": "az"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "infectious disease physician",
+                "llm_value": "infectious disease physician"
+            }
+        },
+        "FDA_3500_PT-2025-020-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-020",
+                "llm_value": "pt-2025-020"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "christine mei zhou",
+                "llm_value": "christine mei zhou"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "21-oct-2008",
+                "llm_value": "21-oct-2008"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "16",
+                "llm_value": "16"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": false,
+                "gt_value": "97 |b",
+                "llm_value": "97"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "asian",
+                "llm_value": "asian"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "hospitalization",
+                "llm_value": "hospitalization"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "30-jan-2025",
+                "llm_value": "30-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "fluoxetine 20mg",
+                "llm_value": "fluoxetine 20mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00002-3105-30",
+                "llm_value": "00002-3105-30"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "eli lilly and company",
+                "llm_value": "eli lilly and company"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "el20250108",
+                "llm_value": "el20250108"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "20 mg",
+                "llm_value": "20 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily",
+                "llm_value": "once daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "15-jan-2025",
+                "llm_value": "15-jan-2025"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "30-jan-2025",
+                "llm_value": "30-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "adams",
+                "llm_value": "adams"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "patricia",
+                "llm_value": "patricia"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "nashville",
+                "llm_value": "nashville"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "tn",
+                "llm_value": "tn"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "child psychiatrist",
+                "llm_value": "child psychiatrist"
+            }
+        },
+        "FDA_3500_PT-2025-018-2.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-018",
+                "llm_value": "pt-2025-018"
+            },
+            "patient_information.full_name": {
+                "match": false,
+                "gt_value": "ashley renee",
+                "llm_value": "ashley renee coleman"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "03-apr-1997",
+                "llm_value": "03-apr-1997"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "27",
+                "llm_value": "27"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "125 lb",
+                "llm_value": "125 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "black or african american",
+                "llm_value": "black or african american"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "hospitalization",
+                "llm_value": "hospitalization"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "25-jan-2025",
+                "llm_value": "25-jan-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "clozapine 200mg",
+                "llm_value": "clozapine 200mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00078-0126-46",
+                "llm_value": "00078-0126-46"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "novartis ag",
+                "llm_value": "novartis ag"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "nv20241218",
+                "llm_value": "nv20241218"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "200 mg",
+                "llm_value": "200 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "once daily (evening)",
+                "llm_value": "once daily (evening)"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "01-oct-2024",
+                "llm_value": "01-oct-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "25-jan-2025",
+                "llm_value": "25-jan-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "scott",
+                "llm_value": "scott"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "tiffany",
+                "llm_value": "tiffany"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "murfreesboro",
+                "llm_value": "murfreesboro"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "tn",
+                "llm_value": "tn"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "psychiatrist",
+                "llm_value": "psychiatrist"
+            }
+        },
+        "image.pdf": {},
+        "FDA_3500_PT-2025-008.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-008",
+                "llm_value": "pt-2025-008"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "susan marie clarke",
+                "llm_value": "susan marie clarke"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "14-jun-1967",
+                "llm_value": "14-jun-1967"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "57",
+                "llm_value": "57"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "female",
+                "llm_value": "female"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "168 lb",
+                "llm_value": "168 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "white",
+                "llm_value": "white"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "disability or permanent damage",
+                "llm_value": "disability or permanent damage"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "15-feb-2025",
+                "llm_value": "15-feb-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "bleomycin 15 units",
+                "llm_value": "bleomycin 15 units"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00703-3069-01",
+                "llm_value": "00703-3069-01"
+            },
+            "suspect_drug.manufacturer": {
+                "match": true,
+                "gt_value": "teva pharmaceuticals",
+                "llm_value": "teva pharmaceuticals"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "tv20240619",
+                "llm_value": "tv20240619"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "15 units",
+                "llm_value": "15 units"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "weekly",
+                "llm_value": "weekly"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "01-jan-2024",
+                "llm_value": "01-jan-2024"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "15-feb-2025",
+                "llm_value": "15-feb-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "martinez",
+                "llm_value": "martinez"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "elena",
+                "llm_value": "elena"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "chicago",
+                "llm_value": "chicago"
+            },
+            "reporter_information.state": {
+                "match": true,
+                "gt_value": "il",
+                "llm_value": "il"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "oncologist",
+                "llm_value": "oncologist"
+            }
+        },
+        "FDA_3500_PT-2025-009.pdf": {
+            "patient_information.patient_identifier": {
+                "match": true,
+                "gt_value": "pt-2025-009",
+                "llm_value": "pt-2025-009"
+            },
+            "patient_information.full_name": {
+                "match": true,
+                "gt_value": "michael j. harrison",
+                "llm_value": "michael j. harrison"
+            },
+            "patient_information.date_of_birth": {
+                "match": true,
+                "gt_value": "05-dec-1942",
+                "llm_value": "05-dec-1942"
+            },
+            "patient_information.age": {
+                "match": true,
+                "gt_value": "82",
+                "llm_value": "82"
+            },
+            "patient_information.sex": {
+                "match": true,
+                "gt_value": "male",
+                "llm_value": "male"
+            },
+            "patient_information.weight": {
+                "match": true,
+                "gt_value": "152 lb",
+                "llm_value": "152 lb"
+            },
+            "patient_information.race_ethnicity": {
+                "match": true,
+                "gt_value": "black or african american",
+                "llm_value": "black or african american"
+            },
+            "adverse_events.type_of_report": {
+                "match": true,
+                "gt_value": "adverse event",
+                "llm_value": "adverse event"
+            },
+            "adverse_events.outcome": {
+                "match": true,
+                "gt_value": "life-threatening",
+                "llm_value": "life-threatening"
+            },
+            "adverse_events.date_of_event": {
+                "match": true,
+                "gt_value": "15-feb-2025",
+                "llm_value": "15-feb-2025"
+            },
+            "suspect_drug.product_name": {
+                "match": true,
+                "gt_value": "enalapril 5mg",
+                "llm_value": "enalapril 5mg"
+            },
+            "suspect_drug.ndc_unique_id": {
+                "match": true,
+                "gt_value": "00006-0713-54",
+                "llm_value": "00006-0713-54"
+            },
+            "suspect_drug.lot_number": {
+                "match": true,
+                "gt_value": "mk20250202",
+                "llm_value": "mk20250202"
+            },
+            "suspect_drug.dose_amount": {
+                "match": true,
+                "gt_value": "5 mg",
+                "llm_value": "5 mg"
+            },
+            "suspect_drug.frequency": {
+                "match": true,
+                "gt_value": "twice daily",
+                "llm_value": "twice daily"
+            },
+            "suspect_drug.therapy_start_date": {
+                "match": true,
+                "gt_value": "15-feb-2025",
+                "llm_value": "15-feb-2025"
+            },
+            "suspect_drug.therapy_stop_date": {
+                "match": true,
+                "gt_value": "15-feb-2025",
+                "llm_value": "15-feb-2025"
+            },
+            "suspect_drug.ongoing_therapy": {
+                "match": true,
+                "gt_value": "no",
+                "llm_value": "no"
+            },
+            "reporter_information.last_name": {
+                "match": true,
+                "gt_value": "davis",
+                "llm_value": "davis"
+            },
+            "reporter_information.first_name": {
+                "match": true,
+                "gt_value": "loretta",
+                "llm_value": "loretta"
+            },
+            "reporter_information.city": {
+                "match": true,
+                "gt_value": "anaheim",
+                "llm_value": "anaheim"
+            },
+            "reporter_information.state": {
+                "match": false,
+                "gt_value": "co",
+                "llm_value": "ca"
+            },
+            "reporter_information.occupation": {
+                "match": true,
+                "gt_value": "emergency physician",
+                "llm_value": "emergency physician"
+            }
+        }
+    },
+    "overall_accuracy": "97.9%"
+}
