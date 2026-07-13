@@ -1,0 +1,12 @@
+{
+    "total_records_validated": 20,
+    "fully_valid_records": 20,
+    "records_with_errors": 0,
+    "pass_rate": "100.0%",
+    "total_errors": 0,
+    "total_warnings": 1,
+    "total_auto_fixes": 30,
+    "issues_by_rule": {
+        "INVALID_WEIGHT": 1
+    }
+}

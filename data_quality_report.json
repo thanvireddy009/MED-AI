@@ -1,0 +1,24 @@
+{
+    "total_records": 21,
+    "records_with_errors": 2,
+    "records_clean": 19,
+    "total_errors": 11,
+    "total_auto_fixes": 11,
+    "errors_by_rule": {
+        "missing_unit": 1,
+        "mandatory": 10
+    },
+    "fields_with_most_errors": {
+        "patient_information.weight": 1,
+        "patient_information.patient_identifier": 1,
+        "patient_information.full_name": 1,
+        "patient_information.date_of_birth": 1,
+        "patient_information.sex": 1,
+        "adverse_events.outcome": 1,
+        "adverse_events.date_of_event": 1,
+        "suspect_drug.product_name": 1,
+        "suspect_drug.dose_amount": 1,
+        "reporter_information.last_name": 1,
+        "reporter_information.occupation": 1
+    }
+}
