@@ -1543,73 +1543,73 @@
         "file_name": "FDA_3500_PT-2025-008.pdf"
     },
     {
+        "file_name": "FDA_3500_PT-2025-009.pdf",
         "report_id": "FDA-3500-PT-2025-009",
-        "patient_information": {
-            "patient_identifier": "PT-2025-009",
-            "full_name": "Michael J. Harrison",
-            "date_of_birth": "05-Dec-1942",
-            "age": "82",
-            "sex": "Male",
-            "weight": "152 lb",
-            "race_ethnicity": "Black or African American"
+        "suspect_drug": {
+            "route": "Oral",
+            "frequency": "Twice daily",
+            "indication": "Congestive heart failure",
+            "lot_number": "MK20250202",
+            "dose_amount": "5 mg",
+            "manufacturer": "Merck & Co.",
+            "product_name": "Enalapril 5mg",
+            "product_type": "Drug or Biologic – Brand",
+            "ndc_unique_id": "00006-0713-54",
+            "ongoing_therapy": "No",
+            "therapy_stop_date": "15-Feb-2025",
+            "therapy_start_date": "15-Feb-2025",
+            "event_abated_after_stop": "Yes",
+            "event_reappeared_after_reintro": "No"
         },
         "adverse_events": {
-            "type_of_report": "Adverse Event",
             "outcome": "Life-threatening",
             "date_of_event": "15-Feb-2025",
+            "type_of_report": "Adverse Event",
             "event_description": "Angioedema of tongue and lips requiring emergency airway management and intubation. Occurred 3 hours after first dose.",
             "medical_history_preexisting": "Previous intolerance to lisinopril (cough). African American male – higher risk for ACE-I angioedema."
         },
-        "suspect_drug": {
-            "product_name": "Enalapril 5mg",
-            "ndc_unique_id": "00006-0713-54",
-            "manufacturer": "Merck & Co.",
-            "lot_number": "MK20250202",
-            "dose_amount": "5 mg",
-            "frequency": "Twice daily",
-            "route": "Oral",
-            "indication": "Congestive heart failure",
-            "therapy_start_date": "15-Feb-2025",
-            "therapy_stop_date": "15-Feb-2025",
-            "event_abated_after_stop": "Yes",
-            "event_reappeared_after_reintro": "No",
-            "product_type": "Drug or Biologic – Brand",
-            "ongoing_therapy": "No"
-        },
-        "concomitant_medications": [
-            {
-                "product_name": "See History / Medical Record",
-                "therapy_start": "N/A",
-                "therapy_end": "N/A"
-            }
-        ],
         "medical_history": {
             "preexisting_conditions": "Previous intolerance to lisinopril (cough). African American male – higher risk for ACE-I angioedema."
         },
         "laboratory_tests": [
             {
-                "test_parameter": "SpO2",
+                "date": "15-Feb-2025",
+                "unit": "%",
                 "result": "86",
                 "low_ref": "95",
                 "high_ref": "100",
-                "unit": "%",
-                "date": "15-Feb-2025"
+                "test_parameter": "SpO2"
             }
         ],
+        "patient_information": {
+            "age": "82",
+            "sex": "Male",
+            "weight": "152 lb",
+            "full_name": "Michael J. Harrison",
+            "date_of_birth": "05-Dec-1942",
+            "race_ethnicity": "Black or African American",
+            "patient_identifier": "PT-2025-009"
+        },
         "reporter_information": {
+            "zip": "92806",
+            "city": "Anaheim",
+            "email": "l.davis@westernclinic.com",
+            "phone": "714-555-0182",
+            "state": "CA",
+            "address": "500 S State College Blvd",
             "last_name": "Davis",
             "first_name": "Loretta",
-            "address": "500 S State College Blvd",
-            "city": "Anaheim",
-            "state": "CA",
-            "zip": "92806",
-            "phone": "714-555-0182",
-            "email": "l.davis@westernclinic.com",
             "occupation": "Emergency Physician",
-            "health_professional": "Yes",
             "also_reported_to": "Manufacturer",
-            "identity_disclosed": "Yes"
+            "identity_disclosed": "Yes",
+            "health_professional": " Yes"
         },
-        "file_name": "FDA_3500_PT-2025-009.pdf"
+        "concomitant_medications": [
+            {
+                "therapy_end": "N/A",
+                "product_name": "See History / Medical Record",
+                "therapy_start": "N/A"
+            }
+        ]
     }
 ]

@@ -1,0 +1,71 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f4f8; color: #1e293b; }
+
+.login-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); }
+.login-card { background: white; border-radius: 16px; padding: 2.5rem; width: 100%; max-width: 420px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.login-logo { font-size: 3rem; text-align: center; margin-bottom: 0.5rem; }
+.login-card h1 { text-align: center; font-size: 1.8rem; color: #1e293b; margin-bottom: 0.25rem; }
+.login-subtitle { text-align: center; color: #64748b; margin-bottom: 2rem; font-size: 0.9rem; }
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 0.5rem; }
+.form-group input { width: 100%; padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.95rem; }
+.form-group input:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+.login-error { background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; border-radius: 6px; padding: 0.6rem 1rem; font-size: 0.85rem; margin-bottom: 1rem; }
+.login-btn { width: 100%; background: #2563eb; color: white; border: none; padding: 0.85rem; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-bottom: 1.25rem; }
+.login-btn:hover { background: #1d4ed8; }
+.login-hint { background: #f8fafc; border-radius: 8px; padding: 1rem; font-size: 0.78rem; color: #64748b; line-height: 1.8; }
+.login-hint p:first-child { font-weight: 600; color: #475569; margin-bottom: 0.25rem; }
+
+.portal-layout { min-height: 100vh; display: flex; flex-direction: column; }
+.portal-nav { background: #1e293b; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { color: white; font-size: 1.1rem; font-weight: 700; }
+.nav-right { display: flex; align-items: center; gap: 1rem; }
+.doctor-name { color: #94a3b8; font-size: 0.9rem; }
+.logout-btn { background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2); padding: 0.4rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.85rem; }
+.logout-btn:hover { background: rgba(255,255,255,0.2); }
+
+.portal-content { flex: 1; padding: 2rem; max-width: 1100px; margin: 0 auto; width: 100%; }
+
+.search-hero { text-align: center; padding: 3rem 0 2rem; }
+.search-hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+.search-hero p { color: #64748b; margin-bottom: 1.5rem; }
+.search-bar { display: flex; gap: 0.75rem; max-width: 700px; margin: 0 auto; }
+.search-input { flex: 1; padding: 0.85rem 1.25rem; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 1rem; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.search-input:focus { outline: none; border-color: #2563eb; }
+.search-btn { background: #2563eb; color: white; border: none; padding: 0.85rem 1.75rem; border-radius: 10px; cursor: pointer; font-size: 1rem; font-weight: 600; white-space: nowrap; }
+.search-btn:hover { background: #1d4ed8; }
+.search-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.results-section { margin-top: 1rem; }
+.results-count { color: #64748b; font-size: 0.85rem; margin-bottom: 1rem; }
+.no-results { text-align: center; padding: 3rem; background: white; border-radius: 12px; color: #64748b; }
+.no-results span { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
+.no-results p { font-size: 1rem; margin-bottom: 0.5rem; }
+.no-results small { font-size: 0.8rem; color: #94a3b8; }
+
+.results-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1rem; }
+.result-card { background: white; border-radius: 12px; padding: 1.25rem; cursor: pointer; border: 1px solid #e2e8f0; transition: all 0.15s; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+.result-card:hover { border-color: #2563eb; box-shadow: 0 4px 16px rgba(37,99,235,0.12); transform: translateY(-1px); }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.patient-name { font-weight: 700; font-size: 1.05rem; }
+.patient-id { background: #eff6ff; color: #2563eb; padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600; }
+.card-details { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1rem; }
+.card-details div { background: #f8fafc; border-radius: 6px; padding: 0.4rem 0.6rem; font-size: 0.8rem; }
+.card-details div span { display: block; color: #94a3b8; font-size: 0.7rem; margin-bottom: 0.1rem; }
+.card-footer { display: flex; justify-content: space-between; font-size: 0.8rem; color: #64748b; padding-top: 0.75rem; border-top: 1px solid #f1f5f9; }
+.view-link { color: #2563eb; font-weight: 600; }
+
+.patient-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+.patient-header h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+.patient-header p { color: #64748b; font-size: 0.85rem; }
+.approved-tag { background: #d1fae5; color: #065f46; padding: 0.4rem 1rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
+
+.sections-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 1rem; }
+.section-card { background: white; border-radius: 12px; padding: 1.25rem; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+.section-card h2 { font-size: 0.9rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #f1f5f9; color: #1e293b; }
+.field-row { display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid #f8fafc; font-size: 0.85rem; }
+.field-label { color: #64748b; text-transform: capitalize; flex-shrink: 0; margin-right: 1rem; }
+.field-value { font-weight: 500; text-align: right; word-break: break-word; }
+.array-item { background: #f8fafc; border-radius: 6px; padding: 0.75rem; margin-bottom: 0.5rem; }
+
+.loading { display: flex; align-items: center; justify-content: center; min-height: 100vh; font-size: 1.1rem; color: #64748b; }
