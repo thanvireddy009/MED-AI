@@ -14,6 +14,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Health check
+app.get('/', (req, res) => res.json({ status: 'ok', message: 'MED AI Express Backend' }));
+app.get('/health', (req, res) => res.json({ status: 'healthy' }));
+
 // Routes
 app.use('/api/documents', require('./routes/documents'));
 app.use('/api/reviews', require('./routes/reviews'));
