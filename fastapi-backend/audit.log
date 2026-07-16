@@ -1,0 +1,20 @@
+2026-07-16 13:39:43,817 — ERROR — Audit log DB write failed: relation "audit_logs" does not exist
+LINE 2:             INSERT INTO audit_logs (user_id, action, resourc...
+                                ^
+
+2026-07-16 13:39:43,818 — INFO — AUDIT | user=string action=LOGIN_FAILED resource=None id=None details=None
+2026-07-16 13:40:07,113 — ERROR — Audit log DB write failed: relation "audit_logs" does not exist
+LINE 2:             INSERT INTO audit_logs (user_id, action, resourc...
+                                ^
+
+2026-07-16 13:40:07,114 — INFO — AUDIT | user=admin action=LOGIN_SUCCESS resource=None id=None details=None
+2026-07-16 13:40:28,557 — ERROR — Audit log DB write failed: relation "audit_logs" does not exist
+LINE 2:             INSERT INTO audit_logs (user_id, action, resourc...
+                                ^
+
+2026-07-16 13:40:28,559 — INFO — AUDIT | user=admin action=LOGIN_SUCCESS resource=None id=None details=None
+2026-07-16 13:49:44,111 — ERROR — Audit log DB write failed: relation "audit_logs" does not exist
+LINE 2:             INSERT INTO audit_logs (user_id, action, resourc...
+                                ^
+
+2026-07-16 13:49:44,114 — INFO — AUDIT | user=admin action=LOGIN_SUCCESS resource=None id=None details=None

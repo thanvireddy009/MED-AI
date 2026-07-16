@@ -1,4 +1,5 @@
 #!/bin/bash
-osascript -e 'tell app "Terminal" to do script "cd \"/Users/thanvireddy/MED AI/human-review-app/backend\" && node server.js"'
-osascript -e 'tell app "Terminal" to do script "cd \"/Users/thanvireddy/MED AI/human-review-app/frontend\" && npm start"'
-osascript -e 'tell app "Terminal" to do script "cd \"/Users/thanvireddy/MED AI/human-review-app/doctor-portal\" && npm start"'
+osascript -e 'tell app "Terminal" to do script "cd \"/Users/thanvireddy/MED AI/express-backend\" && node server.js"'
+osascript -e 'tell app "Terminal" to do script "cd \"/Users/thanvireddy/MED AI/fastapi-backend\" && uvicorn main:app --reload --port 9000"'
+osascript -e 'tell app "Terminal" to do script "cd \"/Users/thanvireddy/MED AI/frontend\" && npm start"'
+osascript -e 'tell app "Terminal" to do script "cd \"/Users/thanvireddy/MED AI/doctor-portal\" && npm start"'

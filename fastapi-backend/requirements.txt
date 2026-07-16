@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+psycopg2-binary
+python-dotenv
+pyjwt
+passlib[bcrypt]
+python-jose[cryptography]
+aiofiles
