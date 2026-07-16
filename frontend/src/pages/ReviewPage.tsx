@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 
-const API = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const API = process.env.REACT_APP_API_URL || 'http://localhost:9000';
+const authHeaders = () => ({ Authorization: `Bearer ${localStorage.getItem('token') || ''}` });
 
 export default function ReviewPage() {
   const { id } = useParams();
@@ -20,26 +21,26 @@ export default function ReviewPage() {
   }, [id]);
 
   const fetchDoc = async () => {
-    const res = await axios.get(`${API}/api/documents/${id}`);
+    const res = await axios.get(`${API}/api/documents/${id}`, { headers: authHeaders() });
     setDoc(res.data);
     setData(res.data.extracted_data || null);
     setNotes(res.data.review_notes || '');
   };
 
   const fetchHistory = async () => {
-    const res = await axios.get(`${API}/api/reviews/${id}`);
+    const res = await axios.get(`${API}/api/reviews/${id}`, { headers: authHeaders() });
     setHistory(res.data);
   };
 
   const handleLoadExtracted = async () => {
     setLoading(true);
     try {
-      const res = await axios.post(`${API}/api/documents/${id}/load-extracted`);
+      const res = await axios.post(`${API}/api/documents/${id}/load-extracted`, {}, { headers: authHeaders() });
       setData(res.data.extracted_data);
       setDoc(res.data);
       alert('✓ Extracted data loaded successfully!');
     } catch (err: any) {
-      alert(err.response?.data?.error || 'Failed to load extracted data');
+      alert(err.response?.data?.detail || 'Failed to load extracted data');
     } finally {
       setLoading(false);
     }
@@ -54,24 +55,29 @@ export default function ReviewPage() {
 
   const handleSave = async () => {
     setSaving(true);
-    await axios.put(`${API}/api/documents/${id}/data`, {
-      extracted_data: data,
-      validated_data: data
-    });
-    setSaving(false);
-    alert('Saved!');
+    try {
+      await axios.put(`${API}/api/documents/${id}/data`, {
+        extracted_data: data,
+        validated_data: data
+      }, { headers: authHeaders() });
+      alert('Saved!');
+    } catch (err: any) {
+      alert(err.response?.data?.detail || 'Save failed');
+    } finally {
+      setSaving(false);
+    }
   };
 
   const handleApprove = async () => {
     if (!window.confirm('Approve this document?')) return;
-    await axios.put(`${API}/api/documents/${id}/approve`, { notes, updated_data: data });
+    await axios.put(`${API}/api/documents/${id}/approve`, { notes, updated_data: data }, { headers: authHeaders() });
     navigate('/');
   };
 
   const handleReject = async () => {
     const reason = window.prompt('Reason for rejection:');
     if (!reason) return;
-    await axios.put(`${API}/api/documents/${id}/reject`, { notes: reason });
+    await axios.put(`${API}/api/documents/${id}/reject`, { notes: reason }, { headers: authHeaders() });
     navigate('/');
   };
 
@@ -118,7 +124,7 @@ export default function ReviewPage() {
             </div>
           ) : (
             <>
-              <div style={{display:'flex', justifyContent:'flex-end', marginBottom:'0.75rem'}}>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '0.75rem' }}>
                 <button className="load-btn-small" onClick={handleLoadExtracted} disabled={loading}>
                   {loading ? 'Reloading...' : '↻ Reload from JSON'}
                 </button>

@@ -5,6 +5,7 @@ import logging
 from pathlib import Path
 from fastapi import APIRouter, UploadFile, File, HTTPException, Depends, Request
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import Optional
 from core.database import get_connection
@@ -17,6 +18,7 @@ logger = logging.getLogger(__name__)
 UPLOAD_DIR = Path(__file__).resolve().parent.parent / "uploads"
 UPLOAD_DIR.mkdir(exist_ok=True)
 
+# llm_extracted_data.json lives at the repo root (MED AI/)
 LLM_JSON_PATH = Path(__file__).resolve().parents[4] / "llm_extracted_data.json"
 
 
@@ -28,14 +30,31 @@ def load_llm_data(file_name: str):
     return next((d for d in data if d["file_name"] == file_name), None)
 
 
-# ─────────────────────────────────────────────
-# POST /upload
-# ─────────────────────────────────────────────
-@router.post("/upload", summary="Upload a PDF document")
+def sync_to_json(file_name: str, updated_data: dict) -> bool:
+    """Write edited data back into llm_extracted_data.json."""
+    try:
+        if not LLM_JSON_PATH.exists():
+            return False
+        with open(LLM_JSON_PATH, "r") as f:
+            all_data = json.load(f)
+        idx = next((i for i, d in enumerate(all_data) if d["file_name"] == file_name), -1)
+        if idx == -1:
+            return False
+        all_data[idx] = {**updated_data, "file_name": file_name}
+        with open(LLM_JSON_PATH, "w") as f:
+            json.dump(all_data, f, indent=4)
+        return True
+    except Exception as e:
+        logger.error(f"sync_to_json failed: {e}")
+        return False
+
+
+# ── POST /api/documents/upload ───────────────────────────────────────────────
+@router.post("/documents/upload", summary="Upload a PDF document")
 async def upload_document(
     request: Request,
     file: UploadFile = File(...),
-    user: dict = Depends(get_current_user)
+    user: dict = Depends(get_current_user),
 ):
     if not file.filename.endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files are accepted")
@@ -47,16 +66,18 @@ async def upload_document(
     with open(file_path, "wb") as f:
         f.write(contents)
 
-    # Auto-load extracted data if available
     extracted = load_llm_data(file.filename)
     status = "reviewed" if extracted else "pending"
 
     conn = get_connection()
     cur = conn.cursor()
-    cur.execute("""
+    cur.execute(
+        """
         INSERT INTO documents (id, file_name, file_path, status, extracted_data)
         VALUES (%s, %s, %s, %s, %s) RETURNING *
-    """, (doc_id, file.filename, str(file_path), status, json.dumps(extracted) if extracted else None))
+        """,
+        (doc_id, file.filename, str(file_path), status, json.dumps(extracted) if extracted else None),
+    )
     doc = dict(cur.fetchone())
     conn.commit()
     cur.close()
@@ -64,45 +85,10 @@ async def upload_document(
 
     log_action(user["username"], "UPLOAD", "document", doc_id, {"file": file.filename}, request.client.host)
     logger.info(f"Uploaded: {file.filename} by {user['username']}")
-
     return doc
 
 
-# ─────────────────────────────────────────────
-# POST /extract/{document_id}
-# ─────────────────────────────────────────────
-@router.post("/extract/{document_id}", summary="Trigger extraction for a document")
-def extract_document(
-    document_id: str,
-    request: Request,
-    user: dict = Depends(get_current_user)
-):
-    conn = get_connection()
-    cur = conn.cursor()
-    cur.execute("SELECT * FROM documents WHERE id = %s", (document_id,))
-    doc = cur.fetchone()
-    if not doc:
-        raise HTTPException(status_code=404, detail="Document not found")
-
-    extracted = load_llm_data(doc["file_name"])
-    if not extracted:
-        raise HTTPException(status_code=404, detail=f"No extracted data found for {doc['file_name']}")
-
-    cur.execute("""
-        UPDATE documents SET extracted_data = %s, status = 'reviewed' WHERE id = %s RETURNING *
-    """, (json.dumps(extracted), document_id))
-    updated = dict(cur.fetchone())
-    conn.commit()
-    cur.close()
-    conn.close()
-
-    log_action(user["username"], "EXTRACT", "document", document_id, {"file": doc["file_name"]}, request.client.host)
-    return updated
-
-
-# ─────────────────────────────────────────────
-# GET /documents
-# ─────────────────────────────────────────────
+# ── GET /api/documents ────────────────────────────────────────────────────────
 @router.get("/documents", summary="List all documents")
 def list_documents(user: dict = Depends(get_current_user)):
     conn = get_connection()
@@ -114,11 +100,49 @@ def list_documents(user: dict = Depends(get_current_user)):
     return docs
 
 
-# ─────────────────────────────────────────────
-# GET /results/{document_id}
-# ─────────────────────────────────────────────
-@router.get("/results/{document_id}", summary="Get extracted results for a document")
-def get_results(document_id: str, user: dict = Depends(get_current_user)):
+# ── GET /api/documents/approved ───────────────────────────────────────────────
+@router.get("/documents/approved", summary="List approved documents")
+def list_approved(user: dict = Depends(get_current_user)):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT id, file_name, upload_date, validated_data FROM documents WHERE status = 'approved' ORDER BY upload_date DESC"
+    )
+    docs = [dict(r) for r in cur.fetchall()]
+    cur.close()
+    conn.close()
+    return docs
+
+
+# ── GET /api/documents/search ─────────────────────────────────────────────────
+@router.get("/documents/search", summary="Search approved documents")
+def search_documents(query: str, user: dict = Depends(get_current_user)):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute(
+        """
+        SELECT id, file_name, upload_date, status, validated_data, extracted_data
+        FROM documents
+        WHERE status = 'approved'
+        AND (
+            validated_data->'patient_information'->>'full_name' ILIKE %s
+            OR validated_data->'patient_information'->>'patient_identifier' ILIKE %s
+            OR extracted_data->'patient_information'->>'full_name' ILIKE %s
+            OR extracted_data->'patient_information'->>'patient_identifier' ILIKE %s
+        )
+        ORDER BY upload_date DESC
+        """,
+        (f"%{query}%", f"%{query}%", f"%{query}%", f"%{query}%"),
+    )
+    results = [dict(r) for r in cur.fetchall()]
+    cur.close()
+    conn.close()
+    return results
+
+
+# ── GET /api/documents/:id ────────────────────────────────────────────────────
+@router.get("/documents/{document_id}", summary="Get a single document")
+def get_document(document_id: str, user: dict = Depends(get_current_user)):
     conn = get_connection()
     cur = conn.cursor()
     cur.execute("SELECT * FROM documents WHERE id = %s", (document_id,))
@@ -130,35 +154,64 @@ def get_results(document_id: str, user: dict = Depends(get_current_user)):
     return dict(doc)
 
 
-# ─────────────────────────────────────────────
-# PUT /results/{document_id}
-# ─────────────────────────────────────────────
+# ── POST /api/documents/:id/load-extracted ────────────────────────────────────
+@router.post("/documents/{document_id}/load-extracted", summary="Load extracted data from JSON")
+def load_extracted(document_id: str, request: Request, user: dict = Depends(get_current_user)):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM documents WHERE id = %s", (document_id,))
+    doc = cur.fetchone()
+    if not doc:
+        raise HTTPException(status_code=404, detail="Document not found")
+
+    extracted = load_llm_data(doc["file_name"])
+    if not extracted:
+        raise HTTPException(status_code=404, detail=f"No extracted data found for {doc['file_name']}")
+
+    cur.execute(
+        "UPDATE documents SET extracted_data = %s, status = 'reviewed' WHERE id = %s RETURNING *",
+        (json.dumps(extracted), document_id),
+    )
+    updated = dict(cur.fetchone())
+    conn.commit()
+    cur.close()
+    conn.close()
+
+    log_action(user["username"], "LOAD_EXTRACTED", "document", document_id, {}, request.client.host)
+    return updated
+
+
+# ── PUT /api/documents/:id/data ───────────────────────────────────────────────
 class UpdateData(BaseModel):
     extracted_data: Optional[dict] = None
     validated_data: Optional[dict] = None
     review_notes: Optional[str] = None
 
-@router.put("/results/{document_id}", summary="Update reviewed data for a document")
-def update_results(
+
+@router.put("/documents/{document_id}/data", summary="Save edited document data")
+def update_document_data(
     document_id: str,
     body: UpdateData,
     request: Request,
-    user: dict = Depends(get_current_user)
+    user: dict = Depends(get_current_user),
 ):
     conn = get_connection()
     cur = conn.cursor()
-    cur.execute("""
+    cur.execute(
+        """
         UPDATE documents
         SET extracted_data = COALESCE(%s::jsonb, extracted_data),
             validated_data = COALESCE(%s::jsonb, validated_data),
             review_notes   = COALESCE(%s, review_notes)
         WHERE id = %s RETURNING *
-    """, (
-        json.dumps(body.extracted_data) if body.extracted_data else None,
-        json.dumps(body.validated_data) if body.validated_data else None,
-        body.review_notes,
-        document_id
-    ))
+        """,
+        (
+            json.dumps(body.extracted_data) if body.extracted_data else None,
+            json.dumps(body.validated_data) if body.validated_data else None,
+            body.review_notes,
+            document_id,
+        ),
+    )
     updated = cur.fetchone()
     conn.commit()
     cur.close()
@@ -167,27 +220,32 @@ def update_results(
     if not updated:
         raise HTTPException(status_code=404, detail="Document not found")
 
+    updated = dict(updated)
+    # Sync back to llm_extracted_data.json
+    sync_data = body.validated_data or body.extracted_data
+    if sync_data:
+        synced = sync_to_json(updated["file_name"], sync_data)
+        updated["json_synced"] = synced
+
     log_action(user["username"], "UPDATE", "document", document_id, {}, request.client.host)
-    return dict(updated)
+    return updated
 
 
-# ─────────────────────────────────────────────
-# POST /approve/{document_id}
-# ─────────────────────────────────────────────
+# ── PUT /api/documents/:id/approve ────────────────────────────────────────────
 class ApproveBody(BaseModel):
     notes: Optional[str] = None
     updated_data: Optional[dict] = None
 
-@router.post("/approve/{document_id}", summary="Approve a document")
+
+@router.put("/documents/{document_id}/approve", summary="Approve a document")
 def approve_document(
     document_id: str,
     body: ApproveBody,
     request: Request,
-    user: dict = Depends(get_current_user)
+    user: dict = Depends(get_current_user),
 ):
     conn = get_connection()
     cur = conn.cursor()
-
     cur.execute("SELECT * FROM documents WHERE id = %s", (document_id,))
     doc = cur.fetchone()
     if not doc:
@@ -195,39 +253,43 @@ def approve_document(
 
     final_data = body.updated_data or doc["extracted_data"]
 
-    # Save to review history
-    cur.execute("""
+    cur.execute(
+        """
         INSERT INTO review_history (document_id, action, previous_data, updated_data, reviewer, notes)
         VALUES (%s, %s, %s, %s, %s, %s)
-    """, (document_id, "approved", json.dumps(dict(doc["extracted_data"]) if doc["extracted_data"] else {}),
-          json.dumps(final_data), user["username"], body.notes))
-
-    # Update document
-    cur.execute("""
-        UPDATE documents SET status = 'approved', review_notes = %s, validated_data = %s
-        WHERE id = %s RETURNING *
-    """, (body.notes, json.dumps(final_data), document_id))
+        """,
+        (
+            document_id, "approved",
+            json.dumps(dict(doc["extracted_data"]) if doc["extracted_data"] else {}),
+            json.dumps(final_data),
+            user["username"], body.notes,
+        ),
+    )
+    cur.execute(
+        "UPDATE documents SET status = 'approved', review_notes = %s, validated_data = %s WHERE id = %s RETURNING *",
+        (body.notes, json.dumps(final_data), document_id),
+    )
     updated = dict(cur.fetchone())
     conn.commit()
     cur.close()
     conn.close()
 
+    sync_to_json(updated["file_name"], final_data if isinstance(final_data, dict) else dict(final_data))
     log_action(user["username"], "APPROVE", "document", document_id, {"notes": body.notes}, request.client.host)
     return updated
 
 
-# ─────────────────────────────────────────────
-# POST /reject/{document_id}
-# ─────────────────────────────────────────────
+# ── PUT /api/documents/:id/reject ─────────────────────────────────────────────
 class RejectBody(BaseModel):
     notes: str
 
-@router.post("/reject/{document_id}", summary="Reject a document")
+
+@router.put("/documents/{document_id}/reject", summary="Reject a document")
 def reject_document(
     document_id: str,
     body: RejectBody,
     request: Request,
-    user: dict = Depends(get_current_user)
+    user: dict = Depends(get_current_user),
 ):
     conn = get_connection()
     cur = conn.cursor()
@@ -236,15 +298,21 @@ def reject_document(
     if not doc:
         raise HTTPException(status_code=404, detail="Document not found")
 
-    cur.execute("""
+    cur.execute(
+        """
         INSERT INTO review_history (document_id, action, previous_data, reviewer, notes)
         VALUES (%s, %s, %s, %s, %s)
-    """, (document_id, "rejected", json.dumps(dict(doc["extracted_data"]) if doc["extracted_data"] else {}),
-          user["username"], body.notes))
-
-    cur.execute("""
-        UPDATE documents SET status = 'rejected', review_notes = %s WHERE id = %s RETURNING *
-    """, (body.notes, document_id))
+        """,
+        (
+            document_id, "rejected",
+            json.dumps(dict(doc["extracted_data"]) if doc["extracted_data"] else {}),
+            user["username"], body.notes,
+        ),
+    )
+    cur.execute(
+        "UPDATE documents SET status = 'rejected', review_notes = %s WHERE id = %s RETURNING *",
+        (body.notes, document_id),
+    )
     updated = dict(cur.fetchone())
     conn.commit()
     cur.close()
@@ -254,9 +322,55 @@ def reject_document(
     return updated
 
 
-# ─────────────────────────────────────────────
-# GET /audit-logs
-# ─────────────────────────────────────────────
+# ── DELETE /api/documents/:id ─────────────────────────────────────────────────
+@router.delete("/documents/{document_id}", summary="Delete a document")
+def delete_document(document_id: str, request: Request, user: dict = Depends(get_current_user)):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("DELETE FROM review_history WHERE document_id = %s", (document_id,))
+    cur.execute("DELETE FROM documents WHERE id = %s", (document_id,))
+    conn.commit()
+    cur.close()
+    conn.close()
+    log_action(user["username"], "DELETE", "document", document_id, {}, request.client.host)
+    return {"message": "Document deleted"}
+
+
+# ── GET /api/reviews ──────────────────────────────────────────────────────────
+@router.get("/reviews", summary="Get all review history")
+def get_all_reviews(user: dict = Depends(get_current_user)):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute(
+        """
+        SELECT rh.*, d.file_name
+        FROM review_history rh
+        JOIN documents d ON rh.document_id = d.id
+        ORDER BY rh.reviewed_at DESC
+        """
+    )
+    rows = [dict(r) for r in cur.fetchall()]
+    cur.close()
+    conn.close()
+    return rows
+
+
+# ── GET /api/reviews/:document_id ────────────────────────────────────────────
+@router.get("/reviews/{document_id}", summary="Get review history for a document")
+def get_document_reviews(document_id: str, user: dict = Depends(get_current_user)):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT * FROM review_history WHERE document_id = %s ORDER BY reviewed_at DESC",
+        (document_id,),
+    )
+    rows = [dict(r) for r in cur.fetchall()]
+    cur.close()
+    conn.close()
+    return rows
+
+
+# ── GET /api/audit-logs ───────────────────────────────────────────────────────
 @router.get("/audit-logs", summary="Get audit logs (admin only)")
 def get_audit_logs(user: dict = Depends(get_current_user)):
     if user["role"] != "admin":
@@ -268,28 +382,3 @@ def get_audit_logs(user: dict = Depends(get_current_user)):
     cur.close()
     conn.close()
     return logs
-
-
-# ─────────────────────────────────────────────
-# GET /search
-# ─────────────────────────────────────────────
-@router.get("/search", summary="Search approved documents by patient name or ID")
-def search_documents(query: str, user: dict = Depends(get_current_user)):
-    conn = get_connection()
-    cur = conn.cursor()
-    cur.execute("""
-        SELECT id, file_name, upload_date, status, validated_data, extracted_data
-        FROM documents
-        WHERE status = 'approved'
-        AND (
-            validated_data->'patient_information'->>'full_name' ILIKE %s
-            OR validated_data->'patient_information'->>'patient_identifier' ILIKE %s
-            OR extracted_data->'patient_information'->>'full_name' ILIKE %s
-            OR extracted_data->'patient_information'->>'patient_identifier' ILIKE %s
-        )
-        ORDER BY upload_date DESC
-    """, (f"%{query}%", f"%{query}%", f"%{query}%", f"%{query}%"))
-    results = [dict(r) for r in cur.fetchall()]
-    cur.close()
-    conn.close()
-    return results

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const API = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const API = process.env.REACT_APP_API_URL || 'http://localhost:9000';
+const authHeaders = () => ({ Authorization: `Bearer ${localStorage.getItem('token') || ''}` });
 
 interface Document {
   id: string;
@@ -22,7 +23,7 @@ export default function Dashboard() {
 
   const fetchDocuments = async () => {
     try {
-      const res = await axios.get(`${API}/api/documents`);
+      const res = await axios.get(`${API}/api/documents`, { headers: authHeaders() });
       setDocuments(res.data);
     } catch (err) {
       console.error(err);
@@ -35,9 +36,9 @@ export default function Dashboard() {
     if (!e.target.files?.length) return;
     setUploading(true);
     const formData = new FormData();
-    formData.append('pdf', e.target.files[0]);
+    formData.append('file', e.target.files[0]);
     try {
-      await axios.post(`${API}/api/documents/upload`, formData);
+      await axios.post(`${API}/api/documents/upload`, formData, { headers: authHeaders() });
       fetchDocuments();
     } catch (err) {
       alert('Upload failed');
@@ -48,7 +49,7 @@ export default function Dashboard() {
 
   const handleDelete = async (id: string) => {
     if (!window.confirm('Delete this document?')) return;
-    await axios.delete(`${API}/api/documents/${id}`);
+    await axios.delete(`${API}/api/documents/${id}`, { headers: authHeaders() });
     fetchDocuments();
   };
 
@@ -107,7 +108,7 @@ export default function Dashboard() {
               </tr>
             ))}
             {!documents.length && (
-              <tr><td colSpan={5} style={{textAlign:'center', padding:'2rem'}}>No documents yet — upload a PDF to get started</td></tr>
+              <tr><td colSpan={5} style={{ textAlign: 'center', padding: '2rem' }}>No documents yet — upload a PDF to get started</td></tr>
             )}
           </tbody>
         </table>

@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const API = process.env.REACT_APP_API_URL || 'http://localhost:9000';
+const authHeaders = () => ({ Authorization: `Bearer ${localStorage.getItem('token') || ''}` });
 
 export default function HistoryPage() {
   const [history, setHistory] = useState<any[]>([]);
 
   useEffect(() => {
-    axios.get(`${API}/api/reviews`).then(res => setHistory(res.data));
+    axios.get(`${API}/api/reviews`, { headers: authHeaders() }).then(res => setHistory(res.data));
   }, []);
 
   return (
@@ -34,7 +35,7 @@ export default function HistoryPage() {
             </tr>
           ))}
           {!history.length && (
-            <tr><td colSpan={5} style={{textAlign:'center', padding:'2rem'}}>No review history yet</td></tr>
+            <tr><td colSpan={5} style={{ textAlign: 'center', padding: '2rem' }}>No review history yet</td></tr>
           )}
         </tbody>
       </table>

@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from routers import documents, auth
+from core.database import init_db
+from pathlib import Path
 import logging
 
 logging.basicConfig(
@@ -28,12 +31,24 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Serve uploaded PDFs at /uploads/<filename>
+UPLOAD_DIR = Path(__file__).resolve().parent / "uploads"
+UPLOAD_DIR.mkdir(exist_ok=True)
+app.mount("/uploads", StaticFiles(directory=str(UPLOAD_DIR)), name="uploads")
+
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
 app.include_router(documents.router, prefix="/api", tags=["Documents"])
+
+
+@app.on_event("startup")
+def startup():
+    init_db()
+
 
 @app.get("/", tags=["Health"])
 def root():
     return {"status": "ok", "message": "MED AI FastAPI Backend", "docs": "/docs"}
+
 
 @app.get("/health", tags=["Health"])
 def health():

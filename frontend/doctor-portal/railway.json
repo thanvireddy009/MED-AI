@@ -1,4 +1,0 @@
-{
- "build": { "builder": "NIXPACKS" },
- "deploy": { "startCommand": "npx serve -s build -l $PORT", "restartPolicyType": "ON_FAILURE" }
-}
