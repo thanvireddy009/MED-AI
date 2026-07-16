@@ -7,7 +7,10 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from dotenv import load_dotenv
 from pathlib import Path
 
-load_dotenv(dotenv_path=Path(__file__).resolve().parents[3] / ".env")
+# Load .env locally if it exists (ignored on Railway — env vars set in dashboard)
+env_path = Path(__file__).resolve().parents[3] / ".env"
+if env_path.exists():
+    load_dotenv(dotenv_path=env_path)
 
 SECRET_KEY = os.getenv("JWT_SECRET", "med-ai-secret-key-change-in-production")
 ALGORITHM = "HS256"

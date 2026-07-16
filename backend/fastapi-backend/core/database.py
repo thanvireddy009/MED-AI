@@ -4,15 +4,16 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 
-# Load .env from parent MED AI folder
+# Load .env locally if it exists (ignored on Railway — env vars set in dashboard)
 env_path = Path(__file__).resolve().parents[3] / ".env"
-load_dotenv(dotenv_path=env_path)
+if env_path.exists():
+    load_dotenv(dotenv_path=env_path)
 
 def get_connection():
-    return psycopg2.connect(
-        os.getenv("NEON_CONNECTION_STRING"),
-        cursor_factory=psycopg2.extras.RealDictCursor
-    )
+    conn_str = os.getenv("NEON_CONNECTION_STRING")
+    if not conn_str:
+        raise RuntimeError("NEON_CONNECTION_STRING environment variable is not set")
+    return psycopg2.connect(conn_str, cursor_factory=psycopg2.extras.RealDictCursor)
 
 def init_db():
     """Create tables if they don't exist."""

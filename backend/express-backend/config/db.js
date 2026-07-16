@@ -1,12 +1,12 @@
 const { Pool } = require('pg');
 const dotenv = require('dotenv');
 const path = require('path');
+const fs = require('fs');
 
-dotenv.config({ path: path.join(__dirname, '../../../.env') });
-
-// Fallback: try parent directories
-if (!process.env.NEON_CONNECTION_STRING) {
-  dotenv.config({ path: path.join(__dirname, '../../../../.env') });
+// Load .env locally if it exists (ignored on Railway — env vars set in dashboard)
+const envPath = path.join(__dirname, '../../../.env');
+if (fs.existsSync(envPath)) {
+    dotenv.config({ path: envPath });
 }
 
 const pool = new Pool({

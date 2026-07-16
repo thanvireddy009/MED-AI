@@ -3,7 +3,12 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const path = require('path');
 
-dotenv.config({ path: path.join(__dirname, '../../../.env') });
+// Load .env locally if it exists (ignored on Railway — env vars set in dashboard)
+const envPath = path.join(__dirname, '../../../.env');
+const fs = require('fs');
+if (fs.existsSync(envPath)) {
+    dotenv.config({ path: envPath });
+}
 
 const app = express();
 app.use(cors());
