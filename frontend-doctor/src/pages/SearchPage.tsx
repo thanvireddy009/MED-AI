@@ -4,11 +4,7 @@ import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL || 'http://localhost:9000';
 
-interface Props {
-  onLogout: () => void;
-}
-
-export default function DoctorSearch({ onLogout }: Props) {
+export default function SearchPage({ onLogout }: { onLogout: () => void }) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
@@ -43,7 +39,6 @@ export default function DoctorSearch({ onLogout }: Props) {
           <button className="logout-btn" onClick={onLogout}>Sign Out</button>
         </div>
       </nav>
-
       <div className="portal-content">
         <div className="search-hero">
           <h1>Patient Record Search</h1>
@@ -62,12 +57,10 @@ export default function DoctorSearch({ onLogout }: Props) {
             </button>
           </div>
         </div>
-
         {searched && (
           <div className="results-section">
             {results.length === 0 ? (
               <div className="no-results">
-                <span>📋</span>
                 <p>No approved reports found for "<strong>{query}</strong>"</p>
                 <small>Only approved documents are accessible.</small>
               </div>
@@ -78,7 +71,7 @@ export default function DoctorSearch({ onLogout }: Props) {
                   {results.map(doc => {
                     const pi = (doc.validated_data || doc.extracted_data)?.patient_information || {};
                     return (
-                      <div className="result-card" key={doc.id} onClick={() => navigate(`/doctor/patient/${doc.id}`)}>
+                      <div className="result-card" key={doc.id} onClick={() => navigate(`/patient/${doc.id}`)}>
                         <div className="card-header">
                           <span className="patient-name">{pi.full_name || 'Unknown Patient'}</span>
                           <span className="patient-id">{pi.patient_identifier || '—'}</span>

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL || 'http://localhost:9000';
 
-export default function DoctorPatient() {
+export default function PatientPage() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [doc, setDoc] = useState<any>(null);
@@ -20,7 +20,6 @@ export default function DoctorPatient() {
   if (!doc) return <div className="loading">Loading patient record...</div>;
 
   const data = doc.validated_data || doc.extracted_data || {};
-
   const sections = [
     { key: 'patient_information', label: '👤 Patient Information' },
     { key: 'adverse_events', label: '⚠️ Adverse Events' },
@@ -36,10 +35,9 @@ export default function DoctorPatient() {
         <div className="nav-brand">🏥 MED AI — Doctor Portal</div>
         <div className="nav-right">
           <span className="doctor-name">👤 {doctorName}</span>
-          <button className="logout-btn" onClick={() => navigate('/doctor')}>← Back to Search</button>
+          <button className="logout-btn" onClick={() => navigate('/')}>← Back to Search</button>
         </div>
       </nav>
-
       <div className="portal-content">
         <div className="patient-header">
           <div>
@@ -48,12 +46,10 @@ export default function DoctorPatient() {
           </div>
           <span className="approved-tag">✓ Approved Report</span>
         </div>
-
         <div className="sections-grid">
           {sections.map(({ key, label }) => {
             const sectionData = data[key];
             if (!sectionData) return null;
-
             if (Array.isArray(sectionData)) {
               if (!sectionData.length || sectionData.every((i: any) => Object.values(i).every(v => !v || v === 'N/A'))) return null;
               return (
@@ -72,10 +68,8 @@ export default function DoctorPatient() {
                 </div>
               );
             }
-
             const entries = Object.entries(sectionData).filter(([, v]) => v && v !== 'N/A');
             if (!entries.length) return null;
-
             return (
               <div className="section-card" key={key}>
                 <h2>{label}</h2>

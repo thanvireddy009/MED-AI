@@ -3,11 +3,7 @@ import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL || 'http://localhost:9000';
 
-interface Props {
-  onLogin: (token: string, name: string, username: string) => void;
-}
-
-export default function DoctorLogin({ onLogin }: Props) {
+export default function LoginPage({ onLogin }: { onLogin: () => void }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -25,7 +21,7 @@ export default function DoctorLogin({ onLogin }: Props) {
       }
       sessionStorage.setItem('doctor_token', res.data.access_token);
       sessionStorage.setItem('doctor_name', res.data.username);
-      onLogin(res.data.access_token, res.data.username, res.data.username);
+      onLogin();
     } catch {
       setError('Invalid username or password');
     } finally {
@@ -42,27 +38,14 @@ export default function DoctorLogin({ onLogin }: Props) {
         <form onSubmit={handleLogin}>
           <div className="form-group">
             <label>Username</label>
-            <input
-              type="text"
-              value={username}
-              onChange={e => { setUsername(e.target.value); setError(''); }}
-              placeholder="Enter your username"
-              autoFocus
-            />
+            <input type="text" value={username} onChange={e => { setUsername(e.target.value); setError(''); }} placeholder="Enter your username" autoFocus />
           </div>
           <div className="form-group">
             <label>Password</label>
-            <input
-              type="password"
-              value={password}
-              onChange={e => { setPassword(e.target.value); setError(''); }}
-              placeholder="Enter your password"
-            />
+            <input type="password" value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" />
           </div>
           {error && <div className="login-error">{error}</div>}
-          <button type="submit" className="login-btn" disabled={loading}>
-            {loading ? 'Signing in...' : 'Sign In'}
-          </button>
+          <button type="submit" className="login-btn" disabled={loading}>{loading ? 'Signing in...' : 'Sign In'}</button>
         </form>
         <div className="login-hint">
           <p>Doctor accounts:</p>

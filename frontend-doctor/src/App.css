@@ -1,0 +1,80 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.loading { text-align: center; padding: 3rem; color: #64748b; }
+
+/* Login */
+.login-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.login-card { background: white; border-radius: 12px; padding: 2.5rem; width: 100%; max-width: 420px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); text-align: center; }
+.login-logo { font-size: 3rem; margin-bottom: 0.5rem; }
+.login-card h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+.login-subtitle { color: #64748b; margin-bottom: 1.5rem; font-size: 0.95rem; }
+.form-group { text-align: left; margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 0.85rem; color: #475569; margin-bottom: 0.4rem; font-weight: 500; }
+.form-group input { width: 100%; padding: 0.65rem 0.9rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.95rem; }
+.form-group input:focus { outline: none; border-color: #3b82f6; }
+.login-btn { width: 100%; background: #3b82f6; color: white; border: none; padding: 0.75rem; border-radius: 6px; font-size: 1rem; cursor: pointer; margin-top: 0.5rem; }
+.login-btn:hover { background: #2563eb; }
+.login-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.login-error { background: #fee2e2; color: #dc2626; padding: 0.5rem; border-radius: 4px; font-size: 0.85rem; margin-bottom: 0.75rem; }
+.login-hint { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #f1f5f9; font-size: 0.78rem; color: #94a3b8; text-align: left; }
+
+/* Portal layout */
+.portal-layout { min-height: 100vh; background: #f1f5f9; }
+.portal-nav { background: #1e293b; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { color: white; font-size: 1.1rem; font-weight: 700; }
+.nav-right { display: flex; align-items: center; gap: 1rem; }
+.doctor-name { color: #94a3b8; font-size: 0.9rem; }
+.logout-btn { background: none; border: 1px solid #475569; color: #94a3b8; padding: 0.4rem 0.9rem; border-radius: 6px; cursor: pointer; font-size: 0.85rem; }
+.logout-btn:hover { border-color: #94a3b8; color: white; }
+.portal-content { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+
+/* Search */
+.search-hero { text-align: center; padding: 2rem 0 1.5rem; }
+.search-hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+.search-hero p { color: #64748b; margin-bottom: 1.5rem; }
+.search-bar { display: flex; gap: 0.75rem; max-width: 700px; margin: 0 auto; }
+.search-input { flex: 1; padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 1rem; }
+.search-input:focus { outline: none; border-color: #3b82f6; }
+.search-btn { background: #3b82f6; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; cursor: pointer; font-size: 1rem; white-space: nowrap; }
+.search-btn:hover { background: #2563eb; }
+.search-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.results-section { margin-top: 1.5rem; }
+.results-count { color: #64748b; font-size: 0.85rem; margin-bottom: 0.75rem; }
+.no-results { text-align: center; padding: 2rem; color: #64748b; background: white; border-radius: 8px; }
+.results-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+
+/* Result cards */
+.result-card { background: white; border-radius: 8px; padding: 1rem 1.5rem; cursor: pointer; border: 1px solid #e2e8f0; transition: border-color 0.15s; }
+.result-card:hover { border-color: #3b82f6; box-shadow: 0 2px 8px rgba(59,130,246,0.1); }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+.patient-name { font-weight: 600; font-size: 1rem; }
+.patient-id { color: #3b82f6; font-size: 0.85rem; font-weight: 500; }
+.card-details { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem; font-size: 0.82rem; color: #64748b; margin-bottom: 0.75rem; }
+.card-details div { display: flex; justify-content: space-between; }
+.card-details strong { color: #1e293b; }
+.card-footer { display: flex; justify-content: space-between; font-size: 0.8rem; color: #94a3b8; border-top: 1px solid #f1f5f9; padding-top: 0.5rem; }
+.view-link { color: #3b82f6; }
+
+/* Patient record */
+.patient-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; }
+.patient-header h1 { font-size: 1.5rem; }
+.patient-header p { color: #64748b; font-size: 0.9rem; }
+.approved-tag { background: #10b981; color: white; padding: 0.35rem 0.9rem; border-radius: 999px; font-size: 0.8rem; white-space: nowrap; }
+.sections-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.section-card { background: white; border-radius: 8px; padding: 1rem 1.25rem; border: 1px solid #e2e8f0; }
+.section-card h2 { font-size: 0.85rem; color: #3b82f6; text-transform: uppercase; margin-bottom: 0.75rem; font-weight: 600; }
+.field-row { display: flex; justify-content: space-between; padding: 0.35rem 0; border-bottom: 1px solid #f8fafc; font-size: 0.85rem; }
+.field-label { color: #64748b; text-transform: capitalize; }
+.field-value { font-weight: 500; text-align: right; max-width: 55%; word-break: break-word; }
+.array-item { background: #f8fafc; border-radius: 4px; padding: 0.5rem; margin-bottom: 0.5rem; }
+
+@media (max-width: 700px) {
+  .sections-grid { grid-template-columns: 1fr; }
+  .search-bar { flex-direction: column; }
+}

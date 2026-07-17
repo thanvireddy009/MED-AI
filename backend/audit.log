@@ -18,3 +18,5 @@ LINE 2:             INSERT INTO audit_logs (user_id, action, resourc...
                                 ^
 
 2026-07-16 13:49:44,114 — INFO — AUDIT | user=admin action=LOGIN_SUCCESS resource=None id=None details=None
+2026-07-17 12:59:30,254 — INFO — AUDIT | user=dr.smith action=LOGIN_SUCCESS resource=None id=None details=None
+2026-07-17 12:59:45,713 — INFO — AUDIT | user=dr.smith action=LOGIN_SUCCESS resource=None id=None details=None
