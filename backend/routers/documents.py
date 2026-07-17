@@ -19,7 +19,7 @@ UPLOAD_DIR = Path(__file__).resolve().parent.parent / "uploads"
 UPLOAD_DIR.mkdir(exist_ok=True)
 
 # llm_extracted_data.json lives at the repo root (MED AI/)
-LLM_JSON_PATH = Path(__file__).resolve().parents[4] / "llm_extracted_data.json"
+LLM_JSON_PATH = Path(__file__).resolve().parents[3] / "llm_extracted_data.json"
 
 
 def load_llm_data(file_name: str):

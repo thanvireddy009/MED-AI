@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 # Load .env locally if present; on Railway env vars are set in dashboard
-env_path = Path(__file__).resolve().parents[3] / ".env"
+env_path = Path(__file__).resolve().parents[2] / ".env"
 if env_path.exists():
     load_dotenv(dotenv_path=env_path)
 
