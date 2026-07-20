@@ -9,7 +9,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import Optional
 from core.database import get_connection
-from core.auth import get_current_user
+from core.auth import get_current_user, require_role
 from core.audit import log_action
 
 router = APIRouter()
@@ -54,7 +54,7 @@ def sync_to_json(file_name: str, updated_data: dict) -> bool:
 async def upload_document(
     request: Request,
     file: UploadFile = File(...),
-    user: dict = Depends(get_current_user),
+    user: dict = Depends(require_role("reviewer")),
 ):
     if not file.filename.endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files are accepted")
@@ -90,7 +90,7 @@ async def upload_document(
 
 # ── GET /api/documents ────────────────────────────────────────────────────────
 @router.get("/documents", summary="List all documents")
-def list_documents(user: dict = Depends(get_current_user)):
+def list_documents(user: dict = Depends(require_role("reviewer"))):
     conn = get_connection()
     cur = conn.cursor()
     cur.execute("SELECT id, file_name, upload_date, status, review_notes FROM documents ORDER BY upload_date DESC")
@@ -102,7 +102,7 @@ def list_documents(user: dict = Depends(get_current_user)):
 
 # ── GET /api/documents/approved ───────────────────────────────────────────────
 @router.get("/documents/approved", summary="List approved documents")
-def list_approved(user: dict = Depends(get_current_user)):
+def list_approved(user: dict = Depends(require_role("doctor"))):
     conn = get_connection()
     cur = conn.cursor()
     cur.execute(
@@ -116,7 +116,7 @@ def list_approved(user: dict = Depends(get_current_user)):
 
 # ── GET /api/documents/search ─────────────────────────────────────────────────
 @router.get("/documents/search", summary="Search approved documents")
-def search_documents(query: str, user: dict = Depends(get_current_user)):
+def search_documents(query: str, user: dict = Depends(require_role("doctor"))):
     conn = get_connection()
     cur = conn.cursor()
     cur.execute(
@@ -151,12 +151,16 @@ def get_document(document_id: str, user: dict = Depends(get_current_user)):
     conn.close()
     if not doc:
         raise HTTPException(status_code=404, detail="Document not found")
-    return dict(doc)
+    document = dict(doc)
+    # Doctors can only retrieve approved reports; reviewers and admins can review any report.
+    if user["role"] == "doctor" and document["status"] != "approved":
+        raise HTTPException(status_code=403, detail="Doctors can only access approved documents")
+    return document
 
 
 # ── POST /api/documents/:id/load-extracted ────────────────────────────────────
 @router.post("/documents/{document_id}/load-extracted", summary="Load extracted data from JSON")
-def load_extracted(document_id: str, request: Request, user: dict = Depends(get_current_user)):
+def load_extracted(document_id: str, request: Request, user: dict = Depends(require_role("reviewer"))):
     conn = get_connection()
     cur = conn.cursor()
     cur.execute("SELECT * FROM documents WHERE id = %s", (document_id,))
@@ -193,7 +197,7 @@ def update_document_data(
     document_id: str,
     body: UpdateData,
     request: Request,
-    user: dict = Depends(get_current_user),
+    user: dict = Depends(require_role("reviewer")),
 ):
     conn = get_connection()
     cur = conn.cursor()
@@ -242,7 +246,7 @@ def approve_document(
     document_id: str,
     body: ApproveBody,
     request: Request,
-    user: dict = Depends(get_current_user),
+    user: dict = Depends(require_role("reviewer")),
 ):
     conn = get_connection()
     cur = conn.cursor()
@@ -289,7 +293,7 @@ def reject_document(
     document_id: str,
     body: RejectBody,
     request: Request,
-    user: dict = Depends(get_current_user),
+    user: dict = Depends(require_role("reviewer")),
 ):
     conn = get_connection()
     cur = conn.cursor()
@@ -324,7 +328,7 @@ def reject_document(
 
 # ── DELETE /api/documents/:id ─────────────────────────────────────────────────
 @router.delete("/documents/{document_id}", summary="Delete a document")
-def delete_document(document_id: str, request: Request, user: dict = Depends(get_current_user)):
+def delete_document(document_id: str, request: Request, user: dict = Depends(require_role("reviewer"))):
     conn = get_connection()
     cur = conn.cursor()
     cur.execute("DELETE FROM review_history WHERE document_id = %s", (document_id,))
@@ -338,7 +342,7 @@ def delete_document(document_id: str, request: Request, user: dict = Depends(get
 
 # ── GET /api/reviews ──────────────────────────────────────────────────────────
 @router.get("/reviews", summary="Get all review history")
-def get_all_reviews(user: dict = Depends(get_current_user)):
+def get_all_reviews(user: dict = Depends(require_role("reviewer"))):
     conn = get_connection()
     cur = conn.cursor()
     cur.execute(
@@ -357,7 +361,7 @@ def get_all_reviews(user: dict = Depends(get_current_user)):
 
 # ── GET /api/reviews/:document_id ────────────────────────────────────────────
 @router.get("/reviews/{document_id}", summary="Get review history for a document")
-def get_document_reviews(document_id: str, user: dict = Depends(get_current_user)):
+def get_document_reviews(document_id: str, user: dict = Depends(require_role("reviewer"))):
     conn = get_connection()
     cur = conn.cursor()
     cur.execute(
