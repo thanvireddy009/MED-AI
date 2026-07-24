@@ -2,18 +2,129 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Session } from '../auth';
+
 const API = process.env.REACT_APP_API_URL || 'http://localhost:9000';
-const sections = [['patient_information', 'Patient Information'], ['adverse_events', 'Adverse Events'], ['suspect_drug', 'Suspect Drug'], ['medical_history', 'Medical History'], ['reporter_information', 'Reporter Information']];
+const sections = [
+  ['patient_information', 'Patient Information'],
+  ['adverse_events', 'Adverse Events'],
+  ['suspect_drug', 'Suspect Drug'],
+  ['medical_history', 'Medical History'],
+  ['reporter_information', 'Reporter Information'],
+];
+
 export default function ReviewPage({ session }: { session: Session }) {
-  const { id } = useParams(); const navigate = useNavigate(); const [doc, setDoc] = useState<any>(null); const [data, setData] = useState<any>(null); const [notes, setNotes] = useState(''); const [saving, setSaving] = useState(false);
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [doc, setDoc] = useState<any>(null);
+  const [data, setData] = useState<any>(null);
+  const [notes, setNotes] = useState('');
+  const [saving, setSaving] = useState(false);
+  const [loadingData, setLoadingData] = useState(false);
+
   const headers = { Authorization: `Bearer ${session.token}` };
-  const load = async () => { const result = await axios.get(`${API}/api/documents/${id}`, { headers }); setDoc(result.data); setData(result.data.extracted_data || null); setNotes(result.data.review_notes || ''); };
+
+  const load = async () => {
+    const result = await axios.get(`${API}/api/documents/${id}`, { headers });
+    setDoc(result.data);
+    setNotes(result.data.review_notes || '');
+    if (result.data.extracted_data) {
+      setData(result.data.extracted_data);
+    } else {
+      // Auto-load from DB if not already stored on the document
+      setLoadingData(true);
+      try {
+        const ex = await axios.post(`${API}/api/documents/${id}/load-extracted`, {}, { headers });
+        setDoc(ex.data);
+        setData(ex.data.extracted_data);
+      } catch {
+        // No extracted data available for this file
+      } finally {
+        setLoadingData(false);
+      }
+    }
+  };
+
   useEffect(() => { load().catch(() => navigate('/dashboard', { replace: true })); }, [id]);
-  const extract = async () => { try { const result = await axios.post(`${API}/api/documents/${id}/load-extracted`, {}, { headers }); setDoc(result.data); setData(result.data.extracted_data); } catch { alert('Could not load extracted data.'); } };
-  const save = async () => { setSaving(true); try { await axios.put(`${API}/api/documents/${id}/data`, { extracted_data: data, validated_data: data }, { headers }); alert('Saved.'); } finally { setSaving(false); } };
-  const approve = async () => { if (window.confirm('Approve this document?')) { await axios.put(`${API}/api/documents/${id}/approve`, { notes, updated_data: data }, { headers }); navigate('/dashboard'); } };
-  const reject = async () => { const reason = window.prompt('Reason for rejection:'); if (reason) { await axios.put(`${API}/api/documents/${id}/reject`, { notes: reason }, { headers }); navigate('/dashboard'); } };
-  const change = (section: string, field: string, value: string) => setData((previous: any) => ({ ...previous, [section]: { ...previous[section], [field]: value } }));
+
+  const save = async () => {
+    setSaving(true);
+    try {
+      await axios.put(`${API}/api/documents/${id}/data`, { extracted_data: data, validated_data: data }, { headers });
+      alert('Saved.');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const approve = async () => {
+    if (window.confirm('Approve this document?')) {
+      await axios.put(`${API}/api/documents/${id}/approve`, { notes, updated_data: data }, { headers });
+      navigate('/dashboard');
+    }
+  };
+
+  const reject = async () => {
+    const reason = window.prompt('Reason for rejection:');
+    if (reason) {
+      await axios.put(`${API}/api/documents/${id}/reject`, { notes: reason }, { headers });
+      navigate('/dashboard');
+    }
+  };
+
+  const change = (section: string, field: string, value: string) =>
+    setData((prev: any) => ({ ...prev, [section]: { ...prev[section], [field]: value } }));
+
   if (!doc) return <div className="loading">Loading document…</div>;
-  return <main className="main-content review-page"><div className="review-header"><button className="back-btn" onClick={() => navigate('/dashboard')}>← Back</button><h2>{doc.file_name}</h2><span className={`status-badge status-${doc.status}`}>{doc.status}</span></div><div className="review-layout"><section className="pdf-panel"><h3>Original Document</h3><iframe src={`${API}/uploads/${doc.file_path.split('/').pop()}`} width="100%" height="700" title="PDF preview" /></section><section className="data-panel"><h3>Extracted Data</h3>{!data ? <div className="no-data"><p>No extracted data yet.</p><button className="load-btn" onClick={extract}>Load Extracted Data</button></div> : <>{sections.map(([key, label]) => data[key] && !Array.isArray(data[key]) && <div className="section-card" key={key}><h4>{label}</h4>{Object.entries(data[key]).map(([field, value]) => <div className="field-row" key={field}><label>{field.replace(/_/g, ' ')}</label><input value={String(value || '')} onChange={event => change(key, field, event.target.value)} /></div>)}</div>)}<div className="notes-section"><label>Review Notes</label><textarea rows={3} value={notes} maxLength={144} onChange={event => setNotes(event.target.value)} /><small style={{display:'block',textAlign:'right',fontSize:'0.75rem',color: notes.length >= 144 ? '#ef4444' : '#94a3b8'}}>{notes.length}/144</small></div><div className="action-buttons"><button className="save-btn" onClick={save} disabled={saving}>{saving ? 'Saving…' : 'Save Changes'}</button><button className="approve-btn" onClick={approve}>✓ Approve</button><button className="reject-btn" onClick={reject}>✗ Reject</button></div></>}</section></div></main>;
+
+  return (
+    <main className="main-content review-page">
+      <div className="review-header">
+        <button className="back-btn" onClick={() => navigate('/dashboard')}>← Back</button>
+        <h2>{doc.file_name}</h2>
+        <span className={`status-badge status-${doc.status}`}>{doc.status}</span>
+      </div>
+      <div className="review-layout">
+        <section className="pdf-panel">
+          <h3>Original Document</h3>
+          <iframe src={`${API}/uploads/${doc.file_path.split('/').pop()}`} width="100%" height="700" title="PDF preview" />
+        </section>
+        <section className="data-panel">
+          <h3>Extracted Data</h3>
+          {loadingData ? (
+            <div className="loading">Loading extracted data…</div>
+          ) : !data ? (
+            <div className="no-data"><p>No extracted data available for this document.</p></div>
+          ) : (
+            <>
+              {sections.map(([key, label]) =>
+                data[key] && !Array.isArray(data[key]) && (
+                  <div className="section-card" key={key}>
+                    <h4>{label}</h4>
+                    {Object.entries(data[key]).map(([field, value]) => (
+                      <div className="field-row" key={field}>
+                        <label>{field.replace(/_/g, ' ')}</label>
+                        <input value={String(value || '')} onChange={e => change(key, field, e.target.value)} />
+                      </div>
+                    ))}
+                  </div>
+                )
+              )}
+              <div className="notes-section">
+                <label>Review Notes</label>
+                <textarea rows={3} value={notes} maxLength={144} onChange={e => setNotes(e.target.value)} />
+                <small style={{ display: 'block', textAlign: 'right', fontSize: '0.75rem', color: notes.length >= 144 ? '#ef4444' : '#94a3b8' }}>
+                  {notes.length}/144
+                </small>
+              </div>
+              <div className="action-buttons">
+                <button className="save-btn" onClick={save} disabled={saving}>{saving ? 'Saving…' : 'Save Changes'}</button>
+                <button className="approve-btn" onClick={approve}>✓ Approve</button>
+                <button className="reject-btn" onClick={reject}>✗ Reject</button>
+              </div>
+            </>
+          )}
+        </section>
+      </div>
+    </main>
+  );
 }
