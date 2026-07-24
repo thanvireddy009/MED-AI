@@ -24,6 +24,7 @@ LLM_JSON_PATH = Path(__file__).resolve().parents[3] / "llm_extracted_data.json"
 
 def load_llm_data(file_name: str):
     """Load extracted data from DB first, fall back to local JSON file."""
+    logger.info(f"load_llm_data called with file_name='{file_name}'")
     # Try DB first (works in production)
     try:
         conn = get_connection()
@@ -33,7 +34,10 @@ def load_llm_data(file_name: str):
         cur.close()
         conn.close()
         if row:
+            logger.info(f"load_llm_data: found match in DB for '{file_name}'")
             return row["extracted_data"]
+        else:
+            logger.warning(f"load_llm_data: NO match in DB for '{file_name}'")
     except Exception as e:
         logger.warning(f"DB lookup for llm data failed: {e}")
 
