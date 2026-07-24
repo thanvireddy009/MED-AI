@@ -52,6 +52,13 @@ def init_db():
             details JSONB,
             ip_address TEXT
         );
+
+        CREATE TABLE IF NOT EXISTS llm_extracted_data (
+            id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+            file_name TEXT UNIQUE NOT NULL,
+            extracted_data JSONB NOT NULL,
+            updated_at TIMESTAMP DEFAULT NOW()
+        );
     """)
     conn.commit()
     cur.close()

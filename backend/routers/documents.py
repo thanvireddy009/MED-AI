@@ -18,35 +18,70 @@ logger = logging.getLogger(__name__)
 UPLOAD_DIR = Path(__file__).resolve().parent.parent / "uploads"
 UPLOAD_DIR.mkdir(exist_ok=True)
 
-# llm_extracted_data.json lives at the repo root (MED AI/)
+# llm_extracted_data.json path kept for local dev fallback only
 LLM_JSON_PATH = Path(__file__).resolve().parents[3] / "llm_extracted_data.json"
 
 
 def load_llm_data(file_name: str):
-    if not LLM_JSON_PATH.exists():
-        return None
-    with open(LLM_JSON_PATH, "r") as f:
-        data = json.load(f)
-    return next((d for d in data if d["file_name"] == file_name), None)
+    """Load extracted data from DB first, fall back to local JSON file."""
+    # Try DB first (works in production)
+    try:
+        conn = get_connection()
+        cur = conn.cursor()
+        cur.execute("SELECT extracted_data FROM llm_extracted_data WHERE file_name = %s", (file_name,))
+        row = cur.fetchone()
+        cur.close()
+        conn.close()
+        if row:
+            return row["extracted_data"]
+    except Exception as e:
+        logger.warning(f"DB lookup for llm data failed: {e}")
+
+    # Fall back to local JSON (local dev without seeding)
+    if LLM_JSON_PATH.exists():
+        with open(LLM_JSON_PATH, "r") as f:
+            data = json.load(f)
+        return next((d for d in data if d["file_name"] == file_name), None)
+
+    return None
 
 
 def sync_to_json(file_name: str, updated_data: dict) -> bool:
-    """Write edited data back into llm_extracted_data.json."""
+    """Write edited data back into DB (and local JSON if present)."""
+    synced = False
+
+    # Update DB
     try:
-        if not LLM_JSON_PATH.exists():
-            return False
-        with open(LLM_JSON_PATH, "r") as f:
-            all_data = json.load(f)
-        idx = next((i for i, d in enumerate(all_data) if d["file_name"] == file_name), -1)
-        if idx == -1:
-            return False
-        all_data[idx] = {**updated_data, "file_name": file_name}
-        with open(LLM_JSON_PATH, "w") as f:
-            json.dump(all_data, f, indent=4)
-        return True
+        conn = get_connection()
+        cur = conn.cursor()
+        cur.execute("""
+            INSERT INTO llm_extracted_data (file_name, extracted_data)
+            VALUES (%s, %s)
+            ON CONFLICT (file_name) DO UPDATE
+                SET extracted_data = EXCLUDED.extracted_data,
+                    updated_at = NOW()
+        """, (file_name, json.dumps({**updated_data, "file_name": file_name})))
+        conn.commit()
+        cur.close()
+        conn.close()
+        synced = True
     except Exception as e:
-        logger.error(f"sync_to_json failed: {e}")
-        return False
+        logger.error(f"sync_to_json DB update failed: {e}")
+
+    # Also update local JSON if it exists (local dev)
+    try:
+        if LLM_JSON_PATH.exists():
+            with open(LLM_JSON_PATH, "r") as f:
+                all_data = json.load(f)
+            idx = next((i for i, d in enumerate(all_data) if d["file_name"] == file_name), -1)
+            if idx != -1:
+                all_data[idx] = {**updated_data, "file_name": file_name}
+                with open(LLM_JSON_PATH, "w") as f:
+                    json.dump(all_data, f, indent=4)
+    except Exception as e:
+        logger.warning(f"sync_to_json local file update failed: {e}")
+
+    return synced
 
 
 # ── POST /api/documents/upload ───────────────────────────────────────────────
