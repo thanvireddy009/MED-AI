@@ -177,19 +177,32 @@ def search_documents(query: str, user: dict = Depends(require_role("doctor"))):
 
 # ── GET /api/documents/:id ────────────────────────────────────────────────────
 @router.get("/documents/{document_id}", summary="Get a single document")
-def get_document(document_id: str, user: dict = Depends(get_current_user)):
+def get_document(document_id: str, request: Request, user: dict = Depends(get_current_user)):
     conn = get_connection()
     cur = conn.cursor()
     cur.execute("SELECT * FROM documents WHERE id = %s", (document_id,))
     doc = cur.fetchone()
-    cur.close()
-    conn.close()
     if not doc:
+        cur.close()
+        conn.close()
         raise HTTPException(status_code=404, detail="Document not found")
     document = dict(doc)
-    # Doctors can only retrieve approved reports; reviewers and admins can review any report.
+    # Doctors can only retrieve approved reports
     if user["role"] == "doctor" and document["status"] != "approved":
+        cur.close()
+        conn.close()
         raise HTTPException(status_code=403, detail="Doctors can only access approved documents")
+    # When a reviewer opens a pending document, mark it as reviewed
+    if user["role"] in ("reviewer", "admin") and document["status"] == "pending":
+        cur.execute(
+            "UPDATE documents SET status = 'reviewed' WHERE id = %s RETURNING *",
+            (document_id,)
+        )
+        document = dict(cur.fetchone())
+        conn.commit()
+        log_action(user["username"], "REVIEWED", "document", document_id, {}, request.client.host)
+    cur.close()
+    conn.close()
     return document
 
 
