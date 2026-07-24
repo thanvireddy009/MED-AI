@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: med-ai-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: NEON_CONNECTION_STRING
+        sync: false
+      - key: JWT_SECRET
+        sync: false
