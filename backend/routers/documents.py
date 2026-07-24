@@ -33,7 +33,10 @@ def load_llm_data(file_name: str):
         cur.close()
         conn.close()
         if row:
+            logger.info(f"load_llm_data: found '{file_name}' in DB")
             return row["extracted_data"]
+        else:
+            logger.warning(f"load_llm_data: '{file_name}' NOT found in DB")
     except Exception as e:
         logger.warning(f"DB lookup for llm data failed: {e}")
 
@@ -204,6 +207,7 @@ def load_extracted(document_id: str, request: Request, user: dict = Depends(requ
         raise HTTPException(status_code=404, detail="Document not found")
 
     extracted = load_llm_data(doc["file_name"])
+    logger.info(f"load-extracted: file_name='{doc['file_name']}', found={extracted is not None}")
     if not extracted:
         raise HTTPException(status_code=404, detail=f"No extracted data found for {doc['file_name']}")
 
