@@ -102,7 +102,7 @@ async def upload_document(
         f.write(contents)
 
     extracted = load_llm_data(file.filename)
-    status = "reviewed" if extracted else "pending"
+    status = "pending"  # Always pending — reviewer decides to approve or reject
 
     conn = get_connection()
     cur = conn.cursor()
